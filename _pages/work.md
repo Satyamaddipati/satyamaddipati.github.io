@@ -9,6 +9,7 @@ toc_icon: "cog"
 header:
   overlay_color: "#0066cc"
   overlay_filter: "0.5"
+  overlay_image: https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1200&h=600&fit=crop
 ---
 
 ## What I'm Working On Now
