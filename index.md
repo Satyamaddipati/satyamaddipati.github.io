@@ -1,61 +1,82 @@
 ---
-layout: splash
-header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: /assets/images/header-bg.jpg
-  actions:
-    - label: "Learn More About Me"
-      url: "/about/"
-excerpt: "Graduate Student, AI Enthusiast, and Eternal Learner 🚀"
-intro: 
-  - excerpt: 'Hey there! I'm Satya, a CS grad student at UW-Madison who loves building things with AI. When I'm not fine-tuning LLMs or debugging code at 2 AM, you'll find me exploring Madison's lakes or experimenting with new recipes.'
-feature_row:
-  - image_path: /assets/images/ai-icon.jpg
-    alt: "Current Work"
-    title: "What I'm Working On"
-    excerpt: "Building intelligent systems that actually work in production. Currently exploring agentic AI and how to make LLMs more reliable."
-    url: "/work/"
-    btn_label: "See My Work"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/hobbies-icon.jpg
-    alt: "Hobbies"
-    title: "Beyond the Screen"
-    excerpt: "Life isn't just about code! Discover what I do when I step away from my terminal."
-    url: "/hobbies/"
-    btn_label: "My Hobbies"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/blog-icon.jpg
-    alt: "Thoughts"
-    title: "Random Thoughts"
-    excerpt: "Musings on AI, tech, life, and everything in between. Sometimes technical, sometimes philosophical."
-    url: "/blog/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
+layout: single
+author_profile: true
+classes: wide
 ---
 
-{% include feature_row id="intro" type="center" %}
+# Hey there! 👋
 
-{% include feature_row %}
+I'm **Satya**, a grad student at UW-Madison who's passionate about building AI systems that actually work (and occasionally debugging them at 2 AM with coffee in hand ☕).
 
-## Hi, I'm Satya! 👋
+## Quick Intro
 
-I'm a grad student at UW-Madison, diving deep into the world of AI and Machine Learning. My journey began at IIT Bombay and led me into the exciting world of insurance technology (yes, AI can make insurance more interesting!).
-
-### Quick Facts About Me
-
-- 🎓 Currently pursuing MS in Computer Science at UW-Madison
-- 🤖 Previously built AI systems that processed thousands of insurance claims daily
-- 🌱 Always learning something new (currently: reinforcement learning & advanced RAG techniques)
-- 🌍 From India, now exploring the Midwest
-- ☕ Fueled by coffee and curiosity
-
-### What Gets Me Excited
-
-I'm fascinated by how we can make AI systems more intelligent, reliable, and actually useful. Whether it's fine-tuning an LLM to understand insurance policies or building multi-agent systems that collaborate like a team, I love the challenge of turning complex problems into elegant solutions.
-
-But I'm more than just a tech person! I believe the best engineers are well-rounded humans who draw inspiration from diverse experiences. That's why you'll find me dabbling in various hobbies, exploring new places, and constantly seeking new perspectives.
+- 🎓 MS Computer Science student at **UW-Madison** (Machine Learning & AI)
+- 🤖 Previously built **production AI systems** at Tata AIA Life Insurance
+- 🧠 Love fine-tuning LLMs, building agentic systems, and making AI practical
+- 🌱 Always learning something new (currently: advanced RAG & RL techniques)
+- 🌍 From India → IIT Bombay → Mumbai → Madison, WI
 
 ---
 
-**Want to know more?** Check out what I'm currently working on, my hobbies, or just reach out to say hi! 👇
+## What I'm About
+
+I'm not just about code and algorithms (though I do love those!). I believe the best engineers are curious humans who:
+- **Build things** that solve real problems
+- **Learn continuously** because tech never stops evolving
+- **Collaborate** because the best ideas come from diverse perspectives  
+- **Stay balanced** through hobbies, fitness, and exploration
+
+---
+
+## Explore More
+
+### 🔬 Current Work
+What I'm building, researching, and learning at UW-Madison
+
+[Learn More →](/work/)
+
+---
+
+### 🎮 Hobbies & Interests
+Life beyond the terminal - gaming, cooking, travel, and more!
+
+[Discover More →](/hobbies/)
+
+---
+
+### 👨‍💻 About Me
+My journey from IIT Bombay to insurance tech to grad school
+
+[Read My Story →](/about/)
+
+---
+
+## Recent Highlights
+
+🚀 **Multi-Agent LLM Evaluation Platform** - Built a system comparing GPT-4, Claude & Gemini with 89% correlation to human ratings
+
+🤖 **Production Agentic AI** - Reduced manual insurance claims review by 35% using autonomous decision-making
+
+🧠 **LLM Fine-Tuning** - Achieved 94% accuracy on document classification with custom-tuned Llama & Qwen models
+
+📊 **Business Impact** - Contributed to 80% YoY growth strategy at Tata AIA Life Insurance
+
+---
+
+## Let's Connect!
+
+I'm always excited to:
+- Collaborate on interesting AI/ML projects
+- Chat about the latest in LLMs and agentic systems
+- Share what I'm learning
+- Grab coffee (virtual or real!) and exchange ideas
+
+📧 **Email:** sbmaddipati@wisc.edu  
+💼 **LinkedIn:** [Connect with me](https://www.linkedin.com/in/YOUR_USERNAME/)  
+💻 **GitHub:** [@Satyamaddipati](https://github.com/Satyamaddipati)
+
+---
+
+*"The best way to predict the future is to invent it." - Alan Kay*
+
+**And I'm here to build that future, one line of code at a time.** 🚀
