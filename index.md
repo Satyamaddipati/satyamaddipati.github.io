@@ -5,119 +5,60 @@ classes: wide
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=600&fit=crop
-  caption: "Photo: [**Unsplash**](https://unsplash.com)"
+  overlay_image: /assets/images/chicago_downtown.JPG
+  caption: "Photo: Chicago Downtown"
 ---
 
-# Hey there! 👋
+## About Me
 
-I'm **Satya**, a grad student at UW-Madison who's passionate about building AI systems that actually work (and occasionally debugging them at 2 AM with coffee in hand ☕).
+I'm Satya, a graduate student in Computer Science at UW–Madison focusing on Machine Learning, LLMs, and applied AI systems.
 
-> *"Give me six hours to chop down a tree and I will spend the first four sharpening the axe."* - Abraham Lincoln  
-> (This is basically my approach to ML projects 😄)
+Previously, I worked as an Assistant Manager – Data Science at Tata AIA Life Insurance, where I built production-grade AI systems, multi-agent workflows, and LLM-based automation pipelines used across business teams.
 
-## Quick Intro
-
-- 🎓 MS Computer Science student at **UW-Madison** (Machine Learning & AI)
-- 🤖 Previously built **production AI systems** at Tata AIA Life Insurance
-- 🧠 Love fine-tuning LLMs, building agentic systems, and making AI practical
-- 🌱 Always learning something new (currently: advanced RAG & RL techniques)
-- 🌍 From India → IIT Bombay → Mumbai → Madison, WI
-- ☕ Coffee enthusiast (my code-to-coffee ratio is 1:3)
-
-## Fun Facts About Me
-
-- 🎯 Cracked JEE Mains in top 0.3% (out of 1.58 million students!) - that's like finding a needle in a haystack, but the needle is also solving calculus
-- 🏆 Bronze medalist at Inter-IIT competitions
-- 🌐 Was Web Coordinator for Techfest IIT Bombay (Asia's largest tech festival!)
-- 🍳 Can make a decent biryani (though my LLMs are more consistent than my cooking)
-- 🎮 Believe strategy games make you a better programmer
-- 📚 Currently reading: *Gödel, Escher, Bach* (again, because once is never enough)
+My work centers around:
+- Large Language Models & fine-tuning  
+- Agentic AI systems (LangGraph, CrewAI)  
+- Retrieval-Augmented Generation (RAG)  
+- Practical ML systems and production deployment  
 
 ---
 
-## What I'm About
+## What I Do
 
-I'm not just about code and algorithms (though I do love those!). I believe the best engineers are curious humans who:
-- **Build things** that solve real problems
-- **Learn continuously** because tech never stops evolving
-- **Collaborate** because the best ideas come from diverse perspectives  
-- **Stay balanced** through hobbies, fitness, and exploration
-
----
-
-## Explore More
-
-### 🔬 Current Work
-What I'm building, researching, and learning at UW-Madison
-
-[Learn More →](/work/)
+- **LLM Engineering:** fine-tuning, evaluation, RAG pipelines, agents  
+- **Machine Learning:** model development, experimentation, optimization  
+- **AI Systems:** building reliable, scalable, end-to-end workflows  
+- **Software & Infra:** Python, PyTorch, FastAPI, Docker, AWS/GCP  
 
 ---
 
-### 🎮 Hobbies & Interests
-Life beyond the terminal - gaming, cooking, travel, and more!
+## Current Focus
 
-[Discover More →](/hobbies/)
-
----
-
-### 👨‍💻 About Me
-My journey from IIT Bombay to insurance tech to grad school
-
-[Read My Story →](/about/)
+- Building advanced agent systems with LangGraph  
+- Improving RAG performance with adaptive retrieval  
+- Exploring evaluation frameworks for LLM reliability  
 
 ---
 
-### 📝 Blog
-Thoughts on AI, ML, and everything in between
+## Highlights
 
-[Read My Posts →](/posts/)
-
----
-
-## Recent Highlights
-
-🚀 **Multi-Agent LLM Evaluation Platform** - Built a system comparing GPT-4, Claude & Gemini with 89% correlation to human ratings
-
-🤖 **Production Agentic AI** - Reduced manual insurance claims review by 35% using autonomous decision-making
-
-🧠 **LLM Fine-Tuning** - Achieved 94% accuracy on document classification with custom-tuned Llama & Qwen models
-
-📊 **Business Impact** - Contributed to 80% YoY growth strategy at Tata AIA Life Insurance
+- Designed multi-agent LLM evaluation system with 89% correlation to human scoring  
+- Reduced manual insurance claims review by 35% with agentic automation  
+- Achieved 94% document-classification accuracy through custom fine-tuning  
+- Delivered ML systems contributing to significant business growth at Tata AIA  
 
 ---
 
-## My Photos
+## Explore My Work
 
-![Fall in Madison](/assets/images/Avatar.JPG)
-*Enjoying fall colors in Madison 🍂*
-
----
-
-## Currently Vibing To 🎵
-
-- Lo-fi beats while coding
-- Podcasts on AI & tech
-- Occasionally, some Bollywood hits for nostalgia
+- [Current Work](/work/)  
+- [Projects](/posts/)  
+- [About](/about/)  
 
 ---
 
-## Let's Connect!
+## Contact
 
-I'm always excited to:
-- Collaborate on interesting AI/ML projects
-- Chat about the latest in LLMs and agentic systems
-- Share what I'm learning
-- Grab coffee (virtual or real!) and exchange ideas
-- Debate whether tabs or spaces are better (I use spaces, fight me 😄)
-
-📧 **Email:** sbmaddipati@wisc.edu  
-💼 **LinkedIn:** [Connect with me](https://www.linkedin.com/in/satya-maddipati/)  
-💻 **GitHub:** [@Satyamaddipati](https://github.com/Satyamaddipati)
-
----
-
-*"The best way to predict the future is to invent it." - Alan Kay*
-
-**And I'm here to build that future, one line of code (and one cup of coffee) at a time.** 🚀☕
+**Email:** sbmaddipati@wisc.edu  
+**LinkedIn:** https://www.linkedin.com/in/satya-maddipati/  
+**GitHub:** https://github.com/Satyamaddipati
