@@ -6,11 +6,16 @@ author_profile: true
 header:
   overlay_color: "#333"
   overlay_filter: "0.5"
+  overlay_image: https://images.unsplash.com/photo-1477346611705-65d1883cee1e?w=1200&h=600&fit=crop
+  caption: "Photo: [**Unsplash**](https://unsplash.com)"
 ---
 
 ## The Story So Far
 
 Hey! I'm Satya Bhargav Maddipati, but most people just call me Satya. I'm currently a graduate student at the University of Wisconsin-Madison, pursuing my MS in Computer Science with a focus on Machine Learning and AI.
+
+![Chicago Adventures](/assets/images/chicago_downtown.JPG)
+*Exploring Chicago - one of my favorite cities! 🌃*
 
 ### My Journey
 
@@ -46,6 +51,9 @@ I believe in:
 - **Collaboration**: The best work happens when diverse minds come together
 - **Balance**: Being a good engineer means being a well-rounded person
 
+![Chicago at Dusk](/assets/images/chic_downtown.jpg)
+*Chicago at dusk - magical views! 🌆*
+
 ### Fun Facts
 
 - 🎯 I was in the top 0.3% of 1.58 million students in JEE Mains (India's engineering entrance exam)
@@ -58,7 +66,7 @@ I believe in:
 I'm always excited to meet new people, collaborate on interesting projects, or just chat about AI, technology, and life. Feel free to reach out!
 
 - 📧 Email: sbmaddipati@wisc.edu
-- 💼 LinkedIn: [Connect with me](https://www.linkedin.com/in/YOUR_USERNAME/)
+- 💼 LinkedIn: [Connect with me](https://www.linkedin.com/in/satya-maddipati/)
 - 💻 GitHub: [Check out my code](https://github.com/Satyamaddipati)
 
 ---
