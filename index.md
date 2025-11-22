@@ -4,6 +4,7 @@ author_profile: true
 classes: wide
 header:
   overlay_color: "#000"
+  overlay_text: ""
   overlay_filter: "0.5"
   overlay_image: /assets/images/chicago_downtown.JPG
   caption: "Photo: Chicago Downtown"
