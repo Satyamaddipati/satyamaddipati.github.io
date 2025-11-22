@@ -5,8 +5,8 @@ classes: wide
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/chicago_downtown.JPG
-  caption: "Photo: Chicago Downtown"
+  overlay_image: https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=600&fit=crop
+  caption: "Photo: [**Unsplash**](https://unsplash.com)"
 ---
 
 # Hey there! 👋
