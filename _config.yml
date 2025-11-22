@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Satya Bhargav Maddipati"
-  avatar           : "/assets/images/profile.jpg"
+  avatar           : "/assets/images/Avatar.jpg"
   bio              : "MS Computer Science @ UW-Madison | Specializing in Machine Learning, LLMs & AI Systems"
   location         : "Madison, WI"
   email            : "sbmaddipati@wisc.edu"
