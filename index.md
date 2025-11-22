@@ -10,7 +10,7 @@ header:
   caption: "Photo: Chicago Downtown"
 ---
 
-## About Me
+
 
 I'm Satya, a graduate student in Computer Science at UW–Madison focusing on Machine Learning, LLMs, and applied AI systems.
 
@@ -60,6 +60,7 @@ My work centers around:
 
 ## Contact
 
-**Email:** sbmaddipati@wisc.edu  
-**LinkedIn:** https://www.linkedin.com/in/satya-maddipati/  
-**GitHub:** https://github.com/Satyamaddipati
+📧 **Email:** sbmaddipati@wisc.edu  
+💼 **LinkedIn:** [linkedin.com/in/satya-bhargav-maddipati-9a47b8158](https://www.linkedin.com/in/satya-bhargav-maddipati-9a47b8158/)  
+💻 **GitHub:** [github.com/Satyamaddipati](https://github.com/Satyamaddipati)
+
