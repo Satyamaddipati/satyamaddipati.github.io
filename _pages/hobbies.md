@@ -6,6 +6,7 @@ author_profile: true
 header:
   overlay_color: "#5e616c"
   overlay_filter: "0.5"
+  overlay_image: https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&h=600&fit=crop
 ---
 
 ## When I'm Not Coding...
