@@ -129,14 +129,14 @@ For my **dual degree thesis at IIT Bombay**, I developed ML models to forecast a
 
 <div style="background: #f6f8fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
 
-📧 **Email:** [sbmaddipati@wisc.edu](mailto:sbmaddipati@wisc.edu)  
-💼 **LinkedIn:** [satya-bhargav-maddipati](https://www.linkedin.com/in/satya-bhargav-maddipati-9a47b8158/)  
-💻 **GitHub:** [@Satyamaddipati](https://github.com/Satyamaddipati)
+📧 **Email:** sbmaddipati@wisc.edu  
+💼 **LinkedIn:** [linkedin.com/in/satya-bhargav-maddipati-9a47b8158](https://www.linkedin.com/in/satya-bhargav-maddipati-9a47b8158/)  
+💻 **GitHub:** [github.com/Satyamaddipati](https://github.com/Satyamaddipati)
 
 </div>
 
 ---
 
 <div style="text-align: center; color: #6c757d; font-size: 0.9em; margin-top: 40px;">
-<em>From forecasting air pollution in Mumbai to building LLM agents in Madison — passionate about ML systems that create real-world impact.</em>
+<em>Open to collaborations, research opportunities, and interesting conversations about ML systems.</em>
 </div>
