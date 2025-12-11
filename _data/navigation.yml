@@ -1,13 +1,17 @@
 # main links
 main:
-  - title: "About"
-    url: /about/
-  - title: "Current Work"
-    url: /work/
-  - title: "Hobbies"
-    url: /hobbies/
+  - title: "Projects"
+    url: /projects/
+    description: "Featured ML projects with code and demos"
+  - title: "Experience"
+    url: /experience/
+    description: "Work history and accomplishments"
   - title: "Blog"
-    url: /posts/
+    url: /blog/
+    description: "Technical deep-dives and tutorials"
+  - title: "Resume"
+    url: /assets/resume.pdf
+    description: "Download full resume (PDF)"
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
