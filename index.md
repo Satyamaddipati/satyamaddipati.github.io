@@ -4,7 +4,7 @@ author_profile: true
 header:
   overlay_image: /assets/images/chicago-banner.jpg
   overlay_filter: 0.5
-  caption: "Photo: Chicago Downtown"
+  caption: "Photo: Chicago Downtown."
 ---
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; margin-bottom: 30px; color: white; text-align: center;">
@@ -41,7 +41,7 @@ I specialize in **LLM engineering and production ML systems** — from RAG pipel
 
 ### 1. Multi-Agent LLM Evaluation System ⭐
 
-Built autonomous evaluation system achieving **89% correlation with human evaluators** across **50,000+ evaluations**. Deployed in production serving **500+ daily requests**.
+Built an autonomous evaluation system achieving **89% correlation with human evaluators** across **50,000+ evaluations**. Deployed in production serving **500+ daily requests**.
 
 **The Problem:** Manual evaluation of LLM outputs was time-consuming and inconsistent, creating bottlenecks in prompt optimization.
 
@@ -61,14 +61,14 @@ Built autonomous evaluation system achieving **89% correlation with human evalua
 
 ### 2. Production RAG System for Insurance Documents
 
-Built hybrid RAG pipeline achieving **35% reduction in manual claims review time**, saving **2,000+ person-hours annually** for a 200-person claims processing team.
+Built a hybrid RAG pipeline achieving **35% reduction in manual claims review time**, saving **2,000+ person-hours annually** for a 200-person claims processing team.
 
-**The Challenge:** Claims processors spent 4+ hours daily searching through policy documents, SOPs, and regulatory guidelines. Traditional keyword search missed context, and pure semantic search returned too many irrelevant results.
+**The Challenge:** Claims processors spent more than 4 hours daily searching through policy documents, SOPs, and regulatory guidelines. Traditional keyword searches often missed context, and pure semantic searches returned too many irrelevant results.
 
 **My Solution:** 
-- Designed adaptive retrieval strategy combining semantic + keyword search
+- Designed an adaptive retrieval strategy combining semantic + keyword search
 - Implemented context-aware chunking for insurance documents
-- Built prompt engineering pipeline for domain-specific queries
+- Built a prompt engineering pipeline for domain-specific queries
 - Deployed with <200ms p95 latency using AWS Lambda
 
 **Impact:**
@@ -87,11 +87,11 @@ Built hybrid RAG pipeline achieving **35% reduction in manual claims review time
 
 Custom fine-tuned transformer model for insurance document classification, achieving **94% accuracy** and processing **10M+ documents** in production.
 
-**The Problem:** Insurance documents (claims, policies, correspondence) needed accurate classification for routing and processing. Off-the-shelf models achieved only 78% accuracy due to domain-specific terminology.
+**The Problem:** Insurance documents (claims, policies, correspondence) needed accurate classification for routing and processing. Off-the-shelf models achieved only 78% accuracy due to the domain-specific nature of the terminology.
 
 **My Approach:**
 - Collected and labeled 50K domain-specific training examples
-- Fine-tuned BERT-base on insurance corpus
+- Fine-tuned BERT on insurance corpus
 - Implemented active learning pipeline for continuous improvement
 - Optimized inference latency to <100ms
 
@@ -99,7 +99,7 @@ Custom fine-tuned transformer model for insurance document classification, achie
 - 94% classification accuracy (vs. 78% baseline)
 - Automated 80% of manual classification work
 - Reduced processing time by 60%
-- Deployed via FastAPI serving 1,000+ daily requests
+- Deployed via FastAPI, serving 1,000+ daily requests
 
 **Tech Stack:** Hugging Face Transformers, PyTorch, FastAPI, MLflow, Docker, AWS EC2
 
@@ -111,7 +111,7 @@ Custom fine-tuned transformer model for insurance document classification, achie
 
 Developed ensemble time-series models for **3-5 day air quality prediction** across 5 major Indian cities, achieving **85%+ forecast accuracy**.
 
-**The Research Question:** Can we predict urban air pollution spikes early enough to enable public health interventions?
+**The Research Question:** Can we predict urban air pollution spikes in time to enable effective public health interventions?
 
 **My Approach:**
 - Collected 3 years of air quality + meteorological data
@@ -122,7 +122,7 @@ Developed ensemble time-series models for **3-5 day air quality prediction** acr
 **Impact:**
 - 85%+ accuracy on 3-day forecasts
 - Identified key predictive features (temperature inversions, wind patterns)
-- Published as dual degree thesis at IIT Bombay
+- Published as a dual degree thesis at IIT Bombay
 - Research contributed to municipal early warning system pilots
 
 **Tech Stack:** Python, scikit-learn, XGBoost, pandas, NumPy, Matplotlib, Jupyter
@@ -234,15 +234,13 @@ I'm actively seeking **Summer 2025 internships** in ML Engineering, Applied AI, 
 
 <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin: 20px 0;">
 
-📧 **Email:** [sbmaddipati@wisc.edu](mailto:sbmaddipati@wisc.edu)  
-💼 **LinkedIn:** [Connect with me](https://linkedin.com/in/satya-bhargav-maddipati-9a47b8158)  
-💻 **GitHub:** [View my code](https://github.com/Satyamaddipati)  
+
 📄 **Resume:** [Download PDF](/assets/resume.pdf)
 
 </div>
 
 ---
 
-*Currently building cool things at UW-Madison. Always happy to chat about ML systems, internship opportunities, or interesting technical challenges!*
+*Currently learning and building cool things at UW-Madison. Always happy to chat about ML systems, internship opportunities, or interesting technical challenges!*
 
-*Last updated: December 2024*
+*Last updated: January 2026*
