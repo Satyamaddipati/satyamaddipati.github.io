@@ -12,6 +12,9 @@ locale: "en-US"
 # Build Settings
 markdown: kramdown
 
+# Include the _pages directory
+include: ["_pages"]
+
 # Exclude these files from build
 exclude:
   - docs
@@ -56,6 +59,7 @@ author:
 defaults:
   - scope:
       path: ""
+      type: pages
     values:
       layout: single
       author_profile: true
