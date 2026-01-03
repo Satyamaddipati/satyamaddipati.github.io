@@ -4,10 +4,11 @@ minimal_mistakes_skin: "default"
 
 # Site Settings
 title: "Satya Bhargav Maddipati"
-description: "MS CS @ UW-Madison | LLM Engineering, RAG systems, and production ML"
+description: "MS CS @ UW–Madison | LLM Engineering, RAG systems, and production ML"
 url: "https://satyamaddipati.github.io"
 baseurl: ""
 locale: "en-US"
+timezone: "America/Chicago"
 
 # Build Settings
 markdown: kramdown
@@ -39,32 +40,27 @@ plugins:
   - jekyll-sitemap
   - jekyll-include-cache
 
-# Author
+# Author (single source of truth for contact links)
 author:
   name: "Satya Bhargav Maddipati"
   avatar: "/assets/images/Avatar.JPG"
-  bio: "MS Computer Science @ UW-Madison | Specializing in Machine Learning, LLMs & AI Systems"
+  bio: "MS CS @ UW–Madison | LLM engineering, RAG pipelines, agentic systems, production ML."
   location: "Madison, WI"
   links:
-    - label: "Website"
-      icon: "fas fa-link"
-      url: "https://satyamaddipati.github.io"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/satya-bhargav-maddipati-9a47b8158/"
     - label: "Email"
       icon: "fas fa-envelope"
       url: "mailto:sbmaddipati@wisc.edu"
-
-# Footer
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-github"
-      url: "https://github.com/Satyamaddipati"
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/satya-bhargav-maddipati-9a47b8158/"
+    - label: "Resume"
+      icon: "fas fa-file-pdf"
+      url: "/assets/resume.pdf"
+
+# Footer (optional)
+# Keep footer empty or minimal to avoid repeating sidebar links
+footer:
+  links: []
 
 # Defaults
 defaults:
