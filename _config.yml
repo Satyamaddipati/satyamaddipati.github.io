@@ -1,83 +1,75 @@
-# -----------------------------
-# Site settings
-# -----------------------------
+# Theme Settings
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "default"
+
+# Site Settings
 title: "Satya Bhargav Maddipati"
-description: "MS CS @ UW–Madison | LLM engineering, RAG systems, agent workflows, and production ML systems."
+description: "MS CS @ UW-Madison | LLM Engineering, RAG systems, and production ML"
 url: "https://satyamaddipati.github.io"
 baseurl: ""
 locale: "en-US"
-timezone: "America/Chicago"
 
-# -----------------------------
-# Theme (Minimal Mistakes)
-# -----------------------------
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "default"
+# Build Settings
+markdown: kramdown
+permalink: /:title/
 
+# Exclude these files from build
+exclude:
+  - docs
+  - test
+  - .github
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README.md
+  - CHANGELOG.md
+  - minimal-mistakes-jekyll.gemspec
+  - screenshot.png
+  - screenshot-layouts.png
+  - staticman.yml
+
+# Plugins
 plugins:
-  - jekyll-include-cache
-  - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-include-cache
 
-# -----------------------------
-# Author (sidebar profile)
-# Single source of truth for contact links
-# -----------------------------
+# Author
 author:
   name: "Satya Bhargav Maddipati"
   avatar: "/assets/images/Avatar.JPG"
+  bio: "MS Computer Science @ UW-Madison | Specializing in Machine Learning, LLMs & AI Systems"
   location: "Madison, WI"
-  bio: "MS Computer Science @ UW–Madison<br/>Machine Learning • LLMs • AI Systems"
   links:
-    - label: "Email"
-      icon: "fas fa-envelope"
-      url: "mailto:sbmaddipati@wisc.edu"
+    - label: "Website"
+      icon: "fas fa-link"
+      url: "https://satyamaddipati.github.io"
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/satya-bhargav-maddipati-9a47b8158/"
-    - label: "Resume"
-      icon: "fas fa-file-pdf"
-      url: "/assets/resume.pdf"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:sbmaddipati@wisc.edu"
 
-# -----------------------------
+# Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/Satyamaddipati"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/satya-bhargav-maddipati-9a47b8158/"
+
 # Defaults
-# -----------------------------
 defaults:
   - scope:
       path: ""
     values:
       layout: single
       author_profile: true
-
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: false
-      share: true
-      related: true
-
-# -----------------------------
-# Markdown / syntax highlighting
-# -----------------------------
-markdown: kramdown
-highlighter: rouge
-
-# -----------------------------
-# Permalinks
-# -----------------------------
-permalink: /blog/:title/
-
-# -----------------------------
-# SEO/social
-# -----------------------------
-social:
-  type: "Person"
-  name: "Satya Bhargav Maddipati"
-  links:
-    - "https://github.com/Satyamaddipati"
-    - "https://www.linkedin.com/in/satya-bhargav-maddipati-9a47b8158/"
