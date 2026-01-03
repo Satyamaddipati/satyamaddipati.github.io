@@ -1,6 +1,6 @@
 ---
 layout: home
-author_profile: true
+author_profile: False
 header:
   overlay_image: /assets/images/chicago-banner.jpg
   overlay_filter: 0.5
@@ -221,26 +221,57 @@ I write about building production ML systems and lessons learned from real deplo
 
 ---
 
-## 📬 Let's Connect
+## 📬 Get In Touch
 
-I'm actively seeking **Summer 2025 internships** in ML Engineering, Applied AI, or LLM Systems. I'm particularly interested in:
+I'm actively seeking **Summer 2025 internships** in ML Engineering, Applied AI, or LLM Systems.
 
-✨ Production LLM applications and agent systems  
-⚙️ Large-scale ML infrastructure and MLOps  
-🚀 AI products with measurable user impact  
-🔬 Research-to-production ML pipelines
+**What I'm looking for:**
+- Production LLM applications and agent systems
+- Large-scale ML infrastructure and MLOps
+- AI products with measurable user impact
+- Research-to-production ML pipelines
 
 **Also open to:** Full-time opportunities starting May 2026
 
-<div style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin: 20px 0;">
-
-
-📄 **Resume:** [Download PDF](/assets/resume.pdf)
-
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 30px; border-radius: 12px; margin: 30px 0; color: white;">
+  <h3 style="color: white; margin-top: 0; text-align: center;">Let's build something together</h3>
+  <p style="text-align: center; font-size: 1.1em; margin-bottom: 25px;">Whether you're hiring, collaborating, or just want to chat about ML systems</p>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; max-width: 800px; margin: 0 auto;">
+    
+    <div style="background: rgba(255,255,255,0.15); padding: 20px; border-radius: 8px; backdrop-filter: blur(10px);">
+      <div style="font-size: 2em; margin-bottom: 10px;">📧</div>
+      <strong>Email</strong><br/>
+      <a href="mailto:sbmaddipati@wisc.edu" style="color: white; text-decoration: none; word-break: break-all;">sbmaddipati@wisc.edu</a>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.15); padding: 20px; border-radius: 8px; backdrop-filter: blur(10px);">
+      <div style="font-size: 2em; margin-bottom: 10px;">💼</div>
+      <strong>LinkedIn</strong><br/>
+      <a href="https://linkedin.com/in/satya-bhargav-maddipati-9a47b8158" style="color: white; text-decoration: none;">View Profile →</a>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.15); padding: 20px; border-radius: 8px; backdrop-filter: blur(10px);">
+      <div style="font-size: 2em; margin-bottom: 10px;">💻</div>
+      <strong>GitHub</strong><br/>
+      <a href="https://github.com/Satyamaddipati" style="color: white; text-decoration: none;">@Satyamaddipati →</a>
+    </div>
+    
+    <div style="background: rgba(255,255,255,0.15); padding: 20px; border-radius: 8px; backdrop-filter: blur(10px);">
+      <div style="font-size: 2em; margin-bottom: 10px;">📄</div>
+      <strong>Resume</strong><br/>
+      <a href="/assets/resume.pdf" style="color: white; text-decoration: none;">Download PDF →</a>
+    </div>
+    
+  </div>
+  
+  <p style="text-align: center; margin-top: 25px; margin-bottom: 0; font-size: 0.95em; opacity: 0.9;">
+    ⚡ Typical response time: Within 24 hours
+  </p>
 </div>
 
 ---
 
-*Currently learning and building cool things at UW-Madison. Always happy to chat about ML systems, internship opportunities, or interesting technical challenges!*
+*Currently learning and building at UW-Madison. Always happy to discuss ML systems, internship opportunities, or interesting technical challenges.*
 
 *Last updated: January 2026*
