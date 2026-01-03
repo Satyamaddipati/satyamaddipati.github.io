@@ -1,17 +1,16 @@
 # main links
 main:
-  - title: "Projects"
-    url: /projects/
-    description: "Featured ML projects with code and demos"
+ - title: "About"
+    url: /about/
+    description: "More about me."
   - title: "Work"
     url: /work/
-    description: "Work history and accomplishments"
+    description: "Work history and accomplishments."
+  - title: "Projects"
+    url: /projects/
+    description: "Featured ML projects with code and demos."
   - title: "Hobbies"
     url: /hobbies/
     description: "Interests outside of work."
-  - title: "About"
-    url: /about/
-    description: "More about me."
-  - title: "Resume"
-    url: /assets/resume.pdf
-    description: "Download full resume (PDF)"
+ 
+  
