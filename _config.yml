@@ -11,7 +11,6 @@ locale: "en-US"
 
 # Build Settings
 markdown: kramdown
-# REMOVED: permalink: /:title/  <-- This was breaking your page permalinks!
 
 # Exclude these files from build
 exclude:
@@ -52,13 +51,6 @@ author:
     - label: "Email"
       icon: "fas fa-envelope"
       url: "mailto:sbmaddipati@wisc.edu"
-
-# Footer (optional - can be removed entirely if you don't want footer links)
-# footer:
-#   links:
-#     - label: "GitHub"
-#       icon: "fab fa-github"
-#       url: "https://github.com/Satyamaddipati"
 
 # Defaults
 defaults:
