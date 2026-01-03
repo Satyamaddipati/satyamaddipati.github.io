@@ -12,7 +12,7 @@ header:
 
 ## The Story So Far
 
-Hey! I'm Satya Bhargav Maddipati, but most people just call me Satya. I'm currently a graduate student at the University of Wisconsin-Madison, pursuing my MS in Computer Science with a focus on Machine Learning and AI.
+Hey! I'm Satya Bhargav Maddipati, but most people call me Satya. I'm currently a graduate student at the University of Wisconsin-Madison, pursuing my MS in Computer Science with a focus on Machine Learning and AI.
 
 ![Chicago Adventures](/assets/images/chicago_downtown.JPG)
 *Exploring Chicago - one of my favorite cities! 🌃*
@@ -32,7 +32,7 @@ The best part? Seeing my systems actually help real people get their insurance c
 
 ### Why UW-Madison?
 
-After two years in industry, I wanted to dive deeper into the theory and cutting-edge research. UW-Madison was the perfect choice - amazing research opportunities, a beautiful campus (those lakes! 😍), and a vibrant AI/ML community.
+After two years in industry, I wanted to dive deeper into the theory and cutting-edge research. UW-Madison was the perfect choice - excellent research opportunities, a beautiful campus (those lakes! 😍), and a vibrant AI/ML community.
 
 ### What Drives Me
 
@@ -63,7 +63,7 @@ I believe in:
 
 ### Let's Connect!
 
-I'm always excited to meet new people, collaborate on interesting projects, or just chat about AI, technology, and life. Feel free to reach out!
+I'm always excited to meet new people, collaborate on interesting projects, or chat about AI, technology, and life. Feel free to reach out!
 
 - 📧 Email: sbmaddipati@wisc.edu
 - 💼 LinkedIn: [Connect with me](https://www.linkedin.com/in/satya-maddipati/)
