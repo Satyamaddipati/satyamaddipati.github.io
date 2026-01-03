@@ -2,9 +2,9 @@
 # Site settings
 # -----------------------------
 title: "Satya Bhargav Maddipati"
-description: "MS CS @ UW-Madison | LLM Engineering, RAG systems, agent workflows, and production ML systems."
+description: "MS CS @ UW–Madison | LLM engineering, RAG systems, agent workflows, and production ML systems."
 url: "https://satyamaddipati.github.io"
-baseurl: ""  # keep empty for user.github.io root sites
+baseurl: ""
 locale: "en-US"
 timezone: "America/Chicago"
 
@@ -22,37 +22,26 @@ plugins:
 
 # -----------------------------
 # Author (sidebar profile)
+# Single source of truth for contact links
 # -----------------------------
 author:
   name: "Satya Bhargav Maddipati"
-  avatar: "/assets/images/Avatar.JPG"  # Updated to match your actual file
+  avatar: "/assets/images/Avatar.JPG"
   location: "Madison, WI"
-  bio: "MS Computer Science @ UW-Madison<br/>Specializing in Machine Learning, LLMs & AI Systems"
+  bio: "MS Computer Science @ UW–Madison<br/>Machine Learning • LLMs • AI Systems"
   links:
-    - label: "Website"
-      icon: "fas fa-link"
-      url: "https://satyamaddipati.github.io"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com/in/satya-bhargav-maddipati-9a47b8158/"
     - label: "Email"
       icon: "fas fa-envelope"
       url: "mailto:sbmaddipati@wisc.edu"
-
-# -----------------------------
-# Footer links (optional - keeps footer clean)
-# -----------------------------
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-github"
-      url: "https://github.com/Satyamaddipati"
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
       url: "https://www.linkedin.com/in/satya-bhargav-maddipati-9a47b8158/"
+    - label: "Resume"
+      icon: "fas fa-file-pdf"
+      url: "/assets/resume.pdf"
 
 # -----------------------------
-# Defaults (so you don't repeat front-matter)
+# Defaults
 # -----------------------------
 defaults:
   - scope:
@@ -60,6 +49,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+
   - scope:
       path: ""
       type: posts
@@ -83,19 +73,11 @@ highlighter: rouge
 permalink: /blog/:title/
 
 # -----------------------------
-# Optional: SEO/social
+# SEO/social
 # -----------------------------
 social:
   type: "Person"
-  name: "Satya Bhargav Maddipati."
+  name: "Satya Bhargav Maddipati"
   links:
     - "https://github.com/Satyamaddipati"
     - "https://www.linkedin.com/in/satya-bhargav-maddipati-9a47b8158/"
-
-# -----------------------------
-# Analytics (optional - add if you want tracking)
-# -----------------------------
-# analytics:
-#   provider: "google-gtag"
-#   google:
-#     tracking_id: "G-XXXXXXXXXX"
