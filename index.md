@@ -166,20 +166,6 @@ Right now, I'm diving deep into:
 
 ---
 
-## 💬 Let's Connect
-
-I'm actively seeking **Summer 2026 internships** in ML Engineering, Applied AI, or LLM Systems.
-
-**What excites me:**
-- Production LLM applications and agent systems
-- Large-scale ML infrastructure and MLOps  
-- AI products with measurable user impact
-- Research-to-production ML pipelines
-
-If you're hiring or want to collaborate, reach out via the sidebar links (Email / LinkedIn).
-
----
-
 *Passionate about ML, enthusiastic about learning, and always genuine about making an impact.*
 
 *Available for Summer 2026 internships | Open to full-time opportunities starting May 2026*
