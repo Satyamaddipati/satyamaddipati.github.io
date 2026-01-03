@@ -1,37 +1,135 @@
 ---
 layout: home
-author_profile: False
+author_profile: true
 header:
   overlay_image: /assets/images/chicago-banner.jpg
   overlay_filter: 0.5
   caption: "Photo: Chicago Downtown."
+classes: wide
 ---
 
-<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; margin-bottom: 30px; color: white; text-align: center;">
-  <h2 style="margin: 0 0 10px 0; color: white;">🎯 Seeking Summer 2025 ML Engineering / Applied AI Internships</h2>
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 12px; margin-bottom: 30px; color: white; text-align: center;">
+  <h2 style="margin: 0 0 10px 0; color: white;">🎯 Seeking Summer 2025 ML Engineering Internships</h2>
   <p style="margin: 5px 0; font-size: 1.1em;">MS CS @ UW-Madison | 2+ years production ML experience | Available May - August 2025</p>
   <div style="margin-top: 15px;">
     <a href="/assets/resume.pdf" style="background: white; color: #667eea; padding: 10px 20px; margin: 5px; border-radius: 5px; text-decoration: none; font-weight: 600; display: inline-block;">📄 Resume</a>
-    <a href="mailto:sbmaddipati@wisc.edu" style="background: white; color: #667eea; padding: 10px 20px; margin: 5px; border-radius: 5px; text-decoration: none; font-weight: 600; display: inline-block;">📧 Email</a>
+    <a href="mailto:sbmaddipati@wisc.edu" style="background: white; color: #667eea; padding: 10px 20px; margin: 5px; border-radius: 5px; text-decoration: none; font-weight: 600; display: inline-block;">📧 Contact Me</a>
     <a href="https://linkedin.com/in/satya-bhargav-maddipati-9a47b8158" style="background: white; color: #667eea; padding: 10px 20px; margin: 5px; border-radius: 5px; text-decoration: none; font-weight: 600; display: inline-block;">💼 LinkedIn</a>
   </div>
 </div>
 
-I'm Satya, an MS Computer Science student at **UW-Madison** with **2 years of production ML experience** at **Tata AIA Life Insurance** and research background from **IIT Bombay**.
-
-I specialize in **LLM engineering and production ML systems** — from RAG pipelines to multi-agent workflows — with a track record of deploying AI systems that deliver measurable business impact.
+I'm Satya, a grad student at **UW-Madison**, genuinely passionate about building AI systems that work in the real world. With a background from **IIT Bombay** and **2 years of production ML experience** at **Tata AIA Life Insurance**, I've learned that great technology begins with understanding real problems—then relentlessly iterating until they're solved.
 
 ---
 
-## 💻 Technical Skills
+## 🎯 What Gets Me Excited
 
-<div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 20px 0;">
 
-**Languages:** Python, SQL, JavaScript  
-**ML/AI:** PyTorch, TensorFlow, scikit-learn, Hugging Face Transformers, LangChain, LangGraph  
-**LLM Engineering:** RAG systems, Fine-tuning, Prompt engineering, Evaluation frameworks  
-**Infrastructure:** Docker, AWS (Lambda, S3, EC2), FastAPI, Redis, PostgreSQL, ChromaDB  
-**Tools:** Git, Weights & Biases, MLflow, Jupyter, Postman
+<div style="background: #f8f9fa; padding: 20px; border-radius: 8px;">
+<h3>🤖 LLM Systems That Actually Work</h3>
+<p>Moving beyond demos to production-ready AI—RAG pipelines, agent workflows, evaluation frameworks. I've deployed systems processing 50K+ requests monthly.</p>
+</div>
+
+<div style="background: #f8f9fa; padding: 20px; border-radius: 8px;">
+<h3>🔨 Building Things That Last</h3>
+<p>From experimentation to deployment, I focus on reliable systems that teams can trust. My work has saved 2,000+ person-hours annually.</p>
+</div>
+
+<div style="background: #f8f9fa; padding: 20px; border-radius: 8px;">
+<h3>🌐 Real-World Impact</h3>
+<p>Whether it's automating insurance workflows or predicting air quality, I'm drawn to problems that matter to real people.</p>
+</div>
+
+</div>
+
+---
+
+## 💡 Recent Work Highlights
+
+<div style="background: #e3f2fd; padding: 25px; border-radius: 10px; margin: 20px 0;">
+
+**At Tata AIA Life Insurance (July 2022 - July 2024):**
+
+✨ Built multi-agent LLM evaluation system achieving **89% correlation** to human scoring across **50K+ evaluations**
+
+⚡ Deployed RAG pipeline reducing manual claims review by **35%**, saving **2,000+ person-hours annually**
+
+🎯 Fine-tuned transformer achieving **94% accuracy** in document classification (vs. 78% baseline)
+
+📈 Delivered ML systems contributing to **15% growth** in digital policy sales and **$200K+ annual savings**
+
+**Tech Stack:** Python, LangChain, LangGraph, FastAPI, PyTorch, Docker, AWS, ChromaDB
+
+</div>
+
+---
+
+## 🌱 From Curiosity to Impact: My Air Quality Journey
+
+Growing up in India, I witnessed our cities transform—encompassing more infrastructure and growth, yet also days when stepping outside felt like breathing through a blanket.
+
+### The Question That Started Everything
+
+During my time at **IIT Bombay**, I thought: *If we can predict weather days in advance, why can't we predict air quality?* That question became my dual degree thesis.
+
+### Building Solutions, Not Just Models
+
+I created forecasting systems by:
+- Analyzing **time series patterns** across 3 years of pollution data
+- Building **ensemble ML models** (Random Forest & XGBoost) trained on real urban data  
+- Integrating **meteorological factors** with traffic and industrial activity
+- Creating **city-specific predictions** for Delhi, Mumbai, Bangalore, Chennai, Kolkata
+
+### Why This Matters
+
+When my models started accurately predicting air quality indices **3-5 days in advance with 85%+ accuracy**, I realized this could help parents decide when to keep asthmatic children indoors, enable cities to manage traffic proactively, and help communities take protective action.
+
+**That's what drives me—building technology that genuinely adds value to people's lives, not just impressive benchmarks.**
+
+---
+
+## 🚀 What I'm Building Now
+
+Right now, I'm diving deep into:
+
+**Agent Architectures** — Experimenting with LangGraph & CrewAI to build systems that can reason and act autonomously
+
+**RAG Optimization** — Exploring hybrid retrieval strategies and context-aware chunking for better performance
+
+**LLM Evaluation** — Developing frameworks to measure reliability, safety, and consistency at scale
+
+**Cost-Performance Tradeoffs** — Making powerful AI accessible and practical through optimization and caching
+
+---
+
+## 📊 Impact at a Glance
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 30px 0;">
+
+<div style="background: #e3f2fd; padding: 20px; border-radius: 8px; text-align: center;">
+<h3 style="color: #1976d2; margin: 0;">3+</h3>
+<p style="margin: 5px 0; font-weight: 600;">Production ML Systems</p>
+<small>Serving 1,000+ daily users</small>
+</div>
+
+<div style="background: #f3e5f5; padding: 20px; border-radius: 8px; text-align: center;">
+<h3 style="color: #7b1fa2; margin: 0;">50K+</h3>
+<p style="margin: 5px 0; font-weight: 600;">LLM Evaluations</p>
+<small>Automated monthly</small>
+</div>
+
+<div style="background: #e8f5e9; padding: 20px; border-radius: 8px; text-align: center;">
+<h3 style="color: #388e3c; margin: 0;">89-94%</h3>
+<p style="margin: 5px 0; font-weight: 600;">Model Accuracy</p>
+<small>Across applications</small>
+</div>
+
+<div style="background: #fff3e0; padding: 20px; border-radius: 8px; text-align: center;">
+<h3 style="color: #f57c00; margin: 0;">$200K+</h3>
+<p style="margin: 5px 0; font-weight: 600;">Annual Savings</p>
+<small>From automation</small>
+</div>
 
 </div>
 
@@ -39,239 +137,98 @@ I specialize in **LLM engineering and production ML systems** — from RAG pipel
 
 ## 🛠️ Featured Projects
 
-### 1. Multi-Agent LLM Evaluation System ⭐
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
 
-Built an autonomous evaluation system achieving **89% correlation with human evaluators** across **50,000+ evaluations**. Deployed in production serving **500+ daily requests**.
-
-**The Problem:** Manual evaluation of LLM outputs was time-consuming and inconsistent, creating bottlenecks in prompt optimization.
-
-**My Solution:** Architected a multi-agent system using LangGraph where specialized agents evaluate different quality dimensions (accuracy, relevance, coherence, safety). Agents collaborate to produce comprehensive evaluations.
-
-**Impact:** 
-- Reduced evaluation time from hours to minutes
-- Enabled rapid A/B testing of prompts
-- 89% correlation with human expert ratings
-- Deployed across multiple business units
-
-**Tech Stack:** Python, LangChain, LangGraph, FastAPI, OpenAI API, Docker, AWS Lambda
-
-📂 [View Code](#) | 📝 [Read Case Study](/blog/llm-eval) | 🚀 [Live Demo](#)
-
----
-
-### 2. Production RAG System for Insurance Documents
-
-Built a hybrid RAG pipeline achieving **35% reduction in manual claims review time**, saving **2,000+ person-hours annually** for a 200-person claims processing team.
-
-**The Challenge:** Claims processors spent more than 4 hours daily searching through policy documents, SOPs, and regulatory guidelines. Traditional keyword searches often missed context, and pure semantic searches returned too many irrelevant results.
-
-**My Solution:** 
-- Designed an adaptive retrieval strategy combining semantic + keyword search
-- Implemented context-aware chunking for insurance documents
-- Built a prompt engineering pipeline for domain-specific queries
-- Deployed with <200ms p95 latency using AWS Lambda
-
-**Impact:**
-- 35% reduction in manual review time
-- Processed 10M+ documents with 94% accuracy
-- Deployed to 200+ users across 3 departments
-- $200K+ annual operational savings
-
-**Tech Stack:** LangChain, ChromaDB, Sentence Transformers, FastAPI, AWS Lambda, Docker, PostgreSQL
-
-📊 [Architecture Diagram](/assets/rag-architecture.png) | 📝 [Technical Deep Dive](/blog/rag-production)
-
----
-
-### 3. Fine-Tuned Document Classifier (94% Accuracy)
-
-Custom fine-tuned transformer model for insurance document classification, achieving **94% accuracy** and processing **10M+ documents** in production.
-
-**The Problem:** Insurance documents (claims, policies, correspondence) needed accurate classification for routing and processing. Off-the-shelf models achieved only 78% accuracy due to the domain-specific nature of the terminology.
-
-**My Approach:**
-- Collected and labeled 50K domain-specific training examples
-- Fine-tuned BERT on insurance corpus
-- Implemented active learning pipeline for continuous improvement
-- Optimized inference latency to <100ms
-
-**Impact:**
-- 94% classification accuracy (vs. 78% baseline)
-- Automated 80% of manual classification work
-- Reduced processing time by 60%
-- Deployed via FastAPI, serving 1,000+ daily requests
-
-**Tech Stack:** Hugging Face Transformers, PyTorch, FastAPI, MLflow, Docker, AWS EC2
-
-📓 [View Notebook](#) | 📝 [Blog Post](/blog/fine-tuning-insurance) | 📈 [Results Dashboard](#)
-
----
-
-### 4. Urban Air Quality Forecasting (IIT Bombay Research)
-
-Developed ensemble time-series models for **3-5 day air quality prediction** across 5 major Indian cities, achieving **85%+ forecast accuracy**.
-
-**The Research Question:** Can we predict urban air pollution spikes in time to enable effective public health interventions?
-
-**My Approach:**
-- Collected 3 years of air quality + meteorological data
-- Built Random Forest and XGBoost ensemble models
-- Integrated temporal patterns, weather factors, and emission sources
-- Validated across Delhi, Mumbai, Bangalore, Chennai, Kolkata
-
-**Impact:**
-- 85%+ accuracy on 3-day forecasts
-- Identified key predictive features (temperature inversions, wind patterns)
-- Published as a dual degree thesis at IIT Bombay
-- Research contributed to municipal early warning system pilots
-
-**Tech Stack:** Python, scikit-learn, XGBoost, pandas, NumPy, Matplotlib, Jupyter
-
-📄 [Read Thesis](/assets/thesis.pdf) | 💻 [GitHub Repository](#) | 📊 [Interactive Viz](#)
-
----
-
-## 📊 Impact at a Glance
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 30px 0;">
-
-<div style="background: #e3f2fd; padding: 20px; border-radius: 8px; text-align: center;">
-<h3 style="color: #1976d2; margin: 0;">3</h3>
-<p style="margin: 5px 0;">Production ML Systems</p>
-<small>Serving 1,000+ daily users</small>
+<div style="border: 2px solid #e1e4e8; border-radius: 8px; padding: 20px; background: white;">
+<h3 style="margin-top: 0;">Multi-Agent LLM Evaluator</h3>
+<p>Autonomous evaluation system with specialized agents achieving 89% correlation to human scoring. Deployed in production serving 500+ daily requests.</p>
+<p><strong>Tech:</strong> LangGraph, FastAPI, AWS Lambda</p>
+<a href="/work/" style="color: #0366d6; text-decoration: none; font-weight: 600;">Read Case Study →</a>
 </div>
 
-<div style="background: #f3e5f5; padding: 20px; border-radius: 8px; text-align: center;">
-<h3 style="color: #7b1fa2; margin: 0;">2,000+</h3>
-<p style="margin: 5px 0;">Person-Hours Saved</p>
-<small>Through automation annually</small>
+<div style="border: 2px solid #e1e4e8; border-radius: 8px; padding: 20px; background: white;">
+<h3 style="margin-top: 0;">Production RAG System</h3>
+<p>Hybrid retrieval pipeline reducing claims review time by 35%. Processing 10M+ documents with 94% accuracy.</p>
+<p><strong>Tech:</strong> LangChain, ChromaDB, Docker</p>
+<a href="/work/" style="color: #0366d6; text-decoration: none; font-weight: 600;">View Architecture →</a>
 </div>
 
-<div style="background: #e8f5e9; padding: 20px; border-radius: 8px; text-align: center;">
-<h3 style="color: #388e3c; margin: 0;">89-94%</h3>
-<p style="margin: 5px 0;">Model Accuracy</p>
-<small>Across multiple applications</small>
-</div>
-
-<div style="background: #fff3e0; padding: 20px; border-radius: 8px; text-align: center;">
-<h3 style="color: #f57c00; margin: 0;">$200K+</h3>
-<p style="margin: 5px 0;">Annual Savings</p>
-<small>From operational efficiency</small>
+<div style="border: 2px solid #e1e4e8; border-radius: 8px; padding: 20px; background: white;">
+<h3 style="margin-top: 0;">Fine-Tuned Document Classifier</h3>
+<p>Custom BERT model for insurance documents. Improved accuracy from 78% to 94% and automated 80% of classification work.</p>
+<p><strong>Tech:</strong> PyTorch, Transformers, MLflow</p>
+<a href="/work/" style="color: #0366d6; text-decoration: none; font-weight: 600;">Technical Details →</a>
 </div>
 
 </div>
 
 ---
 
-## 💼 Experience
+## 📚 Explore More
 
-### Assistant Manager – Data Science
-**Tata AIA Life Insurance** | Mumbai, India | July 2022 - July 2024
-
-**Built Production LLM Systems:**
-- Architected multi-agent evaluation framework processing 50K+ evals/month with 89% correlation to human scoring
-- Deployed RAG pipeline reducing claims review time by 35% (2,000+ hours saved annually)
-- Fine-tuned domain-specific LLM achieving 94% accuracy on document classification
-- Implemented A/B testing infrastructure for prompt optimization
-
-**Drove Business Impact:**
-- ML systems contributed to 15% growth in digital policy sales
-- Automated workflows saving $200K+ annually in operational costs
-- Reduced API costs by 40% through prompt optimization and caching
-- Mentored 3 junior data scientists on MLOps and LLM best practices
-
-**Tech Stack:** Python, LangChain, LangGraph, FastAPI, Docker, AWS, PyTorch, PostgreSQL
+<div style="display: flex; gap: 15px; flex-wrap: wrap; margin: 20px 0;">
+  <a href="/work/" style="padding: 12px 24px; background: #0366d6; color: white; border-radius: 6px; text-decoration: none; font-weight: 600;">📊 Current Work & Projects</a>
+  <a href="/posts/" style="padding: 12px 24px; background: #28a745; color: white; border-radius: 6px; text-decoration: none; font-weight: 600;">✍️ Technical Blog</a>
+  <a href="/about/" style="padding: 12px 24px; background: #6f42c1; color: white; border-radius: 6px; text-decoration: none; font-weight: 600;">👤 About Me</a>
+</div>
 
 ---
 
-### Research Assistant
-**IIT Bombay** | Mumbai, India | Aug 2020 - May 2022
-
-**Air Quality Forecasting Research:**
-- Developed ensemble ML models for 3-5 day air quality prediction across 5 major Indian cities
-- Achieved 85%+ forecast accuracy using meteorological data and emission sources
-- Published dual degree thesis on urban pollution forecasting
-- Collaborated with environmental scientists on real-world validation and deployment
-
-**Tech Stack:** Python, scikit-learn, XGBoost, pandas, NumPy, Matplotlib, Jupyter
-
----
-
-## 🎓 Education
-
-**University of Wisconsin-Madison** — MS Computer Science  
-*Expected May 2026 | Madison, WI*
-
-**Indian Institute of Technology Bombay** — Dual Degree (B.Tech + M.Tech)  
-*Graduated 2022 | Mumbai, India | Major: Chemical Engineering*
-
----
-
-## ✍️ Technical Blog
-
-I write about building production ML systems and lessons learned from real deployments:
-
-**Featured Posts:**
-- [Building a Production RAG System: Architecture & Lessons Learned](/blog/rag-production)
-- [Multi-Agent LLM Evaluation at Scale](/blog/llm-eval)
-- [Fine-Tuning Transformers for Domain-Specific Tasks](/blog/fine-tuning-insurance)
-- [From Research to Production: Air Quality Forecasting](/blog/air-quality-ml)
-
-[View All Posts →](/blog/)
-
----
-
-## 📬 Get In Touch
+## 💬 Let's Connect
 
 I'm actively seeking **Summer 2025 internships** in ML Engineering, Applied AI, or LLM Systems.
 
-**What I'm looking for:**
+**What excites me:**
 - Production LLM applications and agent systems
-- Large-scale ML infrastructure and MLOps
+- Large-scale ML infrastructure and MLOps  
 - AI products with measurable user impact
 - Research-to-production ML pipelines
 
-**Also open to:** Full-time opportunities starting May 2026
+**I also love connecting with people who are:**
+- Building interesting things with AI
+- Working on problems that matter
+- Looking for collaborators on research projects
+- Just curious and want to chat about ML systems
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 30px; border-radius: 12px; margin: 30px 0; color: white;">
-  <h3 style="color: white; margin-top: 0; text-align: center;">Let's build something together</h3>
+  <h3 style="color: white; margin-top: 0; text-align: center;">Ready to build something together?</h3>
   <p style="text-align: center; font-size: 1.1em; margin-bottom: 25px;">Whether you're hiring, collaborating, or just want to chat about ML systems</p>
   
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; max-width: 800px; margin: 0 auto;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; max-width: 900px; margin: 0 auto;">
     
-    <div style="background: rgba(255,255,255,0.15); padding: 20px; border-radius: 8px; backdrop-filter: blur(10px);">
+    <div style="background: rgba(255,255,255,0.15); padding: 20px; border-radius: 8px; backdrop-filter: blur(10px); text-align: center;">
       <div style="font-size: 2em; margin-bottom: 10px;">📧</div>
-      <strong>Email</strong><br/>
-      <a href="mailto:sbmaddipati@wisc.edu" style="color: white; text-decoration: none; word-break: break-all;">sbmaddipati@wisc.edu</a>
+      <strong style="display: block; margin-bottom: 5px;">Email</strong>
+      <a href="mailto:sbmaddipati@wisc.edu" style="color: white; text-decoration: none; font-size: 0.9em;">sbmaddipati@wisc.edu</a>
     </div>
     
-    <div style="background: rgba(255,255,255,0.15); padding: 20px; border-radius: 8px; backdrop-filter: blur(10px);">
+    <div style="background: rgba(255,255,255,0.15); padding: 20px; border-radius: 8px; backdrop-filter: blur(10px); text-align: center;">
       <div style="font-size: 2em; margin-bottom: 10px;">💼</div>
-      <strong>LinkedIn</strong><br/>
-      <a href="https://linkedin.com/in/satya-bhargav-maddipati-9a47b8158" style="color: white; text-decoration: none;">View Profile →</a>
+      <strong style="display: block; margin-bottom: 5px;">LinkedIn</strong>
+      <a href="https://linkedin.com/in/satya-bhargav-maddipati-9a47b8158" style="color: white; text-decoration: none; font-size: 0.9em;">Connect with me →</a>
     </div>
     
-    <div style="background: rgba(255,255,255,0.15); padding: 20px; border-radius: 8px; backdrop-filter: blur(10px);">
+    <div style="background: rgba(255,255,255,0.15); padding: 20px; border-radius: 8px; backdrop-filter: blur(10px); text-align: center;">
       <div style="font-size: 2em; margin-bottom: 10px;">💻</div>
-      <strong>GitHub</strong><br/>
-      <a href="https://github.com/Satyamaddipati" style="color: white; text-decoration: none;">@Satyamaddipati →</a>
+      <strong style="display: block; margin-bottom: 5px;">GitHub</strong>
+      <a href="https://github.com/Satyamaddipati" style="color: white; text-decoration: none; font-size: 0.9em;">@Satyamaddipati →</a>
     </div>
     
-    <div style="background: rgba(255,255,255,0.15); padding: 20px; border-radius: 8px; backdrop-filter: blur(10px);">
+    <div style="background: rgba(255,255,255,0.15); padding: 20px; border-radius: 8px; backdrop-filter: blur(10px); text-align: center;">
       <div style="font-size: 2em; margin-bottom: 10px;">📄</div>
-      <strong>Resume</strong><br/>
-      <a href="/assets/resume.pdf" style="color: white; text-decoration: none;">Download PDF →</a>
+      <strong style="display: block; margin-bottom: 5px;">Resume</strong>
+      <a href="/assets/resume.pdf" style="color: white; text-decoration: none; font-size: 0.9em;">Download PDF →</a>
     </div>
     
   </div>
   
   <p style="text-align: center; margin-top: 25px; margin-bottom: 0; font-size: 0.95em; opacity: 0.9;">
-    ⚡ Typical response time: Within 24 hours
+    ⚡ Response time: Within 24 hours
   </p>
 </div>
 
 ---
 
-*Currently learning and building at UW-Madison. Always happy to discuss ML systems, internship opportunities, or interesting technical challenges.*
+*Passionate about ML, enthusiastic about learning, and always genuine about making an impact.*
 
-*Last updated: January 2026*
+*Available for Summer 2025 internships | Open to full-time opportunities starting May 2026*
