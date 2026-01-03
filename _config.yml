@@ -11,7 +11,7 @@ locale: "en-US"
 
 # Build Settings
 markdown: kramdown
-permalink: /:title/
+# REMOVED: permalink: /:title/  <-- This was breaking your page permalinks!
 
 # Exclude these files from build
 exclude:
