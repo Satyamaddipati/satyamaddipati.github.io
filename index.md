@@ -9,16 +9,14 @@ classes: wide
 ---
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 25px; border-radius: 12px; margin-bottom: 30px; color: white; text-align: center;">
-  <h2 style="margin: 0 0 10px 0; color: white;">🎯 Seeking Summer 2025 ML Engineering Internships</h2>
-  <p style="margin: 5px 0; font-size: 1.1em;">MS CS @ UW-Madison | 2+ years production ML experience | Available May - August 2025</p>
+  <h2 style="margin: 0 0 10px 0; color: white;">🎯 Seeking Summer 2026 ML Engineering Internships</h2>
+  <p style="margin: 5px 0; font-size: 1.1em;">MS CS @ UW–Madison | 2+ years production ML experience | Available May – August 2026</p>
   <div style="margin-top: 15px;">
     <a href="/assets/resume.pdf" style="background: white; color: #667eea; padding: 10px 20px; margin: 5px; border-radius: 5px; text-decoration: none; font-weight: 600; display: inline-block;">📄 Resume</a>
-    <a href="mailto:sbmaddipati@wisc.edu" style="background: white; color: #667eea; padding: 10px 20px; margin: 5px; border-radius: 5px; text-decoration: none; font-weight: 600; display: inline-block;">📧 Contact Me</a>
-    <a href="https://linkedin.com/in/satya-bhargav-maddipati-9a47b8158" style="background: white; color: #667eea; padding: 10px 20px; margin: 5px; border-radius: 5px; text-decoration: none; font-weight: 600; display: inline-block;">💼 LinkedIn</a>
   </div>
 </div>
 
-I'm Satya, a grad student at **UW-Madison**, genuinely passionate about building AI systems that work in the real world. With a background from **IIT Bombay** and **2 years of production ML experience** at **Tata AIA Life Insurance**, I've learned that great technology begins with understanding real problems—then relentlessly iterating until they're solved.
+I'm Satya, a grad student at **UW–Madison**, genuinely passionate about building AI systems that work in the real world. With a background from **IIT Bombay** and **2 years of production ML experience** at **Tata AIA Life Insurance**, I've learned that great technology begins with understanding real problems—then relentlessly iterating until they're solved.
 
 ---
 
@@ -49,14 +47,11 @@ I'm Satya, a grad student at **UW-Madison**, genuinely passionate about building
 
 <div style="background: #e3f2fd; padding: 25px; border-radius: 10px; margin: 20px 0;">
 
-**At Tata AIA Life Insurance (July 2022 - July 2024):**
+**At Tata AIA Life Insurance (July 2022 – July 2024):**
 
-✨ Built multi-agent LLM evaluation system achieving **89% correlation** to human scoring across **50K+ evaluations**
-
-⚡ Deployed RAG pipeline reducing manual claims review by **35%**, saving **2,000+ person-hours annually**
-
-🎯 Fine-tuned transformer achieving **94% accuracy** in document classification (vs. 78% baseline)
-
+✨ Built multi-agent LLM evaluation system achieving **89% correlation** to human scoring across **50K+ evaluations**  
+⚡ Deployed RAG pipeline reducing manual claims review by **35%**, saving **2,000+ person-hours annually**  
+🎯 Fine-tuned transformer achieving **94% accuracy** in document classification (vs. 78% baseline)  
 📈 Delivered ML systems contributing to **15% growth** in digital policy sales and **$200K+ annual savings**
 
 **Tech Stack:** Python, LangChain, LangGraph, FastAPI, PyTorch, Docker, AWS, ChromaDB
@@ -83,7 +78,7 @@ I created forecasting systems by:
 
 ### Why This Matters
 
-When my models started accurately predicting air quality indices **3-5 days in advance with 85%+ accuracy**, I realized this could help parents decide when to keep asthmatic children indoors, enable cities to manage traffic proactively, and help communities take protective action.
+When my models started accurately predicting air quality indices **3–5 days in advance with 85%+ accuracy**, I realized this could help parents decide when to keep asthmatic children indoors, enable cities to manage traffic proactively, and help communities take protective action.
 
 **That's what drives me—building technology that genuinely adds value to people's lives, not just impressive benchmarks.**
 
@@ -93,12 +88,9 @@ When my models started accurately predicting air quality indices **3-5 days in a
 
 Right now, I'm diving deep into:
 
-**Agent Architectures** — Experimenting with LangGraph & CrewAI to build systems that can reason and act autonomously
-
-**RAG Optimization** — Exploring hybrid retrieval strategies and context-aware chunking for better performance
-
-**LLM Evaluation** — Developing frameworks to measure reliability, safety, and consistency at scale
-
+**Agent Architectures** — Experimenting with LangGraph & CrewAI to build systems that can reason and act autonomously  
+**RAG Optimization** — Exploring hybrid retrieval strategies and context-aware chunking for better performance  
+**LLM Evaluation** — Developing frameworks to measure reliability, safety, and consistency at scale  
 **Cost-Performance Tradeoffs** — Making powerful AI accessible and practical through optimization and caching
 
 ---
@@ -120,7 +112,7 @@ Right now, I'm diving deep into:
 </div>
 
 <div style="background: #e8f5e9; padding: 20px; border-radius: 8px; text-align: center;">
-<h3 style="color: #388e3c; margin: 0;">89-94%</h3>
+<h3 style="color: #388e3c; margin: 0;">89–94%</h3>
 <p style="margin: 5px 0; font-weight: 600;">Model Accuracy</p>
 <small>Across applications</small>
 </div>
@@ -176,7 +168,7 @@ Right now, I'm diving deep into:
 
 ## 💬 Let's Connect
 
-I'm actively seeking **Summer 2025 internships** in ML Engineering, Applied AI, or LLM Systems.
+I'm actively seeking **Summer 2026 internships** in ML Engineering, Applied AI, or LLM Systems.
 
 **What excites me:**
 - Production LLM applications and agent systems
@@ -184,51 +176,10 @@ I'm actively seeking **Summer 2025 internships** in ML Engineering, Applied AI, 
 - AI products with measurable user impact
 - Research-to-production ML pipelines
 
-**I also love connecting with people who are:**
-- Building interesting things with AI
-- Working on problems that matter
-- Looking for collaborators on research projects
-- Just curious and want to chat about ML systems
-
-<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 30px; border-radius: 12px; margin: 30px 0; color: white;">
-  <h3 style="color: white; margin-top: 0; text-align: center;">Ready to build something together?</h3>
-  <p style="text-align: center; font-size: 1.1em; margin-bottom: 25px;">Whether you're hiring, collaborating, or just want to chat about ML systems</p>
-  
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; max-width: 900px; margin: 0 auto;">
-    
-    <div style="background: rgba(255,255,255,0.15); padding: 20px; border-radius: 8px; backdrop-filter: blur(10px); text-align: center;">
-      <div style="font-size: 2em; margin-bottom: 10px;">📧</div>
-      <strong style="display: block; margin-bottom: 5px;">Email</strong>
-      <a href="mailto:sbmaddipati@wisc.edu" style="color: white; text-decoration: none; font-size: 0.9em;">sbmaddipati@wisc.edu</a>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.15); padding: 20px; border-radius: 8px; backdrop-filter: blur(10px); text-align: center;">
-      <div style="font-size: 2em; margin-bottom: 10px;">💼</div>
-      <strong style="display: block; margin-bottom: 5px;">LinkedIn</strong>
-      <a href="https://linkedin.com/in/satya-bhargav-maddipati-9a47b8158" style="color: white; text-decoration: none; font-size: 0.9em;">Connect with me →</a>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.15); padding: 20px; border-radius: 8px; backdrop-filter: blur(10px); text-align: center;">
-      <div style="font-size: 2em; margin-bottom: 10px;">💻</div>
-      <strong style="display: block; margin-bottom: 5px;">GitHub</strong>
-      <a href="https://github.com/Satyamaddipati" style="color: white; text-decoration: none; font-size: 0.9em;">@Satyamaddipati →</a>
-    </div>
-    
-    <div style="background: rgba(255,255,255,0.15); padding: 20px; border-radius: 8px; backdrop-filter: blur(10px); text-align: center;">
-      <div style="font-size: 2em; margin-bottom: 10px;">📄</div>
-      <strong style="display: block; margin-bottom: 5px;">Resume</strong>
-      <a href="/assets/resume.pdf" style="color: white; text-decoration: none; font-size: 0.9em;">Download PDF →</a>
-    </div>
-    
-  </div>
-  
-  <p style="text-align: center; margin-top: 25px; margin-bottom: 0; font-size: 0.95em; opacity: 0.9;">
-    ⚡ Response time: Within 24 hours
-  </p>
-</div>
+If you're hiring or want to collaborate, reach out via the sidebar links (Email / LinkedIn).
 
 ---
 
 *Passionate about ML, enthusiastic about learning, and always genuine about making an impact.*
 
-*Available for Summer 2025 internships | Open to full-time opportunities starting May 2026*
+*Available for Summer 2026 internships | Open to full-time opportunities starting May 2026*
