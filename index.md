@@ -169,3 +169,10 @@ Right now, I'm diving deep into:
 *Passionate about ML, enthusiastic about learning, and always genuine about making an impact.*
 
 *Available for Summer 2026 internships | Open to full-time opportunities starting May 2026*
+---
+
+## Test Links
+- [About](/about/)
+- [Work](/work/)
+- [Projects](/projects/)
+- [Hobbies](/hobbies/)
