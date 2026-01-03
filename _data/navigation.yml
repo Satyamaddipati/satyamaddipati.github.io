@@ -1,6 +1,6 @@
 # main links
 main:
- - title: "About"
+  - title: "About"
     url: /about/
     description: "More about me."
   - title: "Work"
@@ -12,5 +12,6 @@ main:
   - title: "Hobbies"
     url: /hobbies/
     description: "Interests outside of work."
- 
-  
+  - title: "Resume"
+    url: /assets/resume.pdf
+    description: "Download full resume (PDF)"
