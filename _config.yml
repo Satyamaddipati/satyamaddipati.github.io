@@ -1,109 +1,101 @@
----
-layout: home
-author_profile: true
-header:
-  overlay_image: /assets/images/chicago-banner.jpg
-  overlay_filter: 0.5
-  caption: "Photo: Chicago Downtown."
----
+# -----------------------------
+# Site settings
+# -----------------------------
+title: "Satya Bhargav Maddipati"
+description: "MS CS @ UW-Madison | LLM Engineering, RAG systems, agent workflows, and production ML systems."
+url: "https://satyamaddipati.github.io"
+baseurl: ""  # keep empty for user.github.io root sites
+locale: "en-US"
+timezone: "America/Chicago"
 
-I'm Satya, a grad student at **UW-Madison**, genuinely passionate about building AI systems that work in the real world. With a background from **IIT Bombay** and experience at **Tata AIA Life Insurance**, I've learned that great technology begins with understanding real problems—then relentlessly iterating until they are solved.
+# -----------------------------
+# Theme (Minimal Mistakes)
+# -----------------------------
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "default"
 
----
+plugins:
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
 
-## 🎯 What Gets Me Excited
+# -----------------------------
+# Author (sidebar profile)
+# -----------------------------
+author:
+  name: "Satya Bhargav Maddipati"
+  avatar: "/assets/images/Avatar.JPG"  # Updated to match your actual file
+  location: "Madison, WI"
+  bio: "MS Computer Science @ UW-Madison<br/>Specializing in Machine Learning, LLMs & AI Systems"
+  links:
+    - label: "Website"
+      icon: "fas fa-link"
+      url: "https://satyamaddipati.github.io"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/satya-bhargav-maddipati-9a47b8158/"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:sbmaddipati@wisc.edu"
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 20px 0;">
+# -----------------------------
+# Footer links (optional - keeps footer clean)
+# -----------------------------
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/Satyamaddipati"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/satya-bhargav-maddipati-9a47b8158/"
 
-<div>
-<h3>🤖 LLM Systems That Actually Work</h3>
-<p>Moving beyond demos to production-ready AI—RAG pipelines, agent workflows, evaluation frameworks</p>
-</div>
+# -----------------------------
+# Defaults (so you don't repeat front-matter)
+# -----------------------------
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
 
-<div>
-<h3>🔨 Building Things That Last</h3>
-<p>From experimentation to deployment, I focus on reliable systems that teams can trust</p>
-</div>
+# -----------------------------
+# Markdown / syntax highlighting
+# -----------------------------
+markdown: kramdown
+highlighter: rouge
 
-<div>
-<h3>🌐 Real-World Impact</h3>
-<p>Whether it's automating insurance workflows or predicting air quality, I'm drawn to problems that matter</p>
-</div>
+# -----------------------------
+# Permalinks
+# -----------------------------
+permalink: /blog/:title/
 
-</div>
+# -----------------------------
+# Optional: SEO/social
+# -----------------------------
+social:
+  type: "Person"
+  name: "Satya Bhargav Maddipati."
+  links:
+    - "https://github.com/Satyamaddipati"
+    - "https://www.linkedin.com/in/satya-bhargav-maddipati-9a47b8158/"
 
----
-
-## 🌱 From Curiosity to Impact: My Air Quality Journey
-
-I've always been the kind of person who asks, "Why?" and "What if?" Growing up in India, I witnessed our cities transform—encompassing more infrastructure and growth, yet also days when stepping outside felt like breathing through a blanket.
-
-### The Question That Started Everything
-
-During my time at **IIT Bombay**, I often thought: *If we can predict weather days in advance, why can't we predict air quality?* That question became my dual degree thesis—and honestly, one of the most fulfilling projects I've worked on.
-
-### Building Solutions, Not Just Models
-
-I dove into creating forecasting systems by:
-- Analyzing **time series patterns** that revealed how pollution evolves
-- Building **ML ensembles** (Random Forest & XGBoost) that learned from real, messy urban data
-- Integrating **meteorological factors** with traffic and industrial activity
-- Creating **city-specific predictions** that understood local patterns
-
-### Why This Matters
-
-When my models started accurately predicting air quality indices 3-5 days in advance, I realized that this could help parents decide when to keep asthmatic children indoors, enable cities to manage traffic proactively, and help communities take protective action.
-
-**That's what drives me—building technology that genuinely adds value to people's lives, not just impressive benchmarks.**
-
----
-
-## 🚀 What I'm Exploring Now
-
-Right now, I'm diving deep into:
-- **Agent architectures** with LangGraph & CrewAI—building systems that can reason and act
-- **RAG optimization**—because retrieval quality matters as much as generation  
-- **LLM evaluation**—how do we know our AI systems are reliable?
-- **Cost-performance tradeoffs**—making powerful AI accessible and practical
-
-I'm always experimenting, always learning, and always looking for the next challenge.
-
----
-
-## 💡 Highlights from My Journey
-
-✨ Built multi-agent LLM evaluation achieving **89% correlation** to human scoring  
-⚡ Automated insurance workflows reducing manual review by **35%**  
-🎯 Achieved **94% accuracy** in document classification through custom fine-tuning  
-📈 Delivered ML systems driving significant business growth at **Tata AIA**  
-🌍 Created air quality forecasting models at **IIT Bombay** for Indian cities
-
----
-
-## 📚 Explore More
-
-<div style="display: flex; gap: 15px; flex-wrap: wrap; margin: 20px 0;">
-  <a href="/work/" style="padding: 12px 24px; background: #0366d6; color: white; border-radius: 6px; text-decoration: none; font-weight: 600;">📊 Current Work</a>
-  <a href="/posts/" style="padding: 12px 24px; background: #28a745; color: white; border-radius: 6px; text-decoration: none; font-weight: 600;">🔬 Projects</a>
-  <a href="/about/" style="padding: 12px 24px; background: #6f42c1; color: white; border-radius: 6px; text-decoration: none; font-weight: 600;">👤 About Me</a>
-</div>
-
----
-
-## 💬 Let's Talk!
-
-I love connecting with people who are:
-- Building interesting things with AI
-- Working on problems that matter
-- Looking for collaborators on research projects  
-- Just curious and want to chat about ML systems
-
-Whether you have a project idea, research opportunity, or just want to discuss the latest in LLMs—I'm genuinely interested in hearing from you.
-
-📧 **Email:** sbmaddipati@wisc.edu  
-💼 **LinkedIn:** [linkedin.com/in/satya-bhargav-maddipati-9a47b8158](https://www.linkedin.com/in/satya-bhargav-maddipati-9a47b8158/)  
-💻 **GitHub:** [github.com/Satyamaddipati](https://github.com/Satyamaddipati)
-
----
-
-*Passionate about ML, enthusiastic about learning, and always genuine about making an impact.*
+# -----------------------------
+# Analytics (optional - add if you want tracking)
+# -----------------------------
+# analytics:
+#   provider: "google-gtag"
+#   google:
+#     tracking_id: "G-XXXXXXXXXX"
