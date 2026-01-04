@@ -8,14 +8,14 @@ header:
 classes: wide
 ---
 
-## Hi, I'm Satya
-
-I'm a Computer Science Master's student at UW–Madison with a dual degree from IIT Bombay. I have over 2 years of industry experience building production ML systems, and I'm hungry to learn more. I specialize in large language model pipelines, RAG systems, and autonomous agents.
+Hi, I’m Satya.
+I’m a Computer Science Master’s student at UW–Madison with a dual degree from IIT Bombay. With over 2 years of industry experience building production ML systems, I specialize in Large Language Model (LLM) pipelines, RAG systems, and autonomous agents.
 
 My goal is straightforward: to transform complex data into reliable, automated decisions.
 
-Currently seeking Summer 2026 ML Engineering internships (May–August). [Resume](/assets/resume.pdf)
+🚀 Currently seeking Summer 2026 ML Engineering internships (May–August).
 
+📄 Download Resume{: .btn .btn--primary .btn--large}
 ---
 
 ## What I Do
