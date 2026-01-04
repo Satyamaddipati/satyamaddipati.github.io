@@ -6,134 +6,75 @@ author_profile: true
 header:
   overlay_color: "#5e616c"
   overlay_filter: "0.5"
-  overlay_image: https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200&h=600&fit=crop
+  overlay_image: https://images.unsplash.com/photo-1483347752404-8fe709f4e3c6?w=1200&h=600&fit=crop
+  caption: "Photo: [**Unsplash**](https://unsplash.com)"
 ---
 
-## When I'm Not Coding...
+## ⚡ Fueling the Engine
 
-Life is too short to only stare at terminals and debug logs! Here's what I do when I need to recharge my batteries (and my creativity).
+If I'm not at my desk, I'm probably sweating it out somewhere in the gym or roaming around the streets.
+
+---
+
+## ❄️ Madison Firsts: Core Memories
+
+Moving to Wisconsin brought some unforgettable firsts.
+
+**The Northern Lights:** I got incredibly lucky and witnessed the Aurora Borealis right here in Madison. Capturing those green and purple pillars over the lake was surreal.
+
+**First Snowfall:** Coming from a tropical climate, my first proper snowfall was magical. (Ask me again in February if I still feel the same way! 🥶)
+
+---
+
+## 🏃‍♂️Fitness & Sports
+
+Back in India, **Cricket** was everything. I spent years on the pitch, and the strategy of the game is still ingrained in me.
+
+Since moving to Madison, I've traded the cricket bat for a paddle. **Pickleball** is my latest addiction. It's fast, social, and the perfect way to disconnect from the stress of grad school.
+
+**My Routine:**
+- **Strength Training:** Lifting heavy clears the mental load of research
+- **Running:** My meditation. Exploring Madison's lakes on foot is how I debug problems in the background
+- **Pickleball:** Currently obsessed (always looking for a doubles partner!)
+
+---
+
+## Live Music & Concerts
+
+There's no feeling quite like the energy of a massive crowd. I love the chaos and connection of big music gigs.
+
+I listen to lo-fi beats when coding, but I crave the volume and atmosphere of live performances to recharge. Whether it's a stadium tour or a local music festival, I'm there for the experience.
+
+
+---
+
+## Cooking as Therapy
+
+For me, cooking isn't just about food—it's a form of stress relief.
+
+After a long day of fine-tuning LLMs or dealing with AWS errors, there's something grounding about chopping vegetables and balancing spices. It's a tactile, sensory experience that pulls me out of my head.
+
 
 ---
 
 ## 🎮 Gaming
 
-I'm a casual gamer who loves strategy and story-driven games. There's something about solving complex problems in games that translates well to debugging code at 3 AM!
+I still make time to game. I love strategy and story-driven games—environments where you have to plan ahead or solve complex puzzles. Keeps the problem-solving part of my brain engaged in a low-stakes environment.
 
-**Current Favorites:**
-- Strategy games where planning matters
-- Open-world RPGs with great storytelling
-- Puzzle games that make you think differently
-
-Gaming taught me patience, strategic thinking, and that sometimes you need to try a completely different approach to solve a problem - skills that translate surprisingly well to ML research!
-
----
-
-## 📚 Reading
-
-I'm an avid reader with eclectic tastes. You'll find everything from sci-fi novels to philosophy books on my nightstand.
-
-**What I'm Reading:**
-- **Tech & AI:** Papers on LLMs, agentic systems, and the latest ML breakthroughs
-- **Science Fiction:** Love exploring how authors imagine AI and technology's future
-- **Non-fiction:** Psychology, philosophy, and how humans think and make decisions
-- **Biographies:** Learning from the journeys of interesting people
-
-**Favorites:**
-- *Superintelligence* by Nick Bostrom
-- *Gödel, Escher, Bach* by Douglas Hofstadter
-- Anything by Isaac Asimov or Arthur C. Clarke
-
----
-
-## 🍳 Cooking & Food Adventures
-
-I love experimenting in the kitchen! Cooking is like programming - you follow a recipe (algorithm), adjust parameters (salt, spice), and iterate until you get it right.
-
-**Specialties:**
-- Indian cuisine (obviously! 😄)
-- Experimenting with fusion dishes
-- Attempting to recreate restaurant favorites at home
-- Finding the best local food spots in Madison
-
-**Current Quest:** Mastering the perfect biryani. It's harder than training a neural network, I swear!
-
----
-
-## 🏃‍♂️ Fitness & Sports
-
-Code runs better when the coder is healthy! I try to stay active and balance out all those hours sitting at a desk.
-
-**Activities:**
-- Running around Madison's beautiful lakes
-- Badminton (played competitively back in school)
-- Gym sessions (trying to stay consistent!)
-- Long walks while listening to podcasts
-
----
-
-## 🎵 Music
-
-Music is my constant companion while coding, studying, or just relaxing. My Spotify playlists are as diverse as my interests!
-
-**Currently Vibing To:**
-- Lo-fi beats while coding
-- Indian classical/fusion music
-- Podcast episodes on AI, tech, and philosophy
-- Occasionally some good old Bollywood hits for nostalgia
+**Favorites:** *Civilization VI*, *The Witcher 3*, *Portal*
 
 ---
 
 ## 🌍 Travel & Exploration
 
-I love exploring new places, trying local food, and experiencing different cultures. Every place teaches you something new!
+I love exploring new places, trying local food, and experiencing different cultures. Exploring Europe is in my bucket list
 
 **Dream Destinations:**
-- Japan (for the tech, culture, and food!)
-- Iceland (Northern Lights on my bucket list)
-- New Zealand (Lord of the Rings locations!)
-- More national parks across the US
-
-**Madison Adventures:**
-- Discovering hidden coffee shops
-- Exploring the lakefront trails
-- Finding the best spots for sunset photos
-- Attending local events and meetups
+- **Iceland:** I've seen the lights in Madison, but I still want to see them over an Icelandic glacier
+- **Japan:** For the unique blend of ancient tradition and futuristic tech
 
 ---
 
-## 🎨 Creative Pursuits
+## 📬 Let's Play?
 
-**Photography:** Amateur photographer capturing moments and landscapes. Madison's changing seasons provide endless opportunities!
-
-**Writing:** Occasionally blog about tech, AI, and my learning journey. Writing helps crystallize my thoughts.
-
-**Side Projects:** Always tinkering with random ideas - from building small apps to experimenting with new ML techniques.
-
----
-
-## 🧘‍♂️ Mindfulness & Learning
-
-I believe in continuous personal growth, not just technical skills.
-
-**Practices:**
-- Meditation (trying to build a consistent habit!)
-- Journaling to reflect on learnings and experiences
-- Online courses on topics outside my comfort zone
-- Attending tech talks, workshops, and meetups
-
----
-
-## Why This Matters
-
-These hobbies aren't just distractions - they make me a better engineer and researcher:
-- **Reading** expands my perspective and creativity
-- **Cooking** teaches patience and experimentation
-- **Gaming** improves problem-solving and strategic thinking
-- **Fitness** keeps my mind sharp
-- **Travel** exposes me to new ideas and cultures
-
-Additionally, the best conversations occur when you have diverse interests beyond your work.
-
----
-
-**What are your hobbies?** I'm always looking for new things to try. Feel free to share recommendations! 📧
+If you're in Madison and up for a game of **Pickleball**, know a great concert venue, or want to grab coffee, hit me up!
