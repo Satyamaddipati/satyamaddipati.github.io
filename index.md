@@ -8,29 +8,32 @@ header:
 classes: wide
 ---
 
-Hi, I’m Satya.
-I’m a Computer Science Master’s student at UW–Madison with a dual degree from IIT Bombay. With over 2 years of industry experience building production ML systems, I specialize in Large Language Model (LLM) pipelines, RAG systems, and autonomous agents.
+## Hi, I'm Satya
+
+I'm a Computer Science Master's student at UW–Madison with a dual degree from IIT Bombay. I have over 2 years of industry experience building production ML systems, and I'm hungry to learn more.
 
 My goal is straightforward: to transform complex data into reliable, automated decisions.
 
-🚀 Currently seeking Summer 2026 ML Engineering internships (May–August).
+<div style="margin: 30px 0; text-align: center;">
+  <a href="/assets/resume.pdf" style="display: inline-block; background: #0066cc; color: white; padding: 12px 30px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 1.1em;">📄 View My Resume</a>
+  <p style="margin-top: 10px; color: #666; font-size: 0.9em;">Seeking Summer 2026 ML Engineering Internships</p>
+</div>
 
-📄 Download Resume{: .btn .btn--primary .btn--large}
 ---
 
-## What I Do
+## What I've Done
 
-I build AI systems that actually work in production. At Tata AIA Life Insurance, I developed multi-agent evaluation systems, RAG pipelines for insurance claims, and fine-tuned transformers for document classification. These weren't just academic exercises—they saved thousands of person-hours and directly contributed to business growth.
+At Tata AIA Life Insurance, I built multi-agent evaluation systems, RAG pipelines for insurance claims, and fine-tuned transformers for document classification. These systems saved thousands of person-hours and contributed directly to business growth.
 
-Previously, I worked on air quality forecasting during my tenure at IIT Bombay. Growing up in India, I witnessed firsthand how pollution impacted daily life. My thesis question was simple: if we can predict the weather, why not air quality? I built ensemble models that could forecast pollution levels 3-5 days in advance for major cities.
+Before that, I worked on air quality forecasting at IIT Bombay. Growing up in India, pollution affected daily life. My question was simple: if we can predict weather, why not air quality? I built models that could forecast pollution levels 3-5 days in advance for major cities.
 
-The common thread? I'm drawn to problems that matter to real people.
+I'm drawn to problems that matter to real people.
 
 ---
 
 ## What I'm Learning
 
-I have just completed my first semester at UW–Madison, where I delved deeply into machine learning theory, human-computer interaction, and database systems. Next semester, I'm taking foundation models, computer vision, big data, and more deep learning.
+I just completed my first semester at UW–Madison, diving deep into machine learning theory, human-computer interaction, and database systems. Next semester, I'm taking foundation models, computer vision, big data, and more deep learning.
 
 Right now, reinforcement learning has caught my attention. There's something fascinating about systems that learn through interaction and improve over time. I'm exploring how RL can make AI agents more adaptive and autonomous.
 
@@ -45,9 +48,6 @@ I'm always interested in:
 - Internship opportunities for Summer 2026
 - Interesting problems in ML/AI
 - Coffee chats about technology
-
-**Email:** sbmaddipati@wisc.edu  
-**LinkedIn:** [Satya Bhargav Maddipati](https://www.linkedin.com/in/satya-bhargav-maddipati-9a47b8158/)
 
 ---
 
