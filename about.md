@@ -21,11 +21,11 @@ Most people call me Satya. I'm a Computer Science grad student at **UW–Madison
 
 ## 🗺️ The Path Here
 
-I grew up in India and completed my **Dual Degree (B.Tech + M.Tech)** at **IIT Bombay**. From there, I pivoted to insurance tech.
+I grew up in India and completed my bachelor's at **IIT Bombay**. From there, I pivoted to insurance tech.
 
 Insurance might not sound exciting, but it taught me something valuable: **the best AI isn't the fanciest algorithm—it's the one that actually solves someone's problem.**
 
-At Tata AIA, I built systems that reviewed insurance claims automatically, fine-tuned models to understand complex policy documents, and created chatbots that people didn't immediately want to rage-quit. Seeing my code help someone get their claim processed faster—that felt real.
+At Tata AIA, I developed systems that automatically reviewed insurance claims, fine-tuned models to comprehend complex policy documents, and created chatbots that people didn't immediately want to rage-quit. Seeing my code help someone get their claim processed faster—that felt real.
 
 After two years, I wanted to go deeper. Not just apply ML, but understand it from first principles. That's why I'm at UW–Madison now.
 
@@ -54,22 +54,12 @@ I also believe in balance. My best ideas don't come while staring at code—they
 
 ## 🎲 Random Facts
 
-**The JEE Grind:** I tested in the **top 0.3%** of 1.58 million students in India's engineering entrance exam. It was stressful. I don't recommend it.
+**The JEE Grind:** I ranked in the **top 0.3%** of 1.58 million students in India's engineering entrance exam. It was stressful. I don't recommend it.
 
-**Web Coord @ IITB:** I managed the website for **Techfest**, handling traffic from thousands of users during registration. Great crash course in scalability (and what *not* to do).
+**Web Coord @ IITB:** I managed the website for **Techfest**, handling traffic from thousands of users during registration. A great crash course in scalability (and what *not* to do).
 
 **Night Owl:** I debug better at 2 AM than 2 PM. I'm not proud of this.
 
-**Chef Mode:** I'm trying to master **Biryani**. It's significantly harder than training neural networks.
-
----
-
-## 📬 Let's Connect
-
-I'm always up for conversations about ML, interesting problems, or where to find good coffee in Madison.
-
-**Email:** [sbmaddipati@wisc.edu](mailto:sbmaddipati@wisc.edu)  
-**LinkedIn:** [Satya Bhargav Maddipati](https://www.linkedin.com/in/satya-bhargav-maddipati-9a47b8158/)
 
 ---
 
