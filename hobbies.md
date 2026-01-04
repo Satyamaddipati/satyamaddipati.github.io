@@ -10,7 +10,7 @@ header:
   caption: "Photo: [**Unsplash**](https://unsplash.com)"
 ---
 
-## ⚡ Fueling the Engine
+## Fueling the Engine
 
 If I'm not at my desk, I'm probably sweating it out somewhere in the gym or roaming around the streets.
 
