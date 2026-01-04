@@ -2,7 +2,7 @@
 layout: home
 author_profile: true
 header:
-  overlay_image: /assets/images/chicago-banner.jpg
+  overlay_image: /assets/images/chic_downtown.jpg
   overlay_filter: 0.5
   caption: "Photo: Chicago Downtown."
 classes: wide
