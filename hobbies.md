@@ -26,7 +26,7 @@ Moving to Wisconsin brought some unforgettable firsts.
 
 ---
 
-## 🏃‍♂️Fitness & Sports
+## Fitness & Sports
 
 Back in India, **Cricket** was everything. I spent years on the pitch, and the strategy of the game is still ingrained in me.
 
@@ -57,7 +57,7 @@ After a long day of fine-tuning LLMs or dealing with AWS errors, there's somethi
 
 ---
 
-## 🎮 Gaming
+## Gaming
 
 I still make time to game. I love strategy and story-driven games—environments where you have to plan ahead or solve complex puzzles. Keeps the problem-solving part of my brain engaged in a low-stakes environment.
 
@@ -65,7 +65,7 @@ I still make time to game. I love strategy and story-driven games—environments
 
 ---
 
-## 🌍 Travel & Exploration
+## Travel & Exploration
 
 I love exploring new places, trying local food, and experiencing different cultures. Exploring Europe is in my bucket list
 
@@ -75,6 +75,6 @@ I love exploring new places, trying local food, and experiencing different cultu
 
 ---
 
-## 📬 Let's Play?
+##  Let's Play?
 
 If you're in Madison and up for a game of **Pickleball**, know a great concert venue, or want to grab coffee, hit me up!
