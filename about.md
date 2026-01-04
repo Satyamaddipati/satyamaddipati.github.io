@@ -10,65 +10,67 @@ header:
   caption: "Photo: [**Unsplash**](https://unsplash.com)"
 ---
 
-## The Story So Far
+## 👋 Hey, I'm Satya
 
-Hey! I'm Satya Bhargav Maddipati, but most people call me Satya. I'm currently a graduate student at the University of Wisconsin-Madison, pursuing my MS in Computer Science with a focus on Machine Learning and AI.
+Most people call me Satya. I'm a Computer Science grad student at **UW–Madison**, and before this, I spent two years building production ML systems at **Tata AIA Life Insurance** in Mumbai.
 
 ![Chicago Adventures](/assets/images/chicago_downtown.JPG)
-*Exploring Chicago - one of my favorite cities! 🌃*
-
-### My Journey
-
-My tech journey started at **IIT Bombay**, where I completed my B.Tech-M.Tech dual degree. Those five years were intense, eye-opening, and filled with late-night coding sessions, incredible friends, and the realization that I absolutely love building things with code.
-
-After graduating, I joined **Tata AIA Life Insurance** as a Data Scientist. Now, I know what you're thinking - "Insurance? Really?" But hear me out! It was actually an incredible opportunity to see how AI can transform traditional industries. I got to:
-
-- Build autonomous AI agents that could review insurance claims (saving hours of manual work!)
-- Fine-tune large language models to understand complex policy documents
-- Create chatbots that could actually help people (not the frustrating kind!)
-- Work with massive amounts of real-world data
-
-The best part? Seeing my systems actually help real people get their insurance claims processed faster. That's when I realized the true power of AI isn't just in fancy algorithms - it's in solving real human problems.
-
-### Why UW-Madison?
-
-After two years in industry, I wanted to dive deeper into the theory and cutting-edge research. UW-Madison was the perfect choice - excellent research opportunities, a beautiful campus (those lakes! 😍), and a vibrant AI/ML community.
-
-### What Drives Me
-
-I'm passionate about:
-
-- **Making AI Practical**: I love bridging the gap between research papers and production systems
-- **LLMs & Agentic Systems**: The idea that AI agents can collaborate and solve complex problems fascinates me
-- **Learning in Public**: Sharing what I learn and contributing to the community
-- **Interdisciplinary Work**: The best innovations happen at the intersection of different fields
-
-### My Philosophy
-
-I believe in:
-- **Continuous Learning**: Technology moves fast, and staying curious is the only way to keep up
-- **Building > Talking**: Ideas are cheap; execution is everything
-- **Collaboration**: The best work happens when diverse minds come together
-- **Balance**: Being a good engineer means being a well-rounded person
-
-![Chicago at Dusk](/assets/images/chic_downtown.jpg)
-*Chicago at dusk - magical views! 🌆*
-
-### Fun Facts
-
-- 🎯 I was in the top 0.3% of 1.58 million students in JEE Mains (India's engineering entrance exam)
-- 🏆 Won a Bronze medal in Inter-IIT competitions
-- 🌐 Served as Web Coordinator for Techfest IIT Bombay (Asia's largest science & tech festival!)
-- 🧠 I can debug code better at 2 AM than at 2 PM (is this a superpower or a problem?)
-
-### Let's Connect!
-
-I'm always excited to meet new people, collaborate on interesting projects, or chat about AI, technology, and life. Feel free to reach out!
-
-- 📧 Email: sbmaddipati@wisc.edu
-- 💼 LinkedIn: [Connect with me](https://www.linkedin.com/in/satya-maddipati/)
-- 💻 GitHub: [Check out my code](https://github.com/Satyamaddipati)
+*Weekend explorations in Chicago*
 
 ---
 
-*"The best way to predict the future is to invent it." - Alan Kay*
+## 🗺️ The Path Here
+
+I grew up in India and completed my **Dual Degree (B.Tech + M.Tech)** at **IIT Bombay**. From there, I pivoted to insurance tech.
+
+Insurance might not sound exciting, but it taught me something valuable: **the best AI isn't the fanciest algorithm—it's the one that actually solves someone's problem.**
+
+At Tata AIA, I built systems that reviewed insurance claims automatically, fine-tuned models to understand complex policy documents, and created chatbots that people didn't immediately want to rage-quit. Seeing my code help someone get their claim processed faster—that felt real.
+
+After two years, I wanted to go deeper. Not just apply ML, but understand it from first principles. That's why I'm at UW–Madison now.
+
+---
+
+## 💡 What I Care About
+
+**Building things that work:** I'm less interested in state-of-the-art benchmarks and more interested in systems that don't break at 3 AM. Production ML taught me that reliability often matters more than raw accuracy.
+
+**Reinforcement Learning:** There's something fascinating about systems that learn through trial and error—getting better over time without explicit instruction.
+
+**Multi-Agent Collaboration:** Right now, I'm experimenting with **LangGraph** and **CrewAI**. The question that drives me: *can we build AI systems that collaborate like a good team does?*
+
+---
+
+## 🧠 How I Think About Work
+
+I believe in **learning by doing**. Reading papers is great, but implementing them from scratch teaches you what the paper didn't say. I try to share what I learn—partly to help others, partly because explaining something is the best way to realize you don't understand it yet.
+
+I also believe in balance. My best ideas don't come while staring at code—they come while cooking, walking around Madison's lakes, or talking with friends about completely unrelated things.
+
+![Chicago at Dusk](/assets/images/chic_downtown.jpg)
+*City lights*
+
+---
+
+## 🎲 Random Facts
+
+**The JEE Grind:** I tested in the **top 0.3%** of 1.58 million students in India's engineering entrance exam. It was stressful. I don't recommend it.
+
+**Web Coord @ IITB:** I managed the website for **Techfest**, handling traffic from thousands of users during registration. Great crash course in scalability (and what *not* to do).
+
+**Night Owl:** I debug better at 2 AM than 2 PM. I'm not proud of this.
+
+**Chef Mode:** I'm trying to master **Biryani**. It's significantly harder than training neural networks.
+
+---
+
+## 📬 Let's Connect
+
+I'm always up for conversations about ML, interesting problems, or where to find good coffee in Madison.
+
+**Email:** [sbmaddipati@wisc.edu](mailto:sbmaddipati@wisc.edu)  
+**LinkedIn:** [Satya Bhargav Maddipati](https://www.linkedin.com/in/satya-bhargav-maddipati-9a47b8158/)
+
+---
+
+> *"The best way to predict the future is to invent it."* — Alan Kay
