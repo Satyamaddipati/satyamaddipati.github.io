@@ -12,9 +12,6 @@ locale: "en-US"
 # Build Settings
 markdown: kramdown
 
-# Include the _pages directory
-include: ["_pages"]
-
 # Exclude these files from build
 exclude:
   - docs
@@ -44,7 +41,7 @@ plugins:
 # Author (sidebar only)
 author:
   name: "Satya Bhargav Maddipati"
-  avatar: "/assets/images/Avatar.jpg"
+  avatar: "/assets/images/Avatar.JPG"
   bio: "MS Computer Science @ UW-Madison | Specializing in Machine Learning, LLMs & AI Systems"
   location: "Madison, WI"
   links:
@@ -63,3 +60,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+# Custom CSS
+after_footer_scripts:
+  - /assets/css/custom.css
