@@ -1,0 +1,74 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Satya Bhargav Maddipati
+    - name: Languages
+      value: English, Telugu, Hindi
+
+- title: Education
+  type: time_table
+  contents:
+    - title: M.S. in Computer Science
+      institution: University of Wisconsin–Madison
+      year: 2025 – 2027 (expected)
+      description:
+        - "Coursework: Foundation Models (CS 639), Distributed Systems & Big Data (CS 544), Database Systems (CS 564), Computer Vision (CS 640), Intro to AI (CS 540)"
+        - GPA / honors / awards as applicable.
+    - title: Dual Degree (B.Tech + M.Tech), Engineering Physics
+      institution: Indian Institute of Technology, Bombay
+      year: 2018 – 2023
+      description:
+        - Thesis on air quality forecasting for Indian cities.
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: ML / Data Engineer
+      institution: Tata AIA Life Insurance
+      year: 2023 – 2025
+      description:
+        - Built multi-agent evaluation systems for insurance claim decisions.
+        - Designed and deployed RAG pipelines over policy clauses and historical claims.
+        - Fine-tuned transformer models for document classification across claim categories.
+        - Work saved thousands of person-hours and contributed directly to business growth.
+    - title: Research Intern — Air Quality Forecasting
+      institution: IIT Bombay
+      year: 2022 – 2023
+      description:
+        - Forecasted PM2.5 / PM10 levels 3–5 days ahead for major Indian cities.
+        - Compared LSTM, Transformer, and ensemble approaches.
+
+- title: Selected Projects
+  type: time_table
+  contents:
+    - title: Agentic Visual Reasoning with LLaVA
+      year: 2026
+      description: CS 639 group project — planner-executor loop on LLaVA for multi-hop visual QA.
+    - title: Buffer Manager (DBMS Internals)
+      year: 2026
+      description: C++ implementation of a page-level buffer manager with clock replacement.
+    - title: Vision Transformer & CLIP from scratch
+      year: 2026
+      description: CS 639 HW3 — implemented ViT and CLIP and reproduced training curves.
+
+- title: Skills
+  type: nested_list
+  contents:
+    - title: Languages
+      items:
+        - Python, C++, SQL, JavaScript
+    - title: ML & AI
+      items:
+        - PyTorch, HuggingFace Transformers, LangChain, LangGraph, CrewAI
+        - RAG, fine-tuning, agentic systems, multimodal models
+    - title: Systems & Infra
+      items:
+        - Docker, Spark, distributed systems
+        - SQLite, vector databases
+
+- title: Looking For
+  type: list
+  contents:
+    - <strong>Summer 2026 ML Engineering Internships.</strong>
+    - Research collaborations on agentic systems / RL / multimodal models.

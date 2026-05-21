@@ -1,0 +1,10 @@
+# GitHub usernames whose stats will be shown on /repositories page
+github_users:
+  - Satyamaddipati
+
+# Specific repos to display as cards (replace with your actual repo names)
+github_repos:
+  - Satyamaddipati/satyamaddipati.github.io
+  # - Satyamaddipati/your-buffer-manager-repo
+  # - Satyamaddipati/your-llava-agent-repo
+  # - Satyamaddipati/your-vit-clip-repo
