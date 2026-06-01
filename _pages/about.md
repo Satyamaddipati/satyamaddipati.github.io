@@ -2,43 +2,38 @@
 layout: about
 title: about
 permalink: /
-subtitle: <strong>MS Computer Science</strong> @ <a href='https://www.cs.wisc.edu/'>UW–Madison</a>. Previously @ Tata AIA Life Insurance, IIT Bombay.
+subtitle: M.S. Computer Sciences @ UW–Madison · Production ML Engineer
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false   # set true for round photo
+  image_circular: false
   more_info: >
     <p>Madison, WI</p>
-    <p>📧 sbmaddipati@wisc.edu</p>
+    <p>sbmaddipati@wisc.edu</p>
 
-selected_papers: false  # flip to true once you have publications in _bibliography/papers.bib
-social: true            # display social links from _config.yml
+selected_papers: false
+social: true
 
 announcements:
-  enabled: false        # banner on homepage — flip to true when you have news to highlight
-  scrollable: true
-  limit: 5
+  enabled: false
 
 latest_posts:
-  enabled: true         # show latest blog posts on homepage
-  scrollable: true
-  limit: 3
-
-news:
-  enabled: true         # show news feed on homepage
-  scrollable: true
-  limit: 5
+  enabled: false
 ---
 
-Hi, I'm **Satya** — a Computer Science Master's student at the University of Wisconsin–Madison, with a dual degree in Engineering Physics from IIT Bombay.
+I'm a Computer Sciences M.S. student at **UW–Madison** (GPA 4.0) who builds and ships
+machine learning systems in production. Before grad school, I spent two years as an
+ML engineer at **Tata AIA Life Insurance**, where I took agentic AI workflows, RAG
+systems, and fine-tuned LLMs from prototype to production — serving 50K+ users at
+0.8s p95 latency and automating real claims pipelines.
 
-I build ML systems that hold up outside the demo. At **Tata AIA Life Insurance**, I shipped multi-agent evaluation systems, RAG pipelines for insurance claims, and fine-tuned transformers for document classification — work that saved thousands of person-hours and contributed directly to business growth. Before that at **IIT Bombay**, I worked on air quality forecasting for major Indian cities, building models that could predict pollution 3–5 days out.
+My work sits at the intersection of **applied ML and software engineering**: I'm as
+comfortable designing a LangGraph agent or fine-tuning Llama with QLoRA as I am
+writing the FastAPI microservices, Docker containers, and CI/CD that put them in
+front of real users. I hold a dual degree from **IIT Bombay**, where I also did
+research on time-series forecasting and model interpretability.
 
-Right now I'm deep in coursework on **foundation models**, **distributed systems**, and **database internals**, while exploring agentic visual reasoning with LLaVA on the side. Lately I've been drawn to **reinforcement learning** — there's something compelling about systems that learn through interaction and just get better with time.
-
-My goal is straightforward: turn complex data into reliable, automated decisions that real teams can actually depend on.
-
-🔍 **Looking for Summer 2026 ML Engineering internships.**
-
-Outside of code, I'm into travel (recently planned an LA / Vegas / San Diego road trip), fitness, and exploring whatever new café Madison has to offer. Always happy to chat about ML, grad school, or interesting problems — just [drop me a line](mailto:sbmaddipati@wisc.edu).
+Right now I'm looking for **SWE and ML engineering internships** where I can ship
+things that matter. If that sounds like a fit, my [CV](/cv/) and
+[projects](/projects/) are below — or reach out directly.
