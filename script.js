@@ -1,89 +1,76 @@
-document.documentElement.classList.add("js");
+/* Progressive enhancements only: every page is readable without JavaScript. */
+(() => {
+  const root = document.documentElement;
+  const themeButton = document.querySelector(".theme-toggle");
+  const systemTheme = window.matchMedia?.("(prefers-color-scheme: dark)");
+  let savedTheme;
+  try { savedTheme = localStorage.getItem("satya-theme"); } catch { /* Storage is optional. */ }
 
-const root = document.documentElement;
-const themeButton = document.querySelector(".theme-toggle");
-const storedTheme = localStorage.getItem("satya-theme");
+  function applyTheme(theme) {
+    root.dataset.theme = theme;
+    const dark = theme === "dark";
+    if (themeButton) {
+      themeButton.setAttribute("aria-label", `Switch to ${dark ? "light" : "dark"} theme`);
+      const icon = themeButton.querySelector("span");
+      if (icon) icon.textContent = dark ? "☀" : "◐";
+    }
+    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", dark ? "#1b211e" : "#f6f5ef");
+  }
 
-if (storedTheme) {
-  root.dataset.theme = storedTheme;
-} else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-  root.dataset.theme = "dark";
-}
-
-function updateThemeLabel() {
-  if (!themeButton) return;
-  const isDark = root.dataset.theme === "dark";
-  themeButton.setAttribute("aria-label", isDark ? "Switch to light theme" : "Switch to dark theme");
-  themeButton.querySelector("span").textContent = isDark ? "☀" : "◐";
-}
-
-updateThemeLabel();
-
-themeButton?.addEventListener("click", () => {
-  root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
-  localStorage.setItem("satya-theme", root.dataset.theme);
-  updateThemeLabel();
-});
-
-const navLinks = [...document.querySelectorAll("nav a[href^='#']")];
-const sections = [...document.querySelectorAll(".observed-section")];
-
-const sectionObserver = new IntersectionObserver(
-  entries => {
-    const visible = entries
-      .filter(entry => entry.isIntersecting)
-      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-
-    if (!visible) return;
-
-    navLinks.forEach(link => {
-      const selected = link.getAttribute("href") === `#${visible.target.id}`;
-      link.classList.toggle("active", selected);
-      if (selected) link.setAttribute("aria-current", "location");
-      else link.removeAttribute("aria-current");
+  applyTheme(savedTheme === "light" || savedTheme === "dark"
+    ? savedTheme : systemTheme?.matches ? "dark" : "light");
+  if (themeButton) {
+    themeButton.hidden = false;
+    themeButton.addEventListener("click", () => {
+      savedTheme = root.dataset.theme === "dark" ? "light" : "dark";
+      applyTheme(savedTheme);
+      try { localStorage.setItem("satya-theme", savedTheme); } catch { /* Keep it for this visit. */ }
     });
-  },
-  { rootMargin: "-18% 0px -62% 0px", threshold: [0, 0.15, 0.4] }
-);
-
-sections.forEach(section => sectionObserver.observe(section));
-
-navLinks.forEach(link => {
-  link.addEventListener("click", () => {
-    navLinks.forEach(item => item.classList.remove("active"));
-    link.classList.add("active");
+  }
+  systemTheme?.addEventListener?.("change", event => {
+    if (savedTheme !== "light" && savedTheme !== "dark") applyTheme(event.matches ? "dark" : "light");
   });
-});
 
-const revealObserver = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("in-view");
-        revealObserver.unobserve(entry.target);
-      }
+  const navLinks = [...document.querySelectorAll('nav a[href^="#"]')];
+  const sections = navLinks.map(link => document.getElementById(link.hash.slice(1))).filter(Boolean);
+  const header = document.querySelector(".site-header");
+  function updateActiveSection() {
+    if (!sections.length) return;
+    const offset = (header?.getBoundingClientRect().height || 80) + 36;
+    let active = sections[0];
+    for (const section of sections) {
+      if (section.getBoundingClientRect().top <= offset) active = section;
+    }
+    if (window.scrollY + window.innerHeight >= root.scrollHeight - 2) active = sections[sections.length - 1];
+    for (const link of navLinks) {
+      if (link.hash === `#${active.id}`) link.setAttribute("aria-current", "location");
+      else link.removeAttribute("aria-current");
+    }
+  }
+  // requestAnimationFrame is optional; section state also works without it.
+  let framePending = false;
+  function scheduleNavigation() {
+    if (framePending) return;
+    if (!window.requestAnimationFrame) { updateActiveSection(); return; }
+    framePending = true;
+    window.requestAnimationFrame(() => { framePending = false; updateActiveSection(); });
+  }
+  if (sections.length) {
+    window.addEventListener("scroll", scheduleNavigation, { passive: true });
+    window.addEventListener("resize", scheduleNavigation);
+    window.addEventListener("hashchange", scheduleNavigation);
+    window.addEventListener("pageshow", scheduleNavigation);
+    updateActiveSection();
+  }
+
+  const helloButton = document.querySelector(".hello-button");
+  const helloResponse = document.querySelector(".hello-response");
+  if (helloButton && helloResponse) {
+    helloButton.hidden = false;
+    helloButton.addEventListener("click", () => {
+      helloResponse.textContent = "hello back! :)";
     });
-  },
-  { threshold: 0.08 }
-);
-
-document.querySelectorAll(".reveal").forEach(element => revealObserver.observe(element));
-
-const progress = document.querySelector(".scroll-progress");
-const backToTop = document.querySelector(".back-to-top");
-
-function updateScrollUI() {
-  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-  const percentage = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
-  if (progress) progress.style.width = `${percentage}%`;
-  backToTop?.classList.toggle("visible", window.scrollY > 650);
-}
-
-window.addEventListener("scroll", updateScrollUI, { passive: true });
-updateScrollUI();
-
-backToTop?.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
-
-document.getElementById("year").textContent = new Date().getFullYear();
+  }
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+})();

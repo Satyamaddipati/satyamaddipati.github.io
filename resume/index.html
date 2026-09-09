@@ -3,11 +3,103 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="refresh" content="0; url=/#experience">
-  <link rel="canonical" href="/#experience">
+  <meta name="description" content="Satya Maddipati — M.S. Computer Sciences at UW–Madison. Experience, education, selected projects, and a downloadable résumé.">
+  <meta name="theme-color" content="#f6f5ef">
   <title>Résumé | Satya Maddipati</title>
+  <link rel="canonical" href="https://satyamaddipati.github.io/resume/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Résumé | Satya Maddipati">
+  <meta property="og:description" content="Satya Maddipati — M.S. Computer Sciences at UW–Madison. Experience, education, selected projects, and a downloadable résumé.">
+  <meta property="og:url" content="https://satyamaddipati.github.io/resume/">
+  <meta property="og:image" content="https://satyamaddipati.github.io/profile.jpg">
+  <meta property="og:image:alt" content="Satya Bhargav Maddipati">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <script src="/theme.js"></script>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/script.js" defer></script>
 </head>
 <body>
-  <p>Continue to <a href="/#experience">Satya’s experience and education</a>.</p>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="/" aria-label="Satya Maddipati, home">satya<span aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/#projects">Work</a>
+        <a href="/#experience">Experience</a>
+        <a href="/blog/">Life</a>
+        <a href="/resume/" aria-current="page">Résumé</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" hidden><span aria-hidden="true">◐</span></button>
+    </div>
+  </header>
+  <main id="content" class="wrap subpage resume-page" tabindex="-1">
+    <header class="page-intro"><p class="eyebrow">Experience &amp; background</p><h1>The résumé<span class="accent">.</span></h1><p>Software, applied AI, and the work behind it.</p><div class="resume-actions"><a class="button button-solid" href="/resume/satya-maddipati-resume.pdf" download>Download résumé <span aria-hidden="true">↓</span></a><a class="button" href="/resume/satya-maddipati-resume.pdf">View PDF <span aria-hidden="true">↗</span></a></div></header>
+    <div class="resume-sheet">
+<!-- RESUME CONTENT START -->
+<h2 class="resume-name">Satya Bhargav Maddipati</h2>
+<p class="muted">M.S. Computer Sciences student at UW-Madison with experience building production AI services, retrieval workflows, and machine learning systems.</p>
+<div class="resume-contact"><a href="mailto:sbmaddipati@wisc.edu">sbmaddipati@wisc.edu</a><a href="https://github.com/Satyamaddipati">GitHub</a><a href="https://www.linkedin.com/in/sbmaddipati">LinkedIn</a></div>
+<section class="resume-section"><h3>Education</h3>
+<article class="resume-item"><div class="resume-item-heading"><h4>University of Wisconsin-Madison</h4><span>Sep 2025 - May 2027</span></div>
+<p><strong>M.S. in Computer Sciences</strong></p>
+<p>GPA: 4.0/4.0. Coursework: AI, machine learning, computer vision, foundation models, databases, big-data systems, and HCI.</p>
+</article>
+<article class="resume-item"><div class="resume-item-heading"><h4>IIT Bombay</h4><span>Aug 2018 - Jun 2023</span></div>
+<p><strong>B.Tech + M.Tech Dual Degree, Honors</strong></p>
+<p>Environmental Science and Engineering. GPA: 8.9/10. Coursework: machine learning, probability, statistics, NLP, and data science.</p>
+</article>
+</section>
+<section class="resume-section"><h3>Experience</h3>
+<article class="resume-item"><div class="resume-item-heading"><h4>Tata AIA Life Insurance</h4><span>Jul 2023 - Dec 2025</span></div>
+<p><strong>Assistant Manager, Data Science</strong></p>
+<p>Management Trainee, Jul 2023-Jun 2024; Assistant Manager, Jun 2024-Dec 2025</p>
+<ul><li>Built production GPT-4 and RAG services with FastAPI on Azure, achieving 0.8s p95 latency and 99.5% uptime.</li><li>Developed agentic and retrieval workflows that reduced manual review by 35%, saving an estimated 2,000+ hours annually.</li><li>Created a multi-agent LLM evaluation platform processing 50K+ evaluations monthly with 89% correlation to human scores.</li><li>Improved document-classification accuracy from 78% to 94% by fine-tuning Llama and Qwen with QLoRA and PEFT.</li></ul>
+</article>
+<article class="resume-item"><div class="resume-item-heading"><h4>IIT Bombay</h4><span>Apr 2022 - Jun 2023</span></div>
+<p><strong>Graduate Research Assistant</strong></p>
+<ul><li>Built 3-7 day air-quality forecasts using SARIMA, XGBoost, Random Forests, and meteorological data.</li><li>Applied stochastic KZ filtering and SHAP analysis to explain seasonal and feature-level contributions.</li></ul>
+</article>
+<article class="resume-item"><div class="resume-item-heading"><h4>IIT Bombay</h4><span>Aug 2022 - May 2023</span></div>
+<p><strong>Teaching Assistant</strong></p>
+<ul><li>Led labs, tutorials, and office hours, helping students understand course material and assignments.</li></ul>
+</article>
+<article class="resume-item"><div class="resume-item-heading"><h4>Cognibot AI</h4><span>Dec 2021 - Feb 2022</span></div>
+<p><strong>Machine Learning Intern</strong></p>
+<ul><li>Developed an EfficientDet computer-vision pipeline for tracking people in retail environments across different compute constraints.</li></ul>
+</article>
+</section>
+<section class="resume-section"><h3>Selected projects</h3>
+<article class="resume-item"><div class="resume-item-heading"><h4>Reason-Guessr</h4></div>
+<p>PyTorch, CLIP, Computer Vision</p>
+<p>Built an interpretable image-geolocation pipeline on a 32K-image dataset, reaching 88.9 km median haversine error.</p>
+<p><a href="https://reason-guessr.vercel.app">View live project ↗</a></p>
+</article>
+<article class="resume-item"><div class="resume-item-heading"><h4>Ray-Ban AI Life Logger</h4></div>
+<p>Python, Whisper, Claude, SQLite</p>
+<p>Built an automated pipeline that transcribes captured audio, filters useful signals, and delivers structured hourly summaries.</p>
+</article>
+<article class="resume-item"><div class="resume-item-heading"><h4>Grounded Vision-Language Agent</h4></div>
+<p>LLaVA-1.6, LoRA/PEFT, Hugging Face</p>
+<p>Implemented an Observe-Reason-Act loop for multi-step visual instruction following and evaluated it against text-only baselines.</p>
+</article>
+</section>
+<section class="resume-section resume-skills"><h3>Technical skills</h3>
+<p><strong>Languages:</strong> Python, C++, SQL, JavaScript, Java, R, MATLAB</p>
+<p><strong>Backend:</strong> FastAPI, Flask, REST APIs, PostgreSQL, Redis, SQLite</p>
+<p><strong>ML &amp; AI:</strong> PyTorch, Scikit-learn, Hugging Face, OpenCV, XGBoost, RAG, LangGraph</p>
+<p><strong>Cloud:</strong> Docker, Kubernetes, CI/CD, Azure, AWS</p>
+</section>
+<!-- RESUME CONTENT END -->
+    </div>
+  </main>
+  <footer id="contact" class="site-footer wrap">
+    <div class="footer-top">
+      <div><p class="eyebrow">Keep in touch</p><h2>Good things start<br>with a hello<span class="accent">.</span></h2></div>
+      <div class="footer-contact"><a class="email-link" href="mailto:sbmaddipati@wisc.edu">sbmaddipati@wisc.edu <span aria-hidden="true">↗</span></a><p>Open to software engineering,<br>machine learning, and applied AI opportunities.</p><div class="text-links"><a href="https://github.com/Satyamaddipati">GitHub ↗</a><a href="https://www.linkedin.com/in/sbmaddipati">LinkedIn ↗</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> Satya Maddipati</span><span>Made with care. And plain HTML.</span><a href="#content">Back to top ↑</a></div>
+  </footer>
 </body>
 </html>

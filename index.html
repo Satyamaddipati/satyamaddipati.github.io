@@ -3,284 +3,114 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Satya Bhargav Maddipati — MS Computer Science student at UW–Madison building software and applied AI systems.">
-  <meta name="theme-color" content="#f7f3ec">
-  <title>Satya Maddipati | Software & Applied AI</title>
+  <meta name="description" content="Satya Maddipati — M.S. Computer Sciences at UW–Madison. Software, applied AI, selected projects, and life outside code.">
+  <meta name="theme-color" content="#f6f5ef">
+  <title>Satya Maddipati | Software &amp; Applied AI</title>
+  <link rel="canonical" href="https://satyamaddipati.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Satya Maddipati | Software &amp; Applied AI">
+  <meta property="og:description" content="Satya Maddipati — M.S. Computer Sciences at UW–Madison. Software, applied AI, selected projects, and life outside code.">
+  <meta property="og:url" content="https://satyamaddipati.github.io/">
+  <meta property="og:image" content="https://satyamaddipati.github.io/profile.jpg">
+  <meta property="og:image:alt" content="Satya Bhargav Maddipati">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <script src="/theme.js"></script>
   <link rel="stylesheet" href="/styles.css">
+  <script src="/script.js" defer></script>
 </head>
 <body>
-  <div class="scroll-progress" aria-hidden="true"></div>
-  <a class="skip-link" href="#about">Skip to content</a>
-
-  <aside class="sidebar" aria-label="Site navigation">
-    <div class="identity">
-      <a href="#about" class="name">Satya<br>Maddipati</a>
-      <p>MS Computer Science<br>Applied AI &amp; Software</p>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="/" aria-label="Satya Maddipati, home">satya<span aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#about" aria-current="location">Home</a>
+        <a href="#projects">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#life">Life</a>
+        <a href="/resume/">Résumé</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme" hidden><span aria-hidden="true">◐</span></button>
     </div>
-
-    <nav aria-label="Page sections">
-      <a class="active" href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#life">Life</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="sidebar-footer">
-      <button class="theme-toggle" type="button" aria-label="Switch color theme">
-        <span aria-hidden="true">◐</span> Theme
-      </button>
-      <div class="socials" aria-label="Social links">
-        <a href="https://github.com/Satyamaddipati" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7A11.5 11.5 0 0 0 8.36 23.1c.58.1.79-.25.79-.56v-2.22c-3.22.7-3.9-1.37-3.9-1.37-.52-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.38.97.1-.75.4-1.27.74-1.56-2.57-.29-5.27-1.28-5.27-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.16 1.18A10.96 10.96 0 0 1 12 6.11c.98 0 1.95.13 2.86.39 2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.71 5.39-5.29 5.68.42.36.79 1.07.79 2.16v3.24c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/sbmaddipati" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.3 7.8H1.7V22h3.6V7.8ZM3.5 2A2.1 2.1 0 1 0 3.5 6.2 2.1 2.1 0 0 0 3.5 2ZM22.3 13.8c0-4.3-2.3-6.3-5.4-6.3-2.5 0-3.6 1.4-4.2 2.3v-2H9.1V22h3.6v-7c0-1.9.4-3.7 2.7-3.7 2.3 0 2.3 2.1 2.3 3.8V22h3.6l1-8.2Z"/></svg>
-        </a>
-        <a href="mailto:sbmaddipati@wisc.edu" aria-label="Email Satya" title="Email">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm9 7.2L20.2 7H3.8L12 12.2ZM3 17h18V9.3l-9 5.7-9-5.7V17Z"/></svg>
-        </a>
-      </div>
-    </div>
-  </aside>
-
-  <main id="content" class="page">
-    <section id="about" class="hero observed-section">
-      <div class="hero-heading">
-        <p class="eyebrow">Hello, I’m Satya</p>
-        <h1>I build useful software and applied AI systems.</h1>
-        <p class="subtitle">I’m Satya Maddipati, currently pursuing an M.S. in Computer Sciences at UW–Madison. Before graduate school, I worked as a data scientist at Tata AIA and earned a dual degree from IIT Bombay, completing an undergraduate double major with Honors.</p>
-        <div class="hero-links">
-          <a class="button primary" href="#projects">See my work</a>
-          <a class="button" href="mailto:sbmaddipati@wisc.edu">Email me</a>
+  </header>
+  <main id="content" class="wrap" tabindex="-1">
+    <section id="about" class="hero observed-section" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Software · Applied AI · A little curiosity</p>
+        <h1 id="intro-title">Hi, I’m Satya<span class="accent">.</span></h1>
+        <p class="hero-statement">I build useful software<br>and applied AI systems.</p>
+        <p class="hero-description">M.S. Computer Sciences at <strong>UW–Madison</strong>.<br>Previously in data science at <strong>Tata AIA</strong>. I’m interested in intelligent systems and turning experiments into products people can use.</p>
+        <div class="hero-links" aria-label="Connect with Satya">
+          <a class="button button-solid" href="/resume/">Résumé <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/Satyamaddipati">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/sbmaddipati">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="mailto:sbmaddipati@wisc.edu">Email <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-
-      <div class="portrait-wrap">
-        <div class="portrait-accent" aria-hidden="true"></div>
-        <img class="profile-photo" src="/profile.jpg" alt="Satya Bhargav Maddipati">
-        <p class="photo-note">Based in Madison, Wisconsin</p>
+      <div class="hero-aside">
+        <figure class="portrait">
+          <img src="/profile.jpg" width="854" height="1280" fetchpriority="high" alt="Satya Maddipati">
+          <figcaption><span class="location-pin" aria-hidden="true">⌖</span> Madison, Wisconsin</figcaption>
+        </figure>
+        <div class="hello-widget"><button class="hello-button" type="button" hidden><span class="tiny-face" aria-hidden="true">:)</span> wave hello <span aria-hidden="true">↗</span></button><span class="hello-response" role="status"></span></div>
       </div>
     </section>
 
-    <section class="content-section reveal">
-      <h2 class="section-title">What I Do</h2>
-      <div class="section-body">
-        <p class="section-intro">I’m using graduate school to strengthen my computer science foundations while turning coursework into practical projects.</p>
-        <ul class="statement-list">
-          <li>Exploring machine learning, artificial intelligence, databases, distributed systems, and human–computer interaction through graduate coursework.</li>
-          <li>Building course and personal projects across computer vision, LLM systems, backend software, and developer tools.</li>
-          <li>Learning how to move ideas from experiments into reliable, usable software.</li>
-          <li>Preparing short technical notes about current projects and what I learn while building them.</li>
-        </ul>
+    <section class="now-section" aria-labelledby="now-title">
+      <div><p class="eyebrow">On my desk / <time datetime="2026-09">Sep 2026</time></p><h2 id="now-title">Learning. Building.<br>Connecting the dots.</h2></div>
+      <div class="now-body"><p>Strengthening my CS foundations at UW–Madison, and putting them to work in course and side projects.</p>
+        <ul class="topic-list" aria-label="Currently exploring"><li>Machine learning</li><li>Distributed systems</li><li>Computer vision</li><li>Agentic AI</li><li>Software engineering</li></ul>
+        <p class="availability"><span class="status-dot" aria-hidden="true"></span> Looking for software engineering &amp; ML/AI opportunities</p>
       </div>
     </section>
 
-    <section class="content-section reveal">
-      <div class="section-label">Currently</div>
-      <div class="section-body">
-        <div class="now-card">
-          <span class="live-dot" aria-hidden="true"></span>
-          <div>
-            <p>Completing my M.S. in Computer Sciences at UW–Madison and looking for software engineering and ML/AI opportunities.</p>
-            <small>Updated September 2026</small>
-          </div>
-        </div>
+    <section id="projects" class="section observed-section" aria-labelledby="work-title">
+      <header class="section-heading"><div><p class="eyebrow">01 / Selected work</p><h2 id="work-title">Things I’ve built.</h2></div><p>From personal experiments<br>to systems running in production.</p></header>
+      <div class="project-grid">
+        <article class="project project-featured">
+          <!-- SCREENSHOT: replace this figure's .project-visual with an img using assets/projects/reason-guessr.webp. Keep a meaningful alt and width/height. -->
+          <figure class="project-figure">
+            <div class="project-visual geo-visual" aria-label="Concept sketch of image geolocation, not a project screenshot">
+              <span class="visual-label">Image geolocation / concept sketch</span>
+              <svg viewBox="0 0 400 220" aria-hidden="true" class="geo-sketch"><g fill="none" stroke="currentColor" stroke-width="1.3"><ellipse cx="200" cy="110" rx="84" ry="84"/><ellipse cx="200" cy="110" rx="38" ry="84"/><ellipse cx="200" cy="110" rx="84" ry="32"/><path d="M116 110h168M200 26v168M43 56h35v35M357 164h-35v-35"/><path d="M251 73l51-27h43" stroke-dasharray="4 5"/><circle cx="251" cy="73" r="5" fill="currentColor"/><circle cx="251" cy="73" r="12"/></g><text x="48" y="175" fill="currentColor" font-family="monospace" font-size="13">a photo → a place</text></svg>
+              <div class="visual-bottom"><span>32K images</span><span>88.9 km median error</span></div>
+            </div>
+            <figcaption>Project screenshot coming soon.</figcaption>
+          </figure>
+          <div class="project-copy"><p class="eyebrow">Computer vision</p><h3>Reason-Guessr</h3><p class="project-question">Where in the world was this taken?</p><p>An interpretable image-geolocation pipeline that connects visual clues to a location. Built on a 32K-image dataset, reaching 88.9 km median haversine error.</p><ul class="tags" aria-label="Technologies"><li>PyTorch</li><li>CLIP</li><li>Computer vision</li></ul><div class="project-links"><a href="https://reason-guessr.vercel.app">Explore the live project <span aria-hidden="true">↗</span></a><span class="pending-link">Source link to come</span></div></div>
+        </article>
+        <article class="project">
+          <!-- SCREENSHOT: replace .project-visual with assets/projects/life-logger.webp when available. -->
+          <figure class="project-figure"><div class="project-visual logger-visual"><span class="visual-label">Pipeline sketch</span><div class="pipeline" aria-label="Audio to transcript to hourly summary"><span><svg viewBox="0 0 60 42" aria-hidden="true"><path d="M5 17v8m8-16v24m8-30v36m8-24v12m8-20v28m8-24v20m8-14v8"/></svg>Audio</span><b aria-hidden="true">→</b><span><span class="sketch-glyph" aria-hidden="true">Aa</span>Transcript</span><b aria-hidden="true">→</b><span><span class="sketch-glyph" aria-hidden="true">≡</span>Summary</span></div></div><figcaption>Project screenshot coming soon.</figcaption></figure>
+          <div class="project-copy"><p class="eyebrow">Personal project</p><h3>Ray-Ban AI Life Logger</h3><p class="project-question">Make captured moments useful.</p><p>An automated pipeline that transcribes captured audio, filters useful signals, and turns them into structured hourly summaries.</p><ul class="tags" aria-label="Technologies"><li>Python</li><li>Whisper</li><li>Claude</li><li>SQLite</li></ul><p class="pending-link">Source &amp; demo links to come</p></div>
+        </article>
+        <article class="project">
+          <!-- SCREENSHOT: add only an approved, shareable image to assets/projects/llm-evaluation.webp. -->
+          <figure class="project-figure"><div class="project-visual evaluation-visual"><span class="visual-label">Tata AIA / production evaluation</span><div class="result-pair"><div><strong>50K<span>+</span></strong><span>evaluations per month</span></div><div><strong>89<span>%</span></strong><span>correlation with human scoring</span></div></div></div><figcaption>Reported results; project screenshot coming soon.</figcaption></figure>
+          <div class="project-copy"><p class="eyebrow">Production AI</p><h3>Multi-Agent LLM Evaluation</h3><p class="project-question">Evaluate AI beyond a good-looking answer.</p><p>A production evaluation platform for LLM systems, processing more than 50K evaluations monthly and comparing results with human scoring.</p><ul class="tags" aria-label="Technologies"><li>LangGraph</li><li>OpenAI API</li><li>Docker</li></ul><div class="project-links"><a href="#experience">More about the work <span aria-hidden="true">↓</span></a><span class="pending-link">Source link to come</span></div></div>
+        </article>
       </div>
+      <details class="research-note"><summary><span><span class="eyebrow">Also exploring</span> Grounded Vision-Language Agent</span><span class="expand-icon" aria-hidden="true">+</span></summary><div><p>An Observe–Reason–Act loop for multi-step visual instruction following, evaluated against text-only baselines.</p><p class="small muted">LLaVA-1.6 · LoRA/PEFT · Hugging Face</p><p class="pending-link">Source &amp; demo links to come</p></div></details>
     </section>
 
-    <section id="projects" class="major-section observed-section reveal">
-      <header class="section-header">
-        <p class="eyebrow">Selected work</p>
-        <h2>Projects</h2>
-        <p>Click a project to see what I built and why it matters.</p>
-      </header>
-
-      <div class="project-stack">
-        <details class="project-card" open>
-          <summary>
-            <span class="project-number">01</span>
-            <span><strong>Reason-Guessr</strong><small>Computer Vision · PyTorch · CLIP</small></span>
-            <span class="project-action">Explore</span>
-          </summary>
-          <div class="project-detail">
-            <p>Built an interpretable image-geolocation pipeline on a 32K-image dataset, reaching 88.9 km median haversine error.</p>
-            <a href="https://reason-guessr.vercel.app" target="_blank" rel="noreferrer">View live project ↗</a>
-          </div>
-        </details>
-
-        <details class="project-card">
-          <summary>
-            <span class="project-number">02</span>
-            <span><strong>Multi-Agent LLM Evaluation</strong><small>LangGraph · OpenAI API · Docker</small></span>
-            <span class="project-action">Explore</span>
-          </summary>
-          <div class="project-detail">
-            <p>Created a production evaluation platform that processed more than 50K evaluations monthly and achieved 89% correlation with human scoring.</p>
-          </div>
-        </details>
-
-        <details class="project-card">
-          <summary>
-            <span class="project-number">03</span>
-            <span><strong>AI Life Logger</strong><small>Python · Whisper · Claude · SQLite</small></span>
-            <span class="project-action">Explore</span>
-          </summary>
-          <div class="project-detail">
-            <p>Built an automated pipeline that transcribes captured audio, filters useful signals, and delivers structured hourly summaries.</p>
-          </div>
-        </details>
-
-        <details class="project-card">
-          <summary>
-            <span class="project-number">04</span>
-            <span><strong>Grounded Vision-Language Agent</strong><small>LLaVA-1.6 · LoRA/PEFT · Hugging Face</small></span>
-            <span class="project-action">Explore</span>
-          </summary>
-          <div class="project-detail">
-            <p>Implemented an Observe–Reason–Act loop for multi-step visual instruction following and evaluated it against text-only baselines.</p>
-          </div>
-        </details>
-      </div>
+    <section id="experience" class="section observed-section" aria-labelledby="experience-title">
+      <header class="section-heading"><div><p class="eyebrow">02 / Experience</p><h2 id="experience-title">Built for the real world.</h2></div><a class="underlined-link" href="/resume/">The full résumé <span aria-hidden="true">↗</span></a></header>
+      <article class="experience-row"><div class="experience-meta"><h3>Tata AIA</h3><p>Jul 2023 — Dec 2025<br>Mumbai, India</p></div><div><h4>Assistant Manager, Data Science</h4><p class="small muted">Previously Management Trainee · promoted June 2024</p><p>Built and improved production AI services, from retrieval workflows to document classification and LLM evaluation.</p><ul class="impact-list"><li><strong>0.8s p95 latency · 99.5% uptime</strong><span>GPT-4 and RAG services with FastAPI on Azure.</span></li><li><strong>35% less manual review</strong><span>Agentic and retrieval workflows; an estimated 2,000+ hours saved annually.</span></li><li><strong>78% → 94% classification accuracy</strong><span>Fine-tuned Llama and Qwen with QLoRA and PEFT.</span></li></ul></div></article>
+      <article class="experience-row compact"><div class="experience-meta"><h3>IIT Bombay</h3><p>Apr 2022 — Jun 2023</p></div><div><h4>Graduate Research Assistant</h4><p>Built 3–7 day air-quality forecasts with SARIMA, XGBoost, Random Forests, and meteorological data. Used KZ filtering and SHAP to explain contributions.</p><p class="small muted">Also a Teaching Assistant · Aug 2022 — May 2023</p></div></article>
+      <article class="experience-row compact"><div class="experience-meta"><h3>Cognibot AI</h3><p>Dec 2021 — Feb 2022</p></div><div><h4>Machine Learning Intern</h4><p>Developed an EfficientDet pipeline to track people in retail environments across different compute constraints.</p></div></article>
     </section>
 
-    <section id="experience" class="major-section observed-section reveal">
-      <header class="section-header">
-        <p class="eyebrow">Where I’ve worked</p>
-        <h2>Experience</h2>
-      </header>
+    <section id="education" class="education-section" aria-labelledby="education-title"><div><p class="eyebrow">The foundations</p><h2 id="education-title">Always a student.</h2></div><div class="education-list"><article><div><h3>University of Wisconsin–Madison</h3><p>M.S. Computer Sciences · GPA 4.0/4.0</p></div><span class="small muted">2025 — 2027</span></article><article><div><h3>IIT Bombay</h3><p>B.Tech + M.Tech Dual Degree, Honors · GPA 8.9/10</p></div><span class="small muted">2018 — 2023</span></article></div></section>
 
-      <div class="timeline">
-        <article class="timeline-item">
-          <div class="timeline-meta"><strong>Jul 2023 – Dec 2025</strong><span>Tata AIA Life Insurance</span><small>Mumbai, India</small></div>
-          <div class="timeline-marker" aria-hidden="true"></div>
-          <div class="timeline-content">
-            <h3>Assistant Manager, Data Science</h3>
-            <p class="role-note">Management Trainee, Jul 2023–Jun 2024 · Assistant Manager, Jun 2024–Dec 2025</p>
-            <ul>
-              <li>Built production GPT-4 and RAG services with FastAPI on Azure, achieving 0.8s p95 latency and 99.5% uptime.</li>
-              <li>Developed agentic and retrieval workflows that reduced manual review by 35%, saving an estimated 2,000+ hours annually.</li>
-              <li>Created a multi-agent LLM evaluation platform processing 50K+ evaluations monthly with 89% correlation to human scores.</li>
-              <li>Improved document-classification accuracy from 78% to 94% by fine-tuning Llama and Qwen models with QLoRA and PEFT.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item">
-          <div class="timeline-meta"><strong>Apr 2022 – Jun 2023</strong><span>IIT Bombay</span><small>Mumbai, India</small></div>
-          <div class="timeline-marker" aria-hidden="true"></div>
-          <div class="timeline-content">
-            <h3>Graduate Research Assistant</h3>
-            <ul>
-              <li>Built 3–7 day air-quality forecasts using SARIMA, XGBoost, Random Forests, and meteorological data.</li>
-              <li>Applied stochastic KZ filtering and SHAP analysis to explain seasonal and feature-level contributions.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item">
-          <div class="timeline-meta"><strong>Aug 2022 – May 2023</strong><span>IIT Bombay</span><small>Mumbai, India</small></div>
-          <div class="timeline-marker" aria-hidden="true"></div>
-          <div class="timeline-content">
-            <h3>Teaching Assistant</h3>
-            <ul>
-              <li>Led labs, tutorials, and office hours while helping students understand course material and assignments.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="timeline-item">
-          <div class="timeline-meta"><strong>Dec 2021 – Feb 2022</strong><span>Cognibot AI</span><small>Mumbai, India</small></div>
-          <div class="timeline-marker" aria-hidden="true"></div>
-          <div class="timeline-content">
-            <h3>Machine Learning Intern</h3>
-            <ul>
-              <li>Developed an EfficientDet computer-vision pipeline for tracking people in retail environments across different compute constraints.</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="education" class="major-section observed-section reveal">
-      <header class="section-header">
-        <p class="eyebrow">Learning path</p>
-        <h2>Education</h2>
-      </header>
-
-      <div class="timeline">
-        <article class="timeline-item">
-          <div class="timeline-meta"><strong>Sep 2025 – May 2027</strong><span>UW–Madison</span><small>Madison, WI</small></div>
-          <div class="timeline-marker" aria-hidden="true"></div>
-          <div class="timeline-content">
-            <h3>M.S. in Computer Sciences</h3>
-            <p>GPA: 4.0/4.0. Coursework includes artificial intelligence, machine learning, computer vision, foundation models, databases, big-data systems, and HCI.</p>
-          </div>
-        </article>
-
-        <article class="timeline-item">
-          <div class="timeline-meta"><strong>Aug 2018 – Jun 2023</strong><span>IIT Bombay</span><small>Mumbai, India</small></div>
-          <div class="timeline-marker" aria-hidden="true"></div>
-          <div class="timeline-content">
-            <h3>B.Tech + M.Tech Dual Degree, Honors</h3>
-            <p>Environmental Science and Engineering. GPA: 8.9/10. Coursework included machine learning, probability, statistics, NLP, and data science.</p>
-          </div>
-        </article>
-      </div>
-
-      <div class="skills">
-        <h3>Tools I use</h3>
-        <div class="skill-groups">
-          <p><strong>Languages</strong><span>Python, C++, SQL, JavaScript, Java, R, MATLAB</span></p>
-          <p><strong>Backend</strong><span>FastAPI, Flask, REST APIs, PostgreSQL, Redis, SQLite</span></p>
-          <p><strong>ML &amp; AI</strong><span>PyTorch, Scikit-learn, Hugging Face, OpenCV, XGBoost, RAG, LangGraph</span></p>
-          <p><strong>Cloud</strong><span>Docker, Kubernetes, CI/CD, Azure, AWS</span></p>
-        </div>
-      </div>
-    </section>
-
-    <section id="life" class="major-section observed-section reveal life-section">
-      <header class="section-header">
-        <p class="eyebrow">Beyond the terminal</p>
-        <h2>Life, lately</h2>
-        <p>This is the less formal side of the website—things I notice, make, and enjoy outside work.</p>
-      </header>
-
-      <div class="interest-grid">
-        <article class="interest-card photo-card">
-          <span>Photography</span>
-          <h3>Small moments, good light, unfamiliar places.</h3>
-          <p>I take plenty of photos on my phone. A curated visual journal is coming here.</p>
-        </article>
-        <article class="interest-card">
-          <span>Videography</span>
-          <h3>Stories that move.</h3>
-          <p>Short experiments, travel fragments, and everyday scenes.</p>
-        </article>
-        <article class="interest-card">
-          <span>Activities</span>
-          <h3>Life away from a screen.</h3>
-          <p>Fitness, exploring new places, and whatever I am currently curious about.</p>
-        </article>
-      </div>
-      <p class="quiet-note">I’ll add photo collections gradually instead of turning this into an unfiltered social feed.</p>
-    </section>
-
-    <section id="contact" class="contact-section observed-section reveal">
-      <p class="eyebrow">Say hello</p>
-      <h2>Have an interesting problem or opportunity?</h2>
-      <p>I’m open to software engineering, machine learning, and applied AI conversations.</p>
-      <div class="contact-links">
-        <a href="mailto:sbmaddipati@wisc.edu">sbmaddipati@wisc.edu ↗</a>
-        <a href="https://github.com/Satyamaddipati" target="_blank" rel="noreferrer">GitHub ↗</a>
-        <a href="https://www.linkedin.com/in/sbmaddipati" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-      </div>
-      <p class="copyright">© <span id="year">2026</span> Satya Maddipati. Built with HTML, CSS, and curiosity.</p>
-    </section>
+    <section id="life" class="section life-section observed-section" aria-labelledby="life-title"><div class="life-copy"><p class="eyebrow">03 / Outside code</p><h2 id="life-title">A little less screen time.</h2><p>Phone photography, short videos, fitness, and unfamiliar places. Small moments worth paying attention to.</p><a class="underlined-link" href="/blog/">Visit the personal journal <span aria-hidden="true">↗</span></a></div><figure class="photo-placeholder"><div class="photo-corners" aria-hidden="true"><svg viewBox="0 0 80 60"><path d="M8 17h16l6-9h20l6 9h16v36H8z"/><circle cx="40" cy="34" r="12"/><path d="M61 24h4"/></svg></div><figcaption>A few frames from life.<br><span>Photo collection coming soon.</span></figcaption></figure></section>
   </main>
-
-  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
-  <script src="/script.js"></script>
+  <footer id="contact" class="site-footer wrap">
+    <div class="footer-top">
+      <div><p class="eyebrow">Keep in touch</p><h2>Good things start<br>with a hello<span class="accent">.</span></h2></div>
+      <div class="footer-contact"><a class="email-link" href="mailto:sbmaddipati@wisc.edu">sbmaddipati@wisc.edu <span aria-hidden="true">↗</span></a><p>Open to software engineering,<br>machine learning, and applied AI opportunities.</p><div class="text-links"><a href="https://github.com/Satyamaddipati">GitHub ↗</a><a href="https://www.linkedin.com/in/sbmaddipati">LinkedIn ↗</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> Satya Maddipati</span><span>Made with care. And plain HTML.</span><a href="#content">Back to top ↑</a></div>
+  </footer>
 </body>
 </html>
