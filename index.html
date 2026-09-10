@@ -40,7 +40,7 @@
       <div class="hero-copy">
         <p class="eyebrow">Student · Learner · Builder</p>
         <h1 id="intro-title">Hi, I’m Satya<span class="accent">.</span></h1>
-        <p class="hero-statement">Learning deeply.<br>Building along the way.</p>
+        <p class="hero-statement">Learning deeply.<br><em>Building along the way.</em></p>
         <p class="hero-description">CS graduate student at <strong>UW–Madison</strong> exploring intelligent systems and software. Previously built production AI systems at <strong>Tata AIA</strong>.</p>
         <div class="hero-links">
           <a class="button button-solid" href="#projects">View my work <span aria-hidden="true">↓</span></a>
@@ -51,7 +51,7 @@
       </div>
       <figure class="hero-portrait">
         <img src="/profile.jpg" width="854" height="1280" fetchpriority="high" alt="Satya Maddipati">
-        <figcaption>Satya, in Madison.<span class="portrait-note" aria-hidden="true">← the person behind the projects</span></figcaption>
+        <figcaption>Satya, in Madison.</figcaption>
       </figure>
       <p class="hero-status"><span class="shoreline" aria-hidden="true"><svg viewBox="0 0 120 24"><path d="M-40 12 Q-30 3 -20 12 T0 12 T20 12 T40 12 T60 12 T80 12 T100 12 T120 12 T140 12 T160 12"/></svg></span><span>learning → building → breaking things → understanding them better</span></p>
     </section>
@@ -61,33 +61,25 @@
 
       </header>
 
+      <div class="work-grid">
       <article id="life-logger" class="case-study logger-case" aria-labelledby="logger-title">
         <div class="case-copy">
           <p class="case-index">01 <span>Personal project / audio &amp; AI</span></p>
-          <h3 id="logger-title">Ray-Ban AI <br>Life Logger</h3>
+          <h3 id="logger-title">Ray-Ban AI Life Logger</h3>
           <p class="case-deck">I built a way to turn captured audio into a record I can actually revisit.</p>
-          <dl class="case-facts">
+          <details class="project-notes"><summary>Technical notes <span aria-hidden="true">+</span></summary><dl class="case-facts">
             <div><dt>The problem</dt><dd>Long recordings are hard to revisit.</dd></div>
             <div><dt>What I built</dt><dd>A pipeline that transcribes audio, filters useful signals, and produces structured hourly summaries.</dd></div>
-          </dl>
+          </dl></details>
           <ul class="tags" aria-label="Life Logger technologies"><li>Python</li><li>Whisper</li><li>Claude</li><li>SQLite</li></ul>
           <!-- TODO: Add the verified Life Logger repository and demo URLs. Confirm Ray-Ban capture and Telegram delivery details before extending the diagram. -->
           <p class="link-note">Code and demo not linked yet.</p>
         </div>
-        <figure class="system-figure">
-          <div class="system-board">
-            <div class="board-heading"><span>Audio → hourly summary</span><span class="board-type">Pipeline sketch</span></div>
-            <ol class="audio-flow" aria-label="Life Logger processing stages">
-              <li><span class="stage-symbol" aria-hidden="true">≋</span><div><strong>Captured audio</strong><span>Input</span></div></li>
-              <li><span class="stage-symbol" aria-hidden="true">Aa</span><div><strong>Whisper</strong><span>Transcription</span></div></li>
-              <li><span class="stage-symbol" aria-hidden="true">⌁</span><div><strong>Claude</strong><span>Filter &amp; summarize</span></div></li>
-              <li><span class="stage-symbol" aria-hidden="true">≡</span><div><strong>Hourly summaries</strong><span>Structured output</span></div></li>
-            </ol>
-            <p class="board-outcome"><span>Output</span> A shorter record to revisit.</p>
-          </div>
-          <!-- TODO image: assets/projects/life-logger.webp — real recording/transcript and resulting hourly summary, with private content removed. Replace this .asset-slot with an img.project-image. -->
-          <div class="asset-slot"><span aria-hidden="true">[ image ]</span><span>Recording + summary preview<span class="asset-state">Screenshot to add</span></span></div>
-          <figcaption>A sketch of the pipeline, not a product screenshot.</figcaption>
+        <figure class="project-figure logger-figure">
+          <div class="project-art" aria-hidden="true">
+            <svg viewBox="0 0 420 170" class="project-sketch" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M52 91v-10m8 24V67m8 48V57m8 42V74m8 48V50m8 55V67m8 27V78m8 31V62m8 39V72m8 20V80"/><path d="M157 86c20-11 34-11 54-1m-9-8 10 9-12 6"/><rect x="252" y="29" width="106" height="117" rx="3" transform="rotate(5 305 87)"/><path d="M271 53h36m-36 17h66m-66 13h60m-60 13h67m-67 13h42"/><path d="m270 126 4 3 8-9"/></g></svg>
+            <span class="art-note">a day, a little easier to revisit</span>
+          </div><figcaption>Audio → transcript → hourly summary <span>Pipeline sketch</span></figcaption>
         </figure>
       </article>
 
@@ -96,34 +88,41 @@
           <p class="case-index">02 <span>Computer vision / geolocation</span></p>
           <h3 id="geo-title">Reason-Guessr</h3>
           <p class="case-deck">I wanted to see if a model could locate a photo—and give interpretable clues along the way.</p>
-          <dl class="case-facts">
+          <details class="project-notes"><summary>Technical notes <span aria-hidden="true">+</span></summary><dl class="case-facts">
             <div><dt>The problem</dt><dd>Estimate geographic location from an image.</dd></div>
             <div><dt>What I built</dt><dd>An interpretable image-geolocation pipeline using PyTorch and CLIP, evaluated on a 32K-image dataset.</dd></div>
-          </dl>
+          </dl></details>
           <ul class="tags" aria-label="Reason-Guessr technologies"><li>PyTorch</li><li>CLIP</li><li>Computer vision</li></ul>
           <div class="case-links"><a href="https://reason-guessr.vercel.app">Try the live project <span aria-hidden="true">↗</span></a><span class="link-note">Source not linked yet.</span></div>
           <!-- TODO: Add a verified source URL and model/architecture details beyond PyTorch and CLIP. -->
         </div>
-        <figure class="geo-figure">
-          <div class="geo-board">
-            <div class="board-heading"><span>Image → location estimate</span><span class="board-type">Concept sketch</span></div>
-            <div class="geo-diagram" aria-hidden="true"><span class="image-frame">a photo</span><span class="diagram-arrow">→</span><svg viewBox="0 0 160 160"><g fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="80" cy="80" r="60"/><ellipse cx="80" cy="80" rx="25" ry="60"/><ellipse cx="80" cy="80" rx="60" ry="23"/><path d="M20 80h120M80 20v120"/><circle cx="112" cy="49" r="5" fill="currentColor"/><circle cx="112" cy="49" r="11"/></g></svg></div>
-            <dl class="geo-results"><div><dt>Median haversine error</dt><dd>88.9 <span>km</span></dd></div><div><dt>Dataset</dt><dd>32K <span>images</span></dd></div></dl>
-          </div>
-          <!-- TODO image: assets/projects/reason-guessr.webp — actual input photo beside the model's estimated location/results. Replace .asset-slot with img.project-image. -->
-          <div class="asset-slot"><span aria-hidden="true">[ image ]</span><span>Input photo + prediction<span class="asset-state">Screenshot to add</span></span></div>
-          <figcaption>Evaluation figures from the existing project record.</figcaption>
+        <figure class="project-figure location-figure">
+          <div class="project-art">
+            <svg viewBox="0 0 420 170" class="project-sketch" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m57 116 15-62 44 12 44-18 47 17-15 63-47-17-43 18Z"/><path d="m116 66-14 63m58-81-15 63"/><path d="M87 98c29-33 62 39 88-11" stroke-dasharray="3 6"/><path d="M160 79c-14-17-21-26-21-36a21 21 0 0 1 42 0c0 10-7 19-21 36Z"/><circle cx="160" cy="42" r="6"/></g></svg>
+            <div class="art-result"><strong>88.9 <small>km</small></strong><span>median haversine error</span><span>32K-image dataset</span></div>
+          </div><figcaption>A photo → a place <span>Concept sketch · reported result</span></figcaption>
         </figure>
       </article>
 
       <article id="production-ai" class="case-study" aria-labelledby="evaluation-title">
-        <div class="case-copy"><p class="case-index">03 <span>Production work · Tata AIA</span></p><h3 id="evaluation-title">Multi-Agent LLM Evaluation Platform</h3><p class="case-deck">I built a repeatable way to compare how language models answer the same questions.</p><dl class="case-facts"><div><dt>How it works</dt><dd>Benchmarks GPT-4, Claude, and Gemini across 1,000+ prompts. LLM-as-judge evaluators score response quality, consistency, and failure modes against reference criteria.</dd></div><div><dt>Production impact</dt><dd>50K+ evaluations per month, with 89% correlation with human scoring.</dd></div></dl><ul class="tags" aria-label="Evaluation technologies"><li>LangGraph</li><li>OpenAI API</li><li>Docker</li><li>Streamlit</li></ul><p class="link-note">Source and demo not linked yet.</p></div>
-        <figure class="system-figure"><div class="system-board"><div class="board-heading"><span>Same prompts. Different models.</span><span class="board-type">Evaluation sketch</span></div><ol class="audio-flow"><li><span class="stage-symbol" aria-hidden="true">?</span><div><strong>1,000+ prompts</strong><span>Shared benchmark</span></div></li><li><span class="stage-symbol" aria-hidden="true">≡</span><div><strong>GPT-4 · Claude · Gemini</strong><span>Model responses</span></div></li><li><span class="stage-symbol" aria-hidden="true">✓</span><div><strong>LLM-as-judge</strong><span>Quality · consistency · failure modes</span></div></li></ol></div><div class="asset-slot"><span aria-hidden="true">[ image ]</span><span>Evaluation comparison view<span class="asset-state">Screenshot to add</span></span></div><figcaption>Method sketch, not an evaluation dashboard.</figcaption></figure>
+        <div class="case-copy"><p class="case-index">03 <span>Production work · Tata AIA</span></p><h3 id="evaluation-title">Multi-Agent LLM Evaluation Platform</h3><p class="case-deck">I built a repeatable way to compare how language models answer the same questions.</p><details class="project-notes"><summary>Technical notes <span aria-hidden="true">+</span></summary><dl class="case-facts"><div><dt>How it works</dt><dd>Benchmarks GPT-4, Claude, and Gemini across 1,000+ prompts. LLM-as-judge evaluators score response quality, consistency, and failure modes against reference criteria.</dd></div><div><dt>Production impact</dt><dd>50K+ evaluations per month, with 89% correlation with human scoring.</dd></div></dl></details><ul class="tags" aria-label="Evaluation technologies"><li>LangGraph</li><li>OpenAI API</li><li>Docker</li><li>Streamlit</li></ul><p class="link-note">Source and demo not linked yet.</p></div>
+        <figure class="project-figure evaluation-figure">
+          <div class="project-art">
+            <div class="evaluation-numbers"><div><strong>50K+</strong><span>evaluations / month</span></div><div><strong>89%</strong><span>correlation with<br>human scoring</span></div></div>
+            <svg class="score-mark" viewBox="0 0 45 45" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M37 15c-4-9-18-12-25-4S7 36 18 38s24-7 20-19"/><path d="m13 24 7 6 14-15"/></g></svg>
+          </div><figcaption>Production work · Tata AIA <span>Reported results</span></figcaption>
+        </figure>
       </article>
       <article id="grounded-agents" class="case-study geo-case" aria-labelledby="grounded-title">
-        <div class="case-copy"><p class="case-index">04 <span>Multimodal agents / experiment</span></p><h3 id="grounded-title">Grounded Vision-Language Agents</h3><p class="case-deck">I explored how an agent follows multi-step instructions when it can see as well as read.</p><dl class="case-facts"><div><dt>How it works</dt><dd>An Observe–Reason–Act loop on LLaVA-1.6 for multi-step visual instruction following, evaluated against text-only baselines.</dd></div></dl><ul class="tags" aria-label="Vision-language technologies"><li>LLaVA-1.6</li><li>LoRA/PEFT</li><li>Hugging Face</li></ul><p class="link-note">Source and demo not linked yet.</p></div>
-        <figure class="geo-figure"><div class="geo-board"><div class="board-heading"><span>Grounding each next step</span><span class="board-type">Agent loop sketch</span></div><ol class="agent-loop"><li>Observe <span>Visual context</span></li><li>Reason <span>Instruction + context</span></li><li>Act <span>Next step → observe again</span></li></ol></div><div class="asset-slot"><span aria-hidden="true">[ image ]</span><span>One real instruction-following trace<span class="asset-state">Screenshot to add</span></span></div><figcaption>Loop structure; no benchmark score implied.</figcaption></figure>
+        <div class="case-copy"><p class="case-index">04 <span>Multimodal agents / experiment</span></p><h3 id="grounded-title">Grounded Vision-Language Agents</h3><p class="case-deck">I explored how an agent follows multi-step instructions when it can see as well as read.</p><details class="project-notes"><summary>Technical notes <span aria-hidden="true">+</span></summary><dl class="case-facts"><div><dt>How it works</dt><dd>An Observe–Reason–Act loop on LLaVA-1.6 for multi-step visual instruction following, evaluated against text-only baselines.</dd></div></dl></details><ul class="tags" aria-label="Vision-language technologies"><li>LLaVA-1.6</li><li>LoRA/PEFT</li><li>Hugging Face</li></ul><p class="link-note">Source and demo not linked yet.</p></div>
+        <figure class="project-figure agent-figure">
+          <div class="project-art" aria-hidden="true">
+            <svg viewBox="0 0 420 170" class="project-sketch" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M61 75s20-31 43-1c-18 24-38 10-43 1Z"/><circle cx="82" cy="75" r="6"/><path d="M136 74h30m-8-6 9 6-9 6"/><path d="M198 57h35v26h-20l-10 9v-9h-5Z"/><path d="M207 66h16m-16 8h11"/><path d="M267 74h29m-8-6 9 6-9 6"/><path d="m329 54 23 24-14 1-7 13Z"/><path d="M336 115c-61 33-185 36-252-1m4 11-6-13 14 3"/></g></svg>
+            <div class="loop-labels"><span>Observe</span><span>Reason</span><span>Act</span></div>
+          </div><figcaption>See, reason, take the next step <span>Agent loop sketch</span></figcaption>
+        </figure>
       </article>
+      </div>
     </section>
     <section id="learning" class="learning-section" aria-labelledby="learning-title">
       <header class="section-heading"><div><p class="eyebrow">Currently · Fall 2026</p><h2 id="learning-title">What I’m learning right now.</h2></div><span class="margin-note">This semester.</span></header>
@@ -151,11 +150,11 @@
       <header class="section-heading"><div><p class="eyebrow">A few pages beyond the work</p><h2 id="life-title">Outside the terminal.</h2></div><p>Phone photos, short videos,<br>fitness, and unfamiliar places.</p></header>
       <div class="photo-journal">
         <!-- TODO: assets/life/madison.webp — one of Satya's own Madison photos, with a real caption/date. Replace .photo-mount with an img and keep the figure. -->
-        <figure><div class="photo-mount"><span class="frame-number">01</span><span class="photo-missing">A Madison photo<br><small>to add</small></span></div><figcaption>Madison</figcaption></figure>
+        <figure><div class="photo-mount"><span class="frame-number">01</span><span class="photo-missing">Madison<br><small>photo to add</small></span></div><figcaption>Madison</figcaption></figure>
         <!-- TODO: assets/life/travel.webp — a real travel photograph and its location/caption. -->
-        <figure><div class="photo-mount"><span class="frame-number">02</span><span class="photo-missing">Somewhere unfamiliar<br><small>photo to add</small></span></div><figcaption>Out exploring</figcaption></figure>
+        <figure><div class="photo-mount"><span class="frame-number">02</span><span class="photo-missing">Out exploring<br><small>photo to add</small></span></div><figcaption>Out exploring</figcaption></figure>
         <!-- TODO: assets/life/everyday.webp — Satya's own everyday/fitness photograph with a real caption. -->
-        <figure><div class="photo-mount"><span class="frame-number">03</span><span class="photo-missing">An everyday moment<br><small>photo to add</small></span></div><figcaption>The in-between</figcaption></figure>
+        <figure><div class="photo-mount"><span class="frame-number">03</span><span class="photo-missing">The everyday<br><small>photo to add</small></span></div><figcaption>The in-between</figcaption></figure>
       </div>
       <!-- Notes is intentionally absent from primary navigation until real posts exist. -->
     </section>

@@ -1,8 +1,9 @@
 # Real project images
 
-The existing hand-authored pipeline/concept sketches remain explicitly labeled.
-No product screenshots have been invented. Replace the matching `.asset-slot`
-in `index.html` with a real image, preserving the figure and updating its caption:
+The four small hand-authored sketches and reported-result visuals are explicitly
+labeled. They are illustrations, not product screenshots. No screenshot images
+have been invented. To add a real screenshot, replace the matching `.project-art`
+inside its `.project-figure` in `index.html`, then update the caption:
 
 ```html
 <img class="project-image" src="/assets/projects/reason-guessr.webp"

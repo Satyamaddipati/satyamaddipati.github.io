@@ -21,10 +21,13 @@ responsive navigation, theme initialization, and scroll tracking are retained.
 
 ## Content and design
 
-- `index.html`: student/learner/builder hero, four visible projects, Fall 2026
-  learning, concise experience, standalone education, About and real-photo slots.
+- `index.html`: student/learner/builder hero, four projects in an open two-column
+  layout, native expandable technical notes, Fall 2026 learning, concise
+  experience, standalone education, About and small real-photo slots.
 - `styles.css`: warm off-white, navy, coastal blue and muted aqua; system sans,
-  Georgia headings, monospace notes, thin borders, editorial spacing, both themes.
+  local serif headings with italic emphasis, small handwritten-style captions,
+  a photo-print portrait, restrained sketches, thin borders, and both themes.
+  The font stacks use local fallbacks and make no network requests.
 - `script.js`: theme, active navigation, year, final-PDF detection, touch wave.
 - `theme.js`: existing storage-safe initialization before first paint.
 - `about/index.html`, `blog/index.html`, `resume/index.html`: existing subpages,
@@ -35,10 +38,12 @@ responsive navigation, theme initialization, and scroll tracking are retained.
 
 The one ocean interaction is a tiny line wave beside the hero notebook note.
 Hover or touch causes one finite 1.8-second movement, with no animation loop,
-canvas, dependency, or text obstruction. Touch continuation is optional JS.
+canvas, dependency, or text obstruction. The tilted photo prints and line
+illustrations are static. Touch continuation is optional JS.
 Reduced motion disables it and smooth scrolling/transitions; no content is ever
 hidden behind animation. Without JavaScript, content and anchor navigation work.
-Blocked local storage does not prevent theme switching.
+Blocked local storage does not prevent theme switching. Technical notes use
+native `<details>` and remain keyboard-operable even without JavaScript.
 
 Fall 2026 contains exactly the four supplied course/interests, presented as an
 editorial two-column grid that stacks on phones. No invented course numbers,
