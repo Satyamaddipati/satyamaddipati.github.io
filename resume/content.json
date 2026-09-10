@@ -6,32 +6,98 @@
   "website": "https://satyamaddipati.github.io/",
   "summary": "M.S. Computer Sciences student at UW-Madison with experience building production AI services, retrieval workflows, and machine learning systems.",
   "education": [
-    {"organization": "University of Wisconsin-Madison", "dates": "Sep 2025 - May 2027", "title": "M.S. in Computer Sciences", "details": "GPA: 4.0/4.0. Coursework: AI, machine learning, computer vision, foundation models, databases, big-data systems, and HCI."},
-    {"organization": "IIT Bombay", "dates": "Aug 2018 - Jun 2023", "title": "B.Tech + M.Tech Dual Degree, Honors", "details": "Environmental Science and Engineering. GPA: 8.9/10. Coursework: machine learning, probability, statistics, NLP, and data science."}
+    {
+      "organization": "University of Wisconsin-Madison",
+      "dates": "Sep 2025 - May 2027",
+      "title": "M.S. in Computer Sciences",
+      "details": "GPA: 4.0/4.0. Coursework: AI, machine learning, computer vision, foundation models, databases, big-data systems, and HCI."
+    },
+    {
+      "organization": "IIT Bombay",
+      "dates": "Aug 2018 - Jun 2023",
+      "title": "B.Tech + M.Tech Dual Degree, Honors",
+      "details": "Environmental Science and Engineering. GPA: 8.9/10. Coursework: machine learning, probability, statistics, NLP, and data science."
+    }
   ],
   "experience": [
-    {"organization": "Tata AIA Life Insurance", "location": "Mumbai, India", "dates": "Jul 2023 - Dec 2025", "title": "Assistant Manager, Data Science", "note": "Management Trainee, Jul 2023-Jun 2024; Assistant Manager, Jun 2024-Dec 2025", "bullets": [
-      "Built production GPT-4 and RAG services with FastAPI on Azure, achieving 0.8s p95 latency and 99.5% uptime.",
-      "Developed agentic and retrieval workflows that reduced manual review by 35%, saving an estimated 2,000+ hours annually.",
-      "Created a multi-agent LLM evaluation platform processing 50K+ evaluations monthly with 89% correlation to human scores.",
-      "Improved document-classification accuracy from 78% to 94% by fine-tuning Llama and Qwen with QLoRA and PEFT."
-    ]},
-    {"organization": "IIT Bombay", "location": "Mumbai, India", "dates": "Apr 2022 - Jun 2023", "title": "Graduate Research Assistant", "bullets": [
-      "Built 3-7 day air-quality forecasts using SARIMA, XGBoost, Random Forests, and meteorological data.",
-      "Applied stochastic KZ filtering and SHAP analysis to explain seasonal and feature-level contributions."
-    ]},
-    {"organization": "IIT Bombay", "location": "Mumbai, India", "dates": "Aug 2022 - May 2023", "title": "Teaching Assistant", "bullets": ["Led labs, tutorials, and office hours, helping students understand course material and assignments."]},
-    {"organization": "Cognibot AI", "location": "Mumbai, India", "dates": "Dec 2021 - Feb 2022", "title": "Machine Learning Intern", "bullets": ["Developed an EfficientDet computer-vision pipeline for tracking people in retail environments across different compute constraints."]}
+    {
+      "organization": "Tata AIA Life Insurance",
+      "location": "Mumbai, India",
+      "dates": "July 2023 – December 2025",
+      "title": "Assistant Manager, Data Science",
+      "bullets": [
+        "Built production GPT-4 and RAG services with FastAPI on Azure, plus agentic claims workflows using LangGraph and CrewAI.",
+        "Developed agentic and retrieval workflows that reduced manual review by 35%, saving an estimated 2,000+ person-hours annually.",
+        "Improved document-classification accuracy from 78% to 94% by fine-tuning Llama and Qwen with QLoRA and PEFT."
+      ],
+      "note": "Management Trainee: July 2023 – June 2024; Assistant Manager, Data Science: June 2024 – December 2025"
+    },
+    {
+      "organization": "IIT Bombay",
+      "location": "Mumbai, India",
+      "dates": "Apr 2022 - Jun 2023",
+      "title": "Graduate Research Assistant",
+      "bullets": [
+        "Built 3–7 day air-quality forecasts using SARIMA, XGBoost, Random Forests, and meteorological data.",
+        "Applied stochastic KZ filtering and SHAP analysis to explain seasonal and feature-level contributions."
+      ]
+    },
+    {
+      "organization": "IIT Bombay",
+      "location": "Mumbai, India",
+      "dates": "Aug 2022 - May 2023",
+      "title": "Teaching Assistant",
+      "bullets": [
+        "Led labs, tutorials, and office hours, helping students understand course material and assignments."
+      ]
+    },
+    {
+      "organization": "Cognibot AI",
+      "location": "Mumbai, India",
+      "dates": "Dec 2021 - Feb 2022",
+      "title": "Machine Learning Intern",
+      "bullets": [
+        "Developed an EfficientDet computer-vision pipeline for tracking people in retail environments across different compute constraints."
+      ]
+    }
   ],
   "projects": [
-    {"title": "Reason-Guessr", "tech": "PyTorch, CLIP, Computer Vision", "description": "Built an interpretable image-geolocation pipeline on a 32K-image dataset, reaching 88.9 km median haversine error.", "url": "https://reason-guessr.vercel.app"},
-    {"title": "Ray-Ban AI Life Logger", "tech": "Python, Whisper, Claude, SQLite", "description": "Built an automated pipeline that transcribes captured audio, filters useful signals, and delivers structured hourly summaries."},
-    {"title": "Grounded Vision-Language Agent", "tech": "LLaVA-1.6, LoRA/PEFT, Hugging Face", "description": "Implemented an Observe-Reason-Act loop for multi-step visual instruction following and evaluated it against text-only baselines."}
+    {
+      "title": "Reason-Guessr",
+      "tech": "PyTorch, CLIP, Computer Vision",
+      "description": "Built an interpretable image-geolocation pipeline on a 32K-image dataset, reaching 88.9 km median haversine error.",
+      "url": "https://reason-guessr.vercel.app"
+    },
+    {
+      "title": "Ray-Ban AI Life Logger",
+      "tech": "Python, Whisper, Claude, SQLite",
+      "description": "Built an automated pipeline that transcribes captured audio, filters useful signals, and delivers structured hourly summaries."
+    },
+    {
+      "title": "Grounded Vision-Language Agent",
+      "tech": "LLaVA-1.6, LoRA/PEFT, Hugging Face",
+      "description": "Implemented an Observe-Reason-Act loop for multi-step visual instruction following and evaluated it against text-only baselines."
+    },
+    {
+      "title": "Multi-Agent LLM Evaluation Platform",
+      "tech": "LangGraph, OpenAI API, Docker, Streamlit",
+      "description": "Production platform processing 50K+ evaluations per month, with 89% correlation with human scoring. Benchmarked GPT-4, Claude, and Gemini across 1,000+ prompts using LLM-as-judge evaluators.",
+      "organization": "Tata AIA Life Insurance",
+      "category": "Professional work"
+    }
   ],
   "skills": {
     "Languages": "Python, C++, SQL, JavaScript, Java, R, MATLAB",
     "Backend": "FastAPI, Flask, REST APIs, PostgreSQL, Redis, SQLite",
     "ML & AI": "PyTorch, Scikit-learn, Hugging Face, OpenCV, XGBoost, RAG, LangGraph",
     "Cloud": "Docker, Kubernetes, CI/CD, Azure, AWS"
-  }
+  },
+  "professional_work": [
+    {
+      "title": "Production GPT-4 and RAG services",
+      "organization": "Tata AIA Life Insurance",
+      "tech": "FastAPI, Azure, GPT-4",
+      "description": "Achieved 0.8s p95 latency and 99.5% uptime."
+    }
+  ]
 }

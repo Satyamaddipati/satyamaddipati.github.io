@@ -1,97 +1,13 @@
-# Satya Maddipati's portfolio
+# Satya Maddipati’s portfolio
 
-A personal software and applied AI portfolio built with HTML, CSS, and vanilla
-JavaScript. Designed for GitHub Pages at https://satyamaddipati.github.io/.
-No framework, npm, site build step, external fonts, or third-party scripts.
+Plain HTML, CSS, and vanilla JavaScript for GitHub Pages. No dependencies, build
+step, external fonts, or third-party scripts. Existing user edits were preserved
+and improved in place; no commit, push, or deployment was performed.
 
-## Preview locally
-
-From the repository root:
+## Preview and check
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1
-```
-
-Open http://127.0.0.1:8000. Stop the server with Ctrl+C.
-Use HTTP rather than opening the HTML file directly: assets use root-relative paths.
-
-## File guide
-
-| File | Purpose |
-| --- | --- |
-| `index.html` | Introduction, current interests, selected projects, concise experience, education, Life |
-| `styles.css` | Shared design tokens, layouts, responsive rules, light/dark themes, print styles |
-| `theme.js` | Small, early theme initialization to avoid a flash of the wrong theme |
-| `script.js` | Optional theme controls, active section navigation, hello interaction, year |
-| `profile.jpg` | Existing portrait and social sharing image |
-| `assets/favicon.svg` | Small custom initial mark |
-| `assets/projects/README.md` | Screenshot locations and replacement instructions |
-| `assets/life/README.md` | Guidance for adding real personal photos |
-| `blog/index.html` | Real journal index, currently with no published entries |
-| `blog/README.md` | How to add a real post or photo collection |
-| `resume/index.html` | Accessible HTML résumé with download and view links |
-| `resume/content.json` | Shared facts for the résumé page and PDF |
-| `resume/satya-maddipati-resume.pdf` | Generated, one-page résumé with selectable text and clickable links |
-| `scripts/build_resume.py` | Optional résumé maintenance tool; requires ReportLab |
-| `scripts/check_site.py` | Standard-library HTML, local link, and palette checks |
-| `scripts/check_behavior.cjs` | Dependency-free JavaScript behavior checks |
-| `.nojekyll` | Disables Jekyll processing on GitHub Pages |
-
-## Design and behavior
-
-Warm paper, forest green, system typography, fine borders, a small portrait mount,
-and editorial spacing. Dark mode uses muted green and charcoal. Projects have
-visible summaries; the smaller research project uses native `<details>`.
-
-The theme follows the device until the visitor chooses a preference. Blocked
-storage does not prevent theme switching. Content is visible without JavaScript;
-script-only controls are hidden until initialized. No animation API is needed.
-Reduced-motion preferences disable smooth scrolling and transitions.
-
-The navigation uses a compact two-row layout on phones so the theme control and
-section links remain available. The homepage retains `#about`, `#projects`,
-`#experience`, `#education`, `#life`, and `#contact` anchors.
-
-Shared navigation and footer markup intentionally lives in each HTML page. Keep
-these three copies consistent when editing; no client-side includes are required.
-
-## Update content
-
-Edit homepage text in `index.html`. Update the “On my desk” date when its content
-changes. Keep production claims traceable to your own work.
-
-The project visuals are labeled concept/pipeline sketches and reported results,
-not fabricated screenshots. Missing links are plain text, never fake buttons.
-See `assets/projects/README.md` to replace the sketches with actual images.
-
-For the résumé, edit `resume/content.json`, then regenerate both outputs:
-
-```sh
-python3 -m venv /tmp/satya-resume-env
-/tmp/satya-resume-env/bin/pip install reportlab
-/tmp/satya-resume-env/bin/python scripts/build_resume.py
-```
-
-This tool is only needed when changing the résumé. GitHub Pages serves the
-committed HTML and PDF directly. The marked content region of `resume/index.html`
-is generated; its page header, navigation, and footer can be edited normally.
-Reopen the PDF after regeneration to confirm page count, spacing, links, and text.
-Homepage summaries are edited separately; keep the facts consistent with the résumé.
-
-## Content still to supply
-
-- Actual screenshots for Reason-Guessr, Ray-Ban AI Life Logger, and LLM Evaluation.
-- Verified project source URLs, plus a Life Logger demo if there is one.
-- Any shareable visual or source link for the production evaluation work.
-- Your own photos, captions, and real journal posts. No sample posts are published.
-- Review the generated résumé before using it for applications. It reuses repository
-  facts and the Ray-Ban project name supplied in the redesign brief.
-- Verify the original dates and metrics. Tata AIA's July 2023–December 2025 dates
-  overlap the September 2025 start of UW–Madison; this was preserved, not guessed away.
-
-## Checks
-
-```sh
 node --check theme.js
 node --check script.js
 node --test scripts/check_behavior.cjs
@@ -99,33 +15,122 @@ python3 scripts/check_site.py
 git diff --check
 ```
 
-The behavior tests cover blocked storage, theme fallback, OS preference changes,
-section navigation, missing animation/media APIs, subpages, and the hello control.
-Static checks validate page structure, IDs, local references, and normal-text
-contrast. Minimum tested palette contrast: light 4.80:1; dark 6.25:1.
-These tests do not replace a browser accessibility audit.
+Open http://127.0.0.1:8000. Root-relative assets assume a GitHub Pages user site.
+The existing `.nojekyll`, canonical URLs, portrait, contact links, skip link,
+responsive navigation, theme initialization, and scroll tracking are retained.
 
-The local homepage, journal, résumé page, and PDF returned HTTP 200. The PDF was
-rendered and visually checked. Browser visual/responsive testing remains pending:
-the available browser/native automation connection could not start.
-External link availability could not be established with the available web fetcher;
-the existing GitHub, LinkedIn, and Reason-Guessr URLs were preserved.
+## Content and design
 
-## Before publishing to GitHub Pages
+- `index.html`: student/learner/builder hero, four visible projects, Fall 2026
+  learning, concise experience, standalone education, About and real-photo slots.
+- `styles.css`: warm off-white, navy, coastal blue and muted aqua; system sans,
+  Georgia headings, monospace notes, thin borders, editorial spacing, both themes.
+- `script.js`: theme, active navigation, year, final-PDF detection, touch wave.
+- `theme.js`: existing storage-safe initialization before first paint.
+- `about/index.html`, `blog/index.html`, `resume/index.html`: existing subpages,
+  with consistent navigation and palette. Notes remains out of the main menu.
+- `resume/content.json`: background reference, manually maintained. It is not a
+  final résumé and is no longer used to generate a substitute PDF.
+- `assets/projects/README.md`, `assets/life/README.md`: real-image instructions.
 
-1. Review the copy, metrics, dates, and generated PDF. Add the missing assets/links
-   above or consciously keep their honest “coming soon” labels.
-2. Run the checks. Preview `/`, `/blog/`, `/resume/`, and the PDF locally.
-3. Test at 320/375px phone, 768px tablet, and 1280px desktop widths in a browser,
-   plus 200% zoom. Check for overflow and readable project diagrams/captions.
-4. Use Tab/Shift+Tab: verify skip link focus, visible focus outlines, native project
-   disclosure, theme switching, navigation, and the résumé download. Test both
-   themes, reduced motion, JavaScript disabled, and storage blocked.
-5. Open GitHub, LinkedIn, and the live Reason-Guessr project to check their current
-   destinations. Verify email uses your preferred address.
-6. Review `git diff`, then commit/push only when ready. In GitHub's repository
-   Settings → Pages, confirm the chosen publishing branch uses the repository root.
-   This checkout contains no deployment workflow. Preserve `.nojekyll`.
-7. After deployment, check the public pages and PDF again. Update canonical/social
-   URLs if you change the domain; root-relative assets assume a user site/domain root.
+The one ocean interaction is a tiny line wave beside the hero notebook note.
+Hover or touch causes one finite 1.8-second movement, with no animation loop,
+canvas, dependency, or text obstruction. Touch continuation is optional JS.
+Reduced motion disables it and smooth scrolling/transitions; no content is ever
+hidden behind animation. Without JavaScript, content and anchor navigation work.
+Blocked local storage does not prevent theme switching.
 
+Fall 2026 contains exactly the four supplied course/interests, presented as an
+editorial two-column grid that stacks on phones. No invented course numbers,
+instructors, grades, or scheduling details. Previous subjects are secondary.
+Education gives equal columns to UW–Madison and IIT Bombay, stacking on phones.
+
+## Final résumé
+
+Supply `assets/resume/Satya_Maddipati_Resume.pdf`, then run:
+
+```sh
+python3 scripts/build_resume.py
+```
+
+Despite its legacy filename, this utility only activates/deactivates links. It
+never generates a PDF. Running it makes final open/download links work without
+JavaScript too. With JS, a successful fetch and `%PDF-` signature activate the
+same links automatically. Otherwise `/resume/` offers an honest availability
+message and readable background. Open links use a new tab; the résumé page also
+has a download link once the file exists.
+
+Neither supplied dummy PDF was copied into the repository or linked. The
+pre-existing `resume/satya-maddipati-resume.pdf` remains unmodified and unlinked;
+it is a generated draft, not the final résumé. Its direct path would still be
+accessible if this tree were published. Archive/remove it before future
+publication if that old URL should disappear.
+
+## Factual sources and differences
+
+Working résumé PDFs may be used as reference material, but factual conflicts
+should be resolved against verified source content rather than assuming the PDFs
+are authoritative. The owner’s explicit corrections govern employment history.
+
+- Tata AIA Life Insurance: Management Trainee, July 2023–June 2024; Assistant
+  Manager, Data Science, June 2024–December 2025. Final working period ended in
+  December 2025. Homepage shorthand: Data Science · 2023–2025.
+- The Multi-Agent LLM Evaluation Platform is professional work at Tata AIA.
+  Selected Work labels it “Production work · Tata AIA”; About, the résumé page,
+  and reference JSON use the same attribution.
+- Restored from pre-existing `HEAD:index.html` and `HEAD:resume/content.json`:
+  50K+ evaluations/month, 89% correlation with human scoring, 35% less manual
+  review, an estimated 2,000+ person-hours saved annually, accuracy improved
+  from 78% to 94%, and IIT Bombay’s 3–7 day forecasting horizon. Service metrics
+  remain 0.8s p95 latency and 99.5% uptime. Metrics are grouped by relevant work.
+- Repository history independently supports the audited evaluation details:
+  `7d01f7b5^:_projects/3_llm_eval.md` contains 1,000+ prompts (a lower bound,
+  not an exact count), GPT-4/Claude/Gemini comparison, and Streamlit.
+- `7d01f7b5^:_projects/2_agentic_claims.md` and `_pages/cv.md` independently
+  support CrewAI and insurance claims-processing work. These details are kept.
+- Removed the grounded-agent 7B parameter count, VisualWebBench, ScienceQA,
+  and Mistral-7B + ReAct baseline from the homepage: no independent support was
+  found in the repository’s project/page history. These need confirmation
+  before being restored.
+
+Remaining historical ambiguities: the older `_projects/1_llava_agent.md` describes
+LLaVA-1.5 with a planner-executor loop, while the more recent pre-existing site
+uses LLaVA-1.6 and Observe–Reason–Act. Confirm whether these are different versions
+or projects. The older `_projects/3_air_quality.md` says 3–5 days, while the recent
+site and résumé reference say 3–7 days. The requested 3–7 day horizon is restored
+from that recent content; the older discrepancy is recorded here for confirmation.
+
+Education and Fall 2026 subjects remain as explicitly supplied by the owner.
+Reason-Guessr’s CLIP/PyTorch, 32K images and 88.9 km metric remain from existing
+site content. More specific model/dataset details await implementation evidence.
+Life Logger facts remain from the existing site. No additional results were added.
+
+## Assets and links still needed
+
+- Four actual project images: Life Logger transcript/summary, Reason-Guessr
+  input/prediction, evaluation comparison, grounded-agent instruction trace.
+- Verified source links for all four; demos for the other three if available.
+  Missing links remain plain text, never fake buttons or `href="#"`.
+- Personal Madison, travel and everyday/fitness photos with real captions.
+- The final PDF at the exact path above.
+
+Existing GitHub, LinkedIn and Reason-Guessr URLs are preserved. The web fetcher
+could not establish availability (cache/safety/access errors); these are not
+confirmed broken. Open them manually and confirm the correct destinations.
+
+## Validation and manual review
+
+Static checks: all four pages, local links/fragments, semantic structure, image
+alternatives, JS syntax, theme/storage/navigation regression checks. Minimum
+normal-text palette contrast: light 5.04:1, dark 6.38:1.
+
+An isolated local Chromium browser checked 320/375/640/768/1280px with no horizontal
+overflow, active section links, both themes, reduced motion, all subpages,
+JavaScript disabled, blocked storage, and missing/invalid/present PDF responses.
+The present-PDF response was mocked only in the browser; no fake PDF was saved.
+Keyboard skip-to-content focus and the finite touch wave also passed.
+
+Review typography and the small wave on your actual phone, including Safari and actual 200% browser zoom;
+confirm the historical research ambiguities noted above and external links.
+Replace honest placeholders with actual imagery when ready. Recheck résumé
+open/download behavior after adding the real final PDF. No publication performed.

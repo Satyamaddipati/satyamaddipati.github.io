@@ -12,7 +12,7 @@ function environment({ stored, blocked = false, dark = false, home = true, anima
   function element() { return { attributes: {}, hidden: true, setAttribute(k,v) { this.attributes[k]=v; }, removeAttribute(k) { delete this.attributes[k]; }, addEventListener(n,fn) { this[n]=fn; } }; }
   const icon = {};
   const theme = element(); theme.querySelector=()=>icon;
-  const meta = element(); const hello=element(); const response={}; const year={};
+  const meta = element(); const year={};
   const root={dataset:{},scrollHeight:4000};
   const tops=[0,900,2100,3100];
   const sections=['about','projects','experience','life'].map((id,i)=>({id,getBoundingClientRect:()=>({top:tops[i]-window.scrollY})}));
@@ -21,23 +21,22 @@ function environment({ stored, blocked = false, dark = false, home = true, anima
   if(media) window.matchMedia=()=>system;
   if(animation) window.requestAnimationFrame=fn=>{ listeners.frame=fn; };
   const document={documentElement:root,
-    querySelector:s=>({'.theme-toggle':theme,'.site-header':{getBoundingClientRect:()=>({height:96})},'meta[name="theme-color"]':meta,'.hello-button':hello,'.hello-response':response})[s],
+    querySelector:s=>({'.theme-toggle':theme,'.site-header':{getBoundingClientRect:()=>({height:96})},'meta[name="theme-color"]':meta})[s],
     querySelectorAll:()=>nav,
     getElementById:id=>id==='year'?year:sections.find(s=>s.id===id)};
   const localStorage={getItem(){if(blocked)throw Error('denied');return stored;},setItem(k,v){if(blocked)throw Error('denied');stored=v;}};
   const context=vm.createContext({document,window,localStorage});
   vm.runInContext(initialTheme,context);
   vm.runInContext(source,context);
-  return {root,theme,icon,meta,hello,response,nav,listeners,window,year};
+  return {root,theme,icon,meta,nav,listeners,window,year};
 }
 test('blocked storage still permits both theme changes and usable controls',()=>{
   const e=environment({blocked:true});
   assert.equal(e.root.dataset.theme,'light'); assert.equal(e.theme.hidden,false);
   e.theme.click(); assert.equal(e.root.dataset.theme,'dark');
-  assert.equal(e.meta.attributes.content,'#1b211e');
+  assert.equal(e.meta.attributes.content,'#132831');
   assert.equal(e.theme.attributes['aria-label'],'Switch to light theme');
   e.theme.click(); assert.equal(e.root.dataset.theme,'light');
-  e.hello.click(); assert.equal(e.response.textContent,'hello back! :)');
 });
 test('valid saved preference overrides OS; invalid preference follows OS',()=>{
   assert.equal(environment({stored:'light',dark:true}).root.dataset.theme,'light');

@@ -1,28 +1,21 @@
 # Real project images
 
-No project screenshots were supplied. The homepage uses explicitly labeled,
-hand-authored concept sketches or existing reported metrics, with a screenshot
-placeholder caption. These are not screenshots of working interfaces.
-
-Suggested files (add the real assets before referencing them):
-
-- `reason-guessr.webp`
-- `life-logger.webp`
-- `llm-evaluation.webp`
-
-Search `index.html` for `SCREENSHOT` to find each replacement point. Replace the
-whole `.project-visual` element inside the corresponding `.project-figure` with:
+The existing hand-authored pipeline/concept sketches remain explicitly labeled.
+No product screenshots have been invented. Replace the matching `.asset-slot`
+in `index.html` with a real image, preserving the figure and updating its caption:
 
 ```html
 <img class="project-image" src="/assets/projects/reason-guessr.webp"
      width="1200" height="750" loading="lazy" decoding="async"
-     alt="Describe what the actual screenshot shows">
+     alt="Describe the actual input and prediction shown">
 ```
 
-Use the image's real width/height, a descriptive alt, and a concise real caption
-instead of “Project screenshot coming soon.” The shared CSS displays images using
-`object-fit: contain` so UI edges are not cropped. Aim for under 200 KB per image
-when possible. Only use screenshots you can share publicly.
+Use actual dimensions, descriptive alt text, and preferably files under 200 KB.
 
-Replace the relevant `.pending-link` text with a normal `<a>` when you have the
-verified source/demo URL. Don't assume a repository name or use `href="#"`.
+- `life-logger.webp`: a real transcript and hourly summary; redact private content.
+- `reason-guessr.webp`: actual input photo beside its prediction/results.
+- `llm-evaluation.webp`: a real comparison/evaluation view.
+- `grounded-agents.webp`: one real Observe–Reason–Act instruction trace.
+
+Verified source URLs are missing for all four projects. Only Reason-Guessr has an
+existing demo URL. Replace plain missing-link notes once real URLs are supplied.

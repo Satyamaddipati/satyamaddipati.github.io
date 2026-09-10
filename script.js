@@ -14,7 +14,7 @@
       const icon = themeButton.querySelector("span");
       if (icon) icon.textContent = dark ? "☀" : "◐";
     }
-    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", dark ? "#1b211e" : "#f6f5ef");
+    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", dark ? "#132831" : "#f7f7f2");
   }
 
   applyTheme(savedTheme === "light" || savedTheme === "dark"
@@ -37,13 +37,13 @@
   function updateActiveSection() {
     if (!sections.length) return;
     const offset = (header?.getBoundingClientRect().height || 80) + 36;
-    let active = sections[0];
+    let active;
     for (const section of sections) {
       if (section.getBoundingClientRect().top <= offset) active = section;
     }
     if (window.scrollY + window.innerHeight >= root.scrollHeight - 2) active = sections[sections.length - 1];
     for (const link of navLinks) {
-      if (link.hash === `#${active.id}`) link.setAttribute("aria-current", "location");
+      if (link.hash === `#${active?.id}`) link.setAttribute("aria-current", "location");
       else link.removeAttribute("aria-current");
     }
   }
@@ -63,14 +63,49 @@
     updateActiveSection();
   }
 
-  const helloButton = document.querySelector(".hello-button");
-  const helloResponse = document.querySelector(".hello-response");
-  if (helloButton && helloResponse) {
-    helloButton.hidden = false;
-    helloButton.addEventListener("click", () => {
-      helloResponse.textContent = "hello back! :)";
-    });
-  }
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
+})();
+
+/* Only expose the final PDF after verifying the actual file, never a draft. */
+(async () => {
+  if (!window.fetch) return;
+  const url = '/assets/resume/Satya_Maddipati_Resume.pdf';
+  try {
+    const response = await window.fetch(url, { cache: 'no-store' });
+    if (!response.ok) return;
+    const bytes = new Uint8Array(await response.arrayBuffer());
+    if (String.fromCharCode(...bytes.slice(0, 5)) !== '%PDF-') return;
+    document.querySelectorAll('[data-resume-link]').forEach(link => {
+      link.href = url;
+      link.target = '_blank';
+      link.rel = 'noopener';
+    });
+    const actions = document.getElementById('resume-downloads');
+    if (actions && !actions.children.length) {
+      for (const download of [false, true]) {
+        const link = document.createElement('a');
+        link.className = download ? 'button' : 'button button-solid';
+        link.href = url;
+        link.textContent = download ? 'Download résumé ↓' : 'Open résumé ↗';
+        if (download) link.download = 'Satya_Maddipati_Resume.pdf';
+        else { link.target = '_blank'; link.rel = 'noopener'; }
+        actions.append(link);
+      }
+      actions.hidden = false;
+      document.getElementById('resume-status').textContent = 'My résumé, ready to read or download.';
+    }
+  } catch { /* The HTML background page remains useful offline or on failure. */ }
+})();
+
+/* A single, finite wave on touch; content and navigation never depend on it. */
+(() => {
+  const shore = document.querySelector('.hero-status');
+  const motion = window.matchMedia?.('(prefers-reduced-motion: no-preference)');
+  if (!shore || !motion) return;
+  shore.addEventListener('pointerdown', () => {
+    if (motion.matches) shore.classList.add('is-rippling');
+  }, { passive: true });
+  shore.addEventListener('animationend', () => shore.classList.remove('is-rippling'));
+  motion.addEventListener?.('change', () => shore.classList.remove('is-rippling'));
 })();

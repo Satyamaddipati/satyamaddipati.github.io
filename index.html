@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Satya Maddipati — M.S. Computer Sciences at UW–Madison. Software, applied AI, selected projects, and life outside code.">
-  <meta name="theme-color" content="#f6f5ef">
-  <title>Satya Maddipati | Software &amp; Applied AI</title>
+  <meta name="description" content="Satya Maddipati — M.S. Computer Sciences at UW–Madison, previously Data Science at Tata AIA. Selected software and applied AI projects.">
+  <meta name="theme-color" content="#f7f7f2">
+  <title>Satya Maddipati | Student · Learner · Builder</title>
   <link rel="canonical" href="https://satyamaddipati.github.io/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Satya Maddipati | Software &amp; Applied AI">
-  <meta property="og:description" content="Satya Maddipati — M.S. Computer Sciences at UW–Madison. Software, applied AI, selected projects, and life outside code.">
+  <meta property="og:title" content="Satya Maddipati | Student · Learner · Builder">
+  <meta property="og:description" content="Satya Maddipati — M.S. Computer Sciences at UW–Madison, previously Data Science at Tata AIA. Selected software and applied AI projects.">
   <meta property="og:url" content="https://satyamaddipati.github.io/">
   <meta property="og:image" content="https://satyamaddipati.github.io/profile.jpg">
   <meta property="og:image:alt" content="Satya Bhargav Maddipati">
@@ -25,92 +25,151 @@
     <div class="header-inner">
       <a class="wordmark" href="/" aria-label="Satya Maddipati, home">satya<span aria-hidden="true">.</span></a>
       <nav aria-label="Main navigation">
-        <a href="#about" aria-current="location">Home</a>
         <a href="#projects">Work</a>
+        <a href="#learning">Learning</a>
         <a href="#experience">Experience</a>
-        <a href="#life">Life</a>
-        <a href="/resume/">Résumé</a>
+        <a href="#about">About</a>
+        <a href="/resume/" data-resume-link>Résumé</a>
       </nav>
+      <!-- Notes joins this navigation when a real entry is published. -->
       <button class="theme-toggle" type="button" aria-label="Switch to dark theme" hidden><span aria-hidden="true">◐</span></button>
     </div>
   </header>
   <main id="content" class="wrap" tabindex="-1">
-    <section id="about" class="hero observed-section" aria-labelledby="intro-title">
+    <section class="hero" aria-labelledby="intro-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Software · Applied AI · A little curiosity</p>
+        <p class="eyebrow">Student · Learner · Builder</p>
         <h1 id="intro-title">Hi, I’m Satya<span class="accent">.</span></h1>
-        <p class="hero-statement">I build useful software<br>and applied AI systems.</p>
-        <p class="hero-description">M.S. Computer Sciences at <strong>UW–Madison</strong>.<br>Previously in data science at <strong>Tata AIA</strong>. I’m interested in intelligent systems and turning experiments into products people can use.</p>
-        <div class="hero-links" aria-label="Connect with Satya">
-          <a class="button button-solid" href="/resume/">Résumé <span aria-hidden="true">↗</span></a>
-          <a href="https://github.com/Satyamaddipati">GitHub <span aria-hidden="true">↗</span></a>
-          <a href="https://www.linkedin.com/in/sbmaddipati">LinkedIn <span aria-hidden="true">↗</span></a>
-          <a href="mailto:sbmaddipati@wisc.edu">Email <span aria-hidden="true">↗</span></a>
+        <p class="hero-statement">Learning deeply.<br>Building along the way.</p>
+        <p class="hero-description">CS graduate student at <strong>UW–Madison</strong> exploring intelligent systems and software. Previously built production AI systems at <strong>Tata AIA</strong>.</p>
+        <div class="hero-links">
+          <a class="button button-solid" href="#projects">View my work <span aria-hidden="true">↓</span></a>
+          <a class="button" href="/resume/" data-resume-link>Résumé <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/Satyamaddipati">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/sbmaddipati">LinkedIn ↗</a>
         </div>
       </div>
-      <div class="hero-aside">
-        <figure class="portrait">
-          <img src="/profile.jpg" width="854" height="1280" fetchpriority="high" alt="Satya Maddipati">
-          <figcaption><span class="location-pin" aria-hidden="true">⌖</span> Madison, Wisconsin</figcaption>
+      <figure class="hero-portrait">
+        <img src="/profile.jpg" width="854" height="1280" fetchpriority="high" alt="Satya Maddipati">
+        <figcaption>Satya, in Madison.<span class="portrait-note" aria-hidden="true">← the person behind the projects</span></figcaption>
+      </figure>
+      <p class="hero-status"><span class="shoreline" aria-hidden="true"><svg viewBox="0 0 120 24"><path d="M-40 12 Q-30 3 -20 12 T0 12 T20 12 T40 12 T60 12 T80 12 T100 12 T120 12 T140 12 T160 12"/></svg></span><span>learning → building → breaking things → understanding them better</span></p>
+    </section>
+    <section id="projects" class="work-section" aria-labelledby="work-title">
+      <header class="section-heading">
+        <div><p class="eyebrow">01 / Selected work</p><h2 id="work-title">A few things I’ve built.</h2></div>
+
+      </header>
+
+      <article id="life-logger" class="case-study logger-case" aria-labelledby="logger-title">
+        <div class="case-copy">
+          <p class="case-index">01 <span>Personal project / audio &amp; AI</span></p>
+          <h3 id="logger-title">Ray-Ban AI <br>Life Logger</h3>
+          <p class="case-deck">I built a way to turn captured audio into a record I can actually revisit.</p>
+          <dl class="case-facts">
+            <div><dt>The problem</dt><dd>Long recordings are hard to revisit.</dd></div>
+            <div><dt>What I built</dt><dd>A pipeline that transcribes audio, filters useful signals, and produces structured hourly summaries.</dd></div>
+          </dl>
+          <ul class="tags" aria-label="Life Logger technologies"><li>Python</li><li>Whisper</li><li>Claude</li><li>SQLite</li></ul>
+          <!-- TODO: Add the verified Life Logger repository and demo URLs. Confirm Ray-Ban capture and Telegram delivery details before extending the diagram. -->
+          <p class="link-note">Code and demo not linked yet.</p>
+        </div>
+        <figure class="system-figure">
+          <div class="system-board">
+            <div class="board-heading"><span>Audio → hourly summary</span><span class="board-type">Pipeline sketch</span></div>
+            <ol class="audio-flow" aria-label="Life Logger processing stages">
+              <li><span class="stage-symbol" aria-hidden="true">≋</span><div><strong>Captured audio</strong><span>Input</span></div></li>
+              <li><span class="stage-symbol" aria-hidden="true">Aa</span><div><strong>Whisper</strong><span>Transcription</span></div></li>
+              <li><span class="stage-symbol" aria-hidden="true">⌁</span><div><strong>Claude</strong><span>Filter &amp; summarize</span></div></li>
+              <li><span class="stage-symbol" aria-hidden="true">≡</span><div><strong>Hourly summaries</strong><span>Structured output</span></div></li>
+            </ol>
+            <p class="board-outcome"><span>Output</span> A shorter record to revisit.</p>
+          </div>
+          <!-- TODO image: assets/projects/life-logger.webp — real recording/transcript and resulting hourly summary, with private content removed. Replace this .asset-slot with an img.project-image. -->
+          <div class="asset-slot"><span aria-hidden="true">[ image ]</span><span>Recording + summary preview<span class="asset-state">Screenshot to add</span></span></div>
+          <figcaption>A sketch of the pipeline, not a product screenshot.</figcaption>
         </figure>
-        <div class="hello-widget"><button class="hello-button" type="button" hidden><span class="tiny-face" aria-hidden="true">:)</span> wave hello <span aria-hidden="true">↗</span></button><span class="hello-response" role="status"></span></div>
-      </div>
-    </section>
+      </article>
 
-    <section class="now-section" aria-labelledby="now-title">
-      <div><p class="eyebrow">On my desk / <time datetime="2026-09">Sep 2026</time></p><h2 id="now-title">Learning. Building.<br>Connecting the dots.</h2></div>
-      <div class="now-body"><p>Strengthening my CS foundations at UW–Madison, and putting them to work in course and side projects.</p>
-        <ul class="topic-list" aria-label="Currently exploring"><li>Machine learning</li><li>Distributed systems</li><li>Computer vision</li><li>Agentic AI</li><li>Software engineering</li></ul>
-        <p class="availability"><span class="status-dot" aria-hidden="true"></span> Looking for software engineering &amp; ML/AI opportunities</p>
-      </div>
-    </section>
+      <article id="reason-guessr" class="case-study geo-case" aria-labelledby="geo-title">
+        <div class="case-copy">
+          <p class="case-index">02 <span>Computer vision / geolocation</span></p>
+          <h3 id="geo-title">Reason-Guessr</h3>
+          <p class="case-deck">I wanted to see if a model could locate a photo—and give interpretable clues along the way.</p>
+          <dl class="case-facts">
+            <div><dt>The problem</dt><dd>Estimate geographic location from an image.</dd></div>
+            <div><dt>What I built</dt><dd>An interpretable image-geolocation pipeline using PyTorch and CLIP, evaluated on a 32K-image dataset.</dd></div>
+          </dl>
+          <ul class="tags" aria-label="Reason-Guessr technologies"><li>PyTorch</li><li>CLIP</li><li>Computer vision</li></ul>
+          <div class="case-links"><a href="https://reason-guessr.vercel.app">Try the live project <span aria-hidden="true">↗</span></a><span class="link-note">Source not linked yet.</span></div>
+          <!-- TODO: Add a verified source URL and model/architecture details beyond PyTorch and CLIP. -->
+        </div>
+        <figure class="geo-figure">
+          <div class="geo-board">
+            <div class="board-heading"><span>Image → location estimate</span><span class="board-type">Concept sketch</span></div>
+            <div class="geo-diagram" aria-hidden="true"><span class="image-frame">a photo</span><span class="diagram-arrow">→</span><svg viewBox="0 0 160 160"><g fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="80" cy="80" r="60"/><ellipse cx="80" cy="80" rx="25" ry="60"/><ellipse cx="80" cy="80" rx="60" ry="23"/><path d="M20 80h120M80 20v120"/><circle cx="112" cy="49" r="5" fill="currentColor"/><circle cx="112" cy="49" r="11"/></g></svg></div>
+            <dl class="geo-results"><div><dt>Median haversine error</dt><dd>88.9 <span>km</span></dd></div><div><dt>Dataset</dt><dd>32K <span>images</span></dd></div></dl>
+          </div>
+          <!-- TODO image: assets/projects/reason-guessr.webp — actual input photo beside the model's estimated location/results. Replace .asset-slot with img.project-image. -->
+          <div class="asset-slot"><span aria-hidden="true">[ image ]</span><span>Input photo + prediction<span class="asset-state">Screenshot to add</span></span></div>
+          <figcaption>Evaluation figures from the existing project record.</figcaption>
+        </figure>
+      </article>
 
-    <section id="projects" class="section observed-section" aria-labelledby="work-title">
-      <header class="section-heading"><div><p class="eyebrow">01 / Selected work</p><h2 id="work-title">Things I’ve built.</h2></div><p>From personal experiments<br>to systems running in production.</p></header>
-      <div class="project-grid">
-        <article class="project project-featured">
-          <!-- SCREENSHOT: replace this figure's .project-visual with an img using assets/projects/reason-guessr.webp. Keep a meaningful alt and width/height. -->
-          <figure class="project-figure">
-            <div class="project-visual geo-visual" aria-label="Concept sketch of image geolocation, not a project screenshot">
-              <span class="visual-label">Image geolocation / concept sketch</span>
-              <svg viewBox="0 0 400 220" aria-hidden="true" class="geo-sketch"><g fill="none" stroke="currentColor" stroke-width="1.3"><ellipse cx="200" cy="110" rx="84" ry="84"/><ellipse cx="200" cy="110" rx="38" ry="84"/><ellipse cx="200" cy="110" rx="84" ry="32"/><path d="M116 110h168M200 26v168M43 56h35v35M357 164h-35v-35"/><path d="M251 73l51-27h43" stroke-dasharray="4 5"/><circle cx="251" cy="73" r="5" fill="currentColor"/><circle cx="251" cy="73" r="12"/></g><text x="48" y="175" fill="currentColor" font-family="monospace" font-size="13">a photo → a place</text></svg>
-              <div class="visual-bottom"><span>32K images</span><span>88.9 km median error</span></div>
-            </div>
-            <figcaption>Project screenshot coming soon.</figcaption>
-          </figure>
-          <div class="project-copy"><p class="eyebrow">Computer vision</p><h3>Reason-Guessr</h3><p class="project-question">Where in the world was this taken?</p><p>An interpretable image-geolocation pipeline that connects visual clues to a location. Built on a 32K-image dataset, reaching 88.9 km median haversine error.</p><ul class="tags" aria-label="Technologies"><li>PyTorch</li><li>CLIP</li><li>Computer vision</li></ul><div class="project-links"><a href="https://reason-guessr.vercel.app">Explore the live project <span aria-hidden="true">↗</span></a><span class="pending-link">Source link to come</span></div></div>
-        </article>
-        <article class="project">
-          <!-- SCREENSHOT: replace .project-visual with assets/projects/life-logger.webp when available. -->
-          <figure class="project-figure"><div class="project-visual logger-visual"><span class="visual-label">Pipeline sketch</span><div class="pipeline" aria-label="Audio to transcript to hourly summary"><span><svg viewBox="0 0 60 42" aria-hidden="true"><path d="M5 17v8m8-16v24m8-30v36m8-24v12m8-20v28m8-24v20m8-14v8"/></svg>Audio</span><b aria-hidden="true">→</b><span><span class="sketch-glyph" aria-hidden="true">Aa</span>Transcript</span><b aria-hidden="true">→</b><span><span class="sketch-glyph" aria-hidden="true">≡</span>Summary</span></div></div><figcaption>Project screenshot coming soon.</figcaption></figure>
-          <div class="project-copy"><p class="eyebrow">Personal project</p><h3>Ray-Ban AI Life Logger</h3><p class="project-question">Make captured moments useful.</p><p>An automated pipeline that transcribes captured audio, filters useful signals, and turns them into structured hourly summaries.</p><ul class="tags" aria-label="Technologies"><li>Python</li><li>Whisper</li><li>Claude</li><li>SQLite</li></ul><p class="pending-link">Source &amp; demo links to come</p></div>
-        </article>
-        <article class="project">
-          <!-- SCREENSHOT: add only an approved, shareable image to assets/projects/llm-evaluation.webp. -->
-          <figure class="project-figure"><div class="project-visual evaluation-visual"><span class="visual-label">Tata AIA / production evaluation</span><div class="result-pair"><div><strong>50K<span>+</span></strong><span>evaluations per month</span></div><div><strong>89<span>%</span></strong><span>correlation with human scoring</span></div></div></div><figcaption>Reported results; project screenshot coming soon.</figcaption></figure>
-          <div class="project-copy"><p class="eyebrow">Production AI</p><h3>Multi-Agent LLM Evaluation</h3><p class="project-question">Evaluate AI beyond a good-looking answer.</p><p>A production evaluation platform for LLM systems, processing more than 50K evaluations monthly and comparing results with human scoring.</p><ul class="tags" aria-label="Technologies"><li>LangGraph</li><li>OpenAI API</li><li>Docker</li></ul><div class="project-links"><a href="#experience">More about the work <span aria-hidden="true">↓</span></a><span class="pending-link">Source link to come</span></div></div>
-        </article>
-      </div>
-      <details class="research-note"><summary><span><span class="eyebrow">Also exploring</span> Grounded Vision-Language Agent</span><span class="expand-icon" aria-hidden="true">+</span></summary><div><p>An Observe–Reason–Act loop for multi-step visual instruction following, evaluated against text-only baselines.</p><p class="small muted">LLaVA-1.6 · LoRA/PEFT · Hugging Face</p><p class="pending-link">Source &amp; demo links to come</p></div></details>
+      <article id="production-ai" class="case-study" aria-labelledby="evaluation-title">
+        <div class="case-copy"><p class="case-index">03 <span>Production work · Tata AIA</span></p><h3 id="evaluation-title">Multi-Agent LLM Evaluation Platform</h3><p class="case-deck">I built a repeatable way to compare how language models answer the same questions.</p><dl class="case-facts"><div><dt>How it works</dt><dd>Benchmarks GPT-4, Claude, and Gemini across 1,000+ prompts. LLM-as-judge evaluators score response quality, consistency, and failure modes against reference criteria.</dd></div><div><dt>Production impact</dt><dd>50K+ evaluations per month, with 89% correlation with human scoring.</dd></div></dl><ul class="tags" aria-label="Evaluation technologies"><li>LangGraph</li><li>OpenAI API</li><li>Docker</li><li>Streamlit</li></ul><p class="link-note">Source and demo not linked yet.</p></div>
+        <figure class="system-figure"><div class="system-board"><div class="board-heading"><span>Same prompts. Different models.</span><span class="board-type">Evaluation sketch</span></div><ol class="audio-flow"><li><span class="stage-symbol" aria-hidden="true">?</span><div><strong>1,000+ prompts</strong><span>Shared benchmark</span></div></li><li><span class="stage-symbol" aria-hidden="true">≡</span><div><strong>GPT-4 · Claude · Gemini</strong><span>Model responses</span></div></li><li><span class="stage-symbol" aria-hidden="true">✓</span><div><strong>LLM-as-judge</strong><span>Quality · consistency · failure modes</span></div></li></ol></div><div class="asset-slot"><span aria-hidden="true">[ image ]</span><span>Evaluation comparison view<span class="asset-state">Screenshot to add</span></span></div><figcaption>Method sketch, not an evaluation dashboard.</figcaption></figure>
+      </article>
+      <article id="grounded-agents" class="case-study geo-case" aria-labelledby="grounded-title">
+        <div class="case-copy"><p class="case-index">04 <span>Multimodal agents / experiment</span></p><h3 id="grounded-title">Grounded Vision-Language Agents</h3><p class="case-deck">I explored how an agent follows multi-step instructions when it can see as well as read.</p><dl class="case-facts"><div><dt>How it works</dt><dd>An Observe–Reason–Act loop on LLaVA-1.6 for multi-step visual instruction following, evaluated against text-only baselines.</dd></div></dl><ul class="tags" aria-label="Vision-language technologies"><li>LLaVA-1.6</li><li>LoRA/PEFT</li><li>Hugging Face</li></ul><p class="link-note">Source and demo not linked yet.</p></div>
+        <figure class="geo-figure"><div class="geo-board"><div class="board-heading"><span>Grounding each next step</span><span class="board-type">Agent loop sketch</span></div><ol class="agent-loop"><li>Observe <span>Visual context</span></li><li>Reason <span>Instruction + context</span></li><li>Act <span>Next step → observe again</span></li></ol></div><div class="asset-slot"><span aria-hidden="true">[ image ]</span><span>One real instruction-following trace<span class="asset-state">Screenshot to add</span></span></div><figcaption>Loop structure; no benchmark score implied.</figcaption></figure>
+      </article>
     </section>
-
+    <section id="learning" class="learning-section" aria-labelledby="learning-title">
+      <header class="section-heading"><div><p class="eyebrow">Currently · Fall 2026</p><h2 id="learning-title">What I’m learning right now.</h2></div><span class="margin-note">This semester.</span></header>
+      <div class="learning-grid">
+        <article><span class="study-number" aria-hidden="true">01 /</span><h3>Advanced Natural Language Processing</h3><p>Language models, representations, and modern NLP systems.</p></article>
+        <article><span class="study-number" aria-hidden="true">02 /</span><h3>AI Agents for Science</h3><p>Reasoning, tool use, and agents for scientific workflows.</p></article>
+        <article><span class="study-number" aria-hidden="true">03 /</span><h3>Reinforcement Learning</h3><p>Sequential decision-making, policies, value functions, and exploration.</p></article>
+        <article><span class="study-number" aria-hidden="true">04 /</span><h3>AI-Assisted Software Development</h3><p>Exploring how AI changes how software is designed, written, tested, and maintained.</p></article>
+      </div><div class="previous-learning"><p class="eyebrow">Previously explored</p><p>Big Data Systems · Foundation Models · Computer Vision</p></div>
+    </section>
     <section id="experience" class="section observed-section" aria-labelledby="experience-title">
-      <header class="section-heading"><div><p class="eyebrow">02 / Experience</p><h2 id="experience-title">Built for the real world.</h2></div><a class="underlined-link" href="/resume/">The full résumé <span aria-hidden="true">↗</span></a></header>
-      <article class="experience-row"><div class="experience-meta"><h3>Tata AIA</h3><p>Jul 2023 — Dec 2025<br>Mumbai, India</p></div><div><h4>Assistant Manager, Data Science</h4><p class="small muted">Previously Management Trainee · promoted June 2024</p><p>Built and improved production AI services, from retrieval workflows to document classification and LLM evaluation.</p><ul class="impact-list"><li><strong>0.8s p95 latency · 99.5% uptime</strong><span>GPT-4 and RAG services with FastAPI on Azure.</span></li><li><strong>35% less manual review</strong><span>Agentic and retrieval workflows; an estimated 2,000+ hours saved annually.</span></li><li><strong>78% → 94% classification accuracy</strong><span>Fine-tuned Llama and Qwen with QLoRA and PEFT.</span></li></ul></div></article>
+      <header class="section-heading"><div><p class="eyebrow">02 / Experience</p><h2 id="experience-title">Experience.</h2></div><a class="underlined-link" href="/resume/" data-resume-link>The full résumé <span aria-hidden="true">↗</span></a></header>
+      <article class="experience-row"><div class="experience-meta"><h3>Tata AIA Life Insurance</h3><p>Mumbai, India</p></div><div><h4>Data Science · 2023–2025</h4><p>I built production Agentic AI and RAG services with FastAPI microservices on Azure, and fine-tuned Llama and Qwen models with QLoRA/PEFT.</p><p class="role-impact"><strong>35% less manual review</strong> through agentic claims workflows, saving an estimated <strong>2,000+ person-hours annually</strong>. Fine-tuning improved document classification accuracy from <strong>78% to 94%</strong>.</p></div></article>
       <article class="experience-row compact"><div class="experience-meta"><h3>IIT Bombay</h3><p>Apr 2022 — Jun 2023</p></div><div><h4>Graduate Research Assistant</h4><p>Built 3–7 day air-quality forecasts with SARIMA, XGBoost, Random Forests, and meteorological data. Used KZ filtering and SHAP to explain contributions.</p><p class="small muted">Also a Teaching Assistant · Aug 2022 — May 2023</p></div></article>
       <article class="experience-row compact"><div class="experience-meta"><h3>Cognibot AI</h3><p>Dec 2021 — Feb 2022</p></div><div><h4>Machine Learning Intern</h4><p>Developed an EfficientDet pipeline to track people in retail environments across different compute constraints.</p></div></article>
     </section>
 
     <section id="education" class="education-section" aria-labelledby="education-title"><div><p class="eyebrow">The foundations</p><h2 id="education-title">Always a student.</h2></div><div class="education-list"><article><div><h3>University of Wisconsin–Madison</h3><p>M.S. Computer Sciences · GPA 4.0/4.0</p></div><span class="small muted">2025 — 2027</span></article><article><div><h3>IIT Bombay</h3><p>B.Tech + M.Tech Dual Degree, Honors · GPA 8.9/10</p></div><span class="small muted">2018 — 2023</span></article></div></section>
 
-    <section id="life" class="section life-section observed-section" aria-labelledby="life-title"><div class="life-copy"><p class="eyebrow">03 / Outside code</p><h2 id="life-title">A little less screen time.</h2><p>Phone photography, short videos, fitness, and unfamiliar places. Small moments worth paying attention to.</p><a class="underlined-link" href="/blog/">Visit the personal journal <span aria-hidden="true">↗</span></a></div><figure class="photo-placeholder"><div class="photo-corners" aria-hidden="true"><svg viewBox="0 0 80 60"><path d="M8 17h16l6-9h20l6 9h16v36H8z"/><circle cx="40" cy="34" r="12"/><path d="M61 24h4"/></svg></div><figcaption>A few frames from life.<br><span>Photo collection coming soon.</span></figcaption></figure></section>
+    <section id="about" class="about-summary section" aria-labelledby="about-title">
+      <div><p class="eyebrow">A little context</p><h2 id="about-title">Still figuring things out.</h2></div>
+      <div><p>I’m Satya Maddipati, a Computer Sciences graduate student at UW–Madison. I worked in data science at Tata AIA and earned my dual degree at IIT Bombay.</p><p>I’m interested in machine learning, intelligent systems, computer vision, and distributed systems. Usually somewhere between understanding how something works and trying to build it myself.</p><a class="underlined-link" href="/about/">More about me ↗</a></div>
+    </section>
+    <section id="life" class="life-section" aria-labelledby="life-title">
+      <header class="section-heading"><div><p class="eyebrow">A few pages beyond the work</p><h2 id="life-title">Outside the terminal.</h2></div><p>Phone photos, short videos,<br>fitness, and unfamiliar places.</p></header>
+      <div class="photo-journal">
+        <!-- TODO: assets/life/madison.webp — one of Satya's own Madison photos, with a real caption/date. Replace .photo-mount with an img and keep the figure. -->
+        <figure><div class="photo-mount"><span class="frame-number">01</span><span class="photo-missing">A Madison photo<br><small>to add</small></span></div><figcaption>Madison</figcaption></figure>
+        <!-- TODO: assets/life/travel.webp — a real travel photograph and its location/caption. -->
+        <figure><div class="photo-mount"><span class="frame-number">02</span><span class="photo-missing">Somewhere unfamiliar<br><small>photo to add</small></span></div><figcaption>Out exploring</figcaption></figure>
+        <!-- TODO: assets/life/everyday.webp — Satya's own everyday/fitness photograph with a real caption. -->
+        <figure><div class="photo-mount"><span class="frame-number">03</span><span class="photo-missing">An everyday moment<br><small>photo to add</small></span></div><figcaption>The in-between</figcaption></figure>
+      </div>
+      <!-- Notes is intentionally absent from primary navigation until real posts exist. -->
+    </section>
   </main>
   <footer id="contact" class="site-footer wrap">
     <div class="footer-top">
-      <div><p class="eyebrow">Keep in touch</p><h2>Good things start<br>with a hello<span class="accent">.</span></h2></div>
-      <div class="footer-contact"><a class="email-link" href="mailto:sbmaddipati@wisc.edu">sbmaddipati@wisc.edu <span aria-hidden="true">↗</span></a><p>Open to software engineering,<br>machine learning, and applied AI opportunities.</p><div class="text-links"><a href="https://github.com/Satyamaddipati">GitHub ↗</a><a href="https://www.linkedin.com/in/sbmaddipati">LinkedIn ↗</a></div></div>
+      <h2>Say hello<span class="accent">.</span></h2>
+      <div class="text-links" aria-label="Contact links">
+        <a href="mailto:sbmaddipati@wisc.edu">Email ↗</a>
+        <a href="https://github.com/Satyamaddipati">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/sbmaddipati">LinkedIn ↗</a>
+      </div>
     </div>
-    <div class="footer-bottom"><span>© <span id="year">2026</span> Satya Maddipati</span><span>Made with care. And plain HTML.</span><a href="#content">Back to top ↑</a></div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> Satya Maddipati</span><a href="#content">Back to top ↑</a></div>
   </footer>
 </body>
 </html>
