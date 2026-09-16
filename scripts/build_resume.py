@@ -22,6 +22,6 @@ for page in ROOT.rglob('*.html'):
         text = re.sub(r'(<p id="resume-status" role="status">).*?(</p>)', lambda m:m[1]+message+m[2], text)
         actions = f'<div class="resume-actions" id="resume-downloads"><a class="button button-solid" href="{URL}" target="_blank" rel="noopener">Open résumé ↗</a><a class="button" href="{URL}" download>Download résumé ↓</a></div>' if available else '<div class="resume-actions" id="resume-downloads" hidden></div>'
         text = re.sub(r'<div class="resume-actions" id="resume-downloads"[^>]*>.*?</div>', actions, text)
-        text = re.sub(r'<noscript>.*?</noscript>', '' if available else '<noscript><p class="small muted">PDF availability checking needs JavaScript. You can still read my background below.</p></noscript>', text)
+        text = re.sub(r'<noscript>.*?</noscript>', '', text)
     if text != page.read_text(): page.write_text(text)
 print('Final résumé links activated.' if available else 'Final PDF absent or invalid; résumé links use the background page.')

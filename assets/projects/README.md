@@ -1,22 +1,14 @@
-# Real project images
+# Project imagery
 
-The four small hand-authored sketches and reported-result visuals are explicitly
-labeled. They are illustrations, not product screenshots. No screenshot images
-have been invented. To add a real screenshot, replace the matching `.project-art`
-inside its `.project-figure` in `index.html`, then update the caption:
+Reason-Guessr uses an original inline SVG contour illustration, labeled as a
+concept rather than a screenshot or actual prediction. To replace it with a real
+screenshot, replace `.geo-art` inside `.geo-figure` in `index.html`:
 
 ```html
-<img class="project-image" src="/assets/projects/reason-guessr.webp"
-     width="1200" height="750" loading="lazy" decoding="async"
-     alt="Describe the actual input and prediction shown">
+<img src="/assets/projects/reason-guessr.webp" width="1200" height="900"
+     loading="lazy" decoding="async" alt="Describe the actual input and prediction">
 ```
 
-Use actual dimensions, descriptive alt text, and preferably files under 200 KB.
-
-- `life-logger.webp`: a real transcript and hourly summary; redact private content.
-- `reason-guessr.webp`: actual input photo beside its prediction/results.
-- `llm-evaluation.webp`: a real comparison/evaluation view.
-- `grounded-agents.webp`: one real Observe–Reason–Act instruction trace.
-
-Verified source URLs are missing for all four projects. Only Reason-Guessr has an
-existing demo URL. Replace plain missing-link notes once real URLs are supplied.
+Use actual dimensions and a small file, and update the caption. Life Logger has
+a simple text flow, evaluation has existing reported numbers, and the agent
+experiment is text-led. No screenshots, personal photographs, or URLs were invented.
