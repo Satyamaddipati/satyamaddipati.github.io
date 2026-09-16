@@ -43,7 +43,7 @@ all content and navigation remain available.
   marked Exploring, without dates or article links. See `blog/README.md`.
 - Verified source links for the projects, and any additional actual demos.
   Reason-Guessr’s existing live URL is preserved.
-- The final résumé PDF; see below.
+- The supplied résumé is available at `/resume/resume.pdf`; see below.
 
 ## Final résumé
 
@@ -51,7 +51,8 @@ The existing `resume/satya-maddipati-resume.pdf` is documented in the original
 repository as a generated draft. It is unchanged and remains unlinked. The file
 would still be reachable at its old direct URL if the branch were published.
 
-Place the real final PDF at `assets/resume/Satya_Maddipati_Resume.pdf`, then run:
+The owner-supplied final PDF is `resume/resume.pdf`, served unchanged. After
+replacing it with an updated résumé, run:
 
 ```sh
 python3 scripts/build_resume.py
@@ -95,7 +96,7 @@ checks cover Escape, destination focus, outside clicks, and viewport changes.
 
 Before merging, review all four pages on desktop and a real phone; check external
 destinations, portrait crop, copy and historic research details, and the clearly
-marked missing photo/final résumé. Browser review should include 375, 768, 1024,
+marked missing photo and the uploaded résumé. Browser review should include 375, 768, 1024,
 and 1440px, keyboard navigation, reduced motion, and JavaScript disabled.
 
 Work is on `redesign/editorial-portfolio`. Do not merge or deploy automatically.

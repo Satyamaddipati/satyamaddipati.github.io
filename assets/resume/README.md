@@ -1,7 +1,7 @@
 # Final résumé
 
-Place the actual final PDF at `assets/resume/Satya_Maddipati_Resume.pdf`.
-No final file is currently supplied.
+The owner-supplied final PDF is stored unchanged at `resume/resume.pdf` and
+served at `/resume/resume.pdf`. Replace that file to update the résumé.
 
 Run `python3 scripts/build_resume.py` after adding or removing it to update
 static links. This utility checks the PDF signature and never generates,

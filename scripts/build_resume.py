@@ -1,13 +1,13 @@
 """Activate a supplied final résumé for visitors without JavaScript.
 
 Legacy filename retained; this script never creates or overwrites a PDF.
-Run after adding assets/resume/Satya_Maddipati_Resume.pdf.
+Run after updating resume/resume.pdf.
 """
 from pathlib import Path
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
-URL = '/assets/resume/Satya_Maddipati_Resume.pdf'
+URL = '/resume/resume.pdf'
 pdf = ROOT / URL.lstrip('/')
 available = pdf.is_file() and pdf.read_bytes().startswith(b'%PDF-')
 for page in ROOT.rglob('*.html'):
