@@ -1,7 +1,6 @@
 # Satya Maddipati’s portfolio
 
-A static editorial personal site: HTML, CSS, and a small vanilla JavaScript menu.
-No build step, runtime dependencies, external fonts, or stock photography.
+A static personal site built with HTML, CSS, and a small vanilla JavaScript menu.
 
 ## Preview
 
@@ -9,79 +8,59 @@ No build step, runtime dependencies, external fonts, or stock photography.
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Open http://127.0.0.1:8000. Root-relative paths target the existing GitHub Pages
-user site. Nothing is automatically deployed.
+Open http://127.0.0.1:8000. Root-relative paths target the GitHub Pages user site.
 
-## Structure and design
+## Reference-driven layout
 
-- `index.html`: introduction, Fall 2026 notebook, selected work, chronology,
-  education, unpublished note ideas, life, About, and contact.
-- `styles.css`: warm paper, ocean-blue accents, local serif headings, sans-serif
-  prose, and monospace metadata. Responsive layouts at 600/800/1050px.
-- `script.js`: accessible mobile menu and copyright year. No fetches or trackers.
-- `about/`, `blog/`, `resume/`: preserved supporting routes and shared navigation.
-- `resume/content.json`: existing factual reference, unchanged.
-- `profile.jpg`: original portrait, unchanged.
-- `.nojekyll`: preserved.
+The homepage follows the owner's supplied six-panel reference: serif headings,
+warm textured paper, blue buttons, a tilted scenic photograph, handwritten
+margin notes, a compact semester notebook, two-column photographic project cards,
+a vertical experience timeline, education cards, a photo-and-notes writing section,
+and contact buttons followed by four lifestyle cards.
 
-Reason-Guessr leads with an original inline SVG contour illustration, explicitly
-labeled as conceptual rather than model output. Secondary work uses different
-text-led compositions. Education explains the transition from Environmental
-Science and Engineering into computer science. All technical descriptions are
-visible without expanding controls.
+- `index.html`: the six homepage sections.
+- `journal.css`: homepage layout and responsive styling, scoped through the
+  homepage stylesheet and body class.
+- `styles.css`: shared base styles and supporting routes.
+- `script.js`: accessible mobile menu and copyright year.
+- `about/`, `blog/`, `resume/`: supporting routes, original portrait and
+  fuller background.
+- `resume/resume.pdf`: owner-supplied final résumé, served unchanged.
+- `assets/images/`: local photographs and generated editorial imagery;
+  see the asset README for provenance and generation prompts.
 
-The site is intentionally light, with a dark education section. System dark-mode
-preferences do not override the palette. Reduced motion disables smooth scrolling
-and transitions. Nothing is hidden behind animations. With JavaScript disabled,
-all content and navigation remain available.
+The content remains grounded in the existing portfolio, rather than copying
+sample dates, degrees, jobs, or unpublished articles from the visual reference.
+Project metrics and additional career details are available in native HTML
+disclosures, including without JavaScript. Notes are explicitly marked Exploring.
+Institution badges are typographic labels, not official seals.
 
-## Content still to supply
+## Content and factual integrity
 
-- One personal photograph in the marked `.life-photo-slot`; see
-  `assets/life/README.md`. No personal photos or locations were fabricated.
-- Real published notes: `blog/` currently has no articles. Homepage concepts are
-  marked Exploring, without dates or article links. See `blog/README.md`.
-- Verified source links for the projects, and any additional actual demos.
-  Reason-Guessr’s existing live URL is preserved.
-- The supplied résumé is available at `/resume/resume.pdf`; see below.
-
-## Final résumé
-
-The existing `resume/satya-maddipati-resume.pdf` is documented in the original
-repository as a generated draft. It is unchanged and remains unlinked. The file
-would still be reachable at its old direct URL if the branch were published.
-
-The owner-supplied final PDF is `resume/resume.pdf`, served unchanged. After
-replacing it with an updated résumé, run:
-
-```sh
-python3 scripts/build_resume.py
-```
-
-This existing utility activates static links and download controls after checking
-the PDF signature. It does not generate or alter a PDF. Without a final PDF, all
-resume links lead to the readable background page at `/resume/`. No browser-side
-availability fetch is needed; rerun the utility whenever the final file changes.
-
-## Factual integrity
-
-The current repository and the owner’s brief supply the content. Existing email,
-GitHub, LinkedIn, Reason-Guessr URL, dates, grades, roles, and project technologies
-are preserved. The portrait caption does not assume where the photograph was taken.
+The actual degrees remain an M.S. in Computer Sciences at UW–Madison (2025–2027,
+GPA 4.0/4.0) and an Environmental Science and Engineering dual degree with Honors
+at IIT Bombay (2018–2023, GPA 8.9/10).
 
 Tata AIA roles remain Management Trainee (July 2023–June 2024) and Assistant
-Manager, Data Science (June 2024–December 2025) on the supporting pages. Homepage
-dates remain 2023–2025; no claim is made that employment ended before graduate
-school began. Multi-Agent LLM Evaluation remains professional work at Tata AIA.
+Manager, Data Science (June 2024–December 2025). Multi-Agent LLM Evaluation remains
+professional work at Tata AIA. Grounded-agent and forecasting descriptions
+preserve the existing LLaVA-1.6, Observe–Reason–Act, and 3–7 day values.
+No new performance claims were added.
 
-The prior README recorded historical differences: an older grounded-agent entry
-used LLaVA-1.5 with a planner-executor loop, while the current site and reference
-use LLaVA-1.6 and Observe–Reason–Act. Older forecasting material said 3–5 days;
-the current site/reference says 3–7 days. This redesign preserves the current
-values without asserting that the historical versions were the same project.
-No new benchmarks, datasets, model sizes, or results were inferred.
+The generated photographs are editorial imagery; they are not personal travel
+records or screenshots of the projects. Original campus and lake photographs
+were already present in the workspace. Real project source links and published
+notes can be added when supplied. Existing GitHub, LinkedIn, email, and
+Reason-Guessr destinations are preserved.
 
-## Checks and review
+## Résumé
+
+The original generated draft at `resume/satya-maddipati-resume.pdf` remains
+unchanged and unlinked. The final owner-supplied file is `resume/resume.pdf`.
+After replacing the final file, run `python3 scripts/build_resume.py` to check its
+signature and activate static download controls. It does not generate a PDF.
+
+## Verification
 
 ```sh
 python3 scripts/check_site.py
@@ -90,25 +69,11 @@ node --test scripts/check_behavior.cjs
 git diff --check
 ```
 
-Static checks cover all HTML pages, local paths/fragments, duplicate IDs, image
-alternatives, element nesting, and normal-text palette contrast. Menu regression
-checks cover Escape, destination focus, outside clicks, and viewport changes.
+Checks cover HTML structure, local links and fragments, image alternatives,
+palette contrast, and menu behavior. Browser checks cover desktop and mobile
+widths, supporting routes, keyboard navigation, anchor focus, reduced motion,
+and navigation without JavaScript. Current visual review screenshots are local
+temporary files, not deployed assets.
 
-Before merging, review all four pages on desktop and a real phone; check external
-destinations, portrait crop, copy and historic research details, and the clearly
-marked missing photo and the uploaded résumé. Browser review should include 375, 768, 1024,
-and 1440px, keyboard navigation, reduced motion, and JavaScript disabled.
-
-Work is on `redesign/editorial-portfolio`. Do not merge or deploy automatically.
-
-### Redesign verification
-
-An isolated Chromium browser checked all four pages at 375, 768, 1024, and 1440px
-without horizontal overflow. Full-page and viewport screenshots were reviewed.
-Keyboard skip navigation, mobile menu, Escape, focus at anchor destinations,
-sticky-header offsets, reduced motion, and navigation without JavaScript passed.
-No browser console errors or failed local requests were observed. The minimum
-normal-text contrast is 4.78:1 on paper and 9.68:1 in the education section.
-
-Reason-Guessr and GitHub returned HTTP 200. LinkedIn returned HTTP 999 to the
-automated check; its original URL is preserved and needs a manual browser check.
+Work is on `redesign/editorial-portfolio`. Nothing is automatically merged or
+deployed.

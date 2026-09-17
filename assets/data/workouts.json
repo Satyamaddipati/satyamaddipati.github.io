@@ -1,0 +1,10 @@
+{
+  "updatedAt": null,
+  "summary": {
+    "sleepMinutes": null,
+    "restingHeartRate": null,
+    "bodyBattery": null,
+    "stress": null
+  },
+  "activities": []
+}

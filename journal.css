@@ -1,0 +1,273 @@
+/* Homepage proportions and photographic language from the supplied reference. */
+.journal-home { --width: 940px; --gutter: clamp(24px, 5vw, 70px); --accent: #194f76; --heading: #101923; --muted: #555d64; --tint: #dfe5e8; --serif: "Times New Roman", Times, Georgia, serif; font-size: 18px; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23817a6a' opacity='.07' filter='url(%23grain)' d='M0 0h180v180H0z'/%3E%3C/svg%3E"); }
+.journal-home .header-inner { min-height: 88px; }
+.journal-home .wordmark { font-size: 25px; }
+.journal-home nav { gap: 32px; }
+.journal-home nav a { font-family: var(--serif); font-size: 15px; }
+.journal-home .site-header { background: rgb(243 241 234 / .97); }
+.journal-home h2 { font-size: clamp(44px, 5vw, 68px); letter-spacing: -.045em; }
+.journal-home .eyebrow { font-size: 10px; letter-spacing: .2em; margin-bottom: 13px; }
+.journal-home .section { padding-block: 75px; }
+.journal-home .section-heading { position: relative; margin-bottom: 35px; padding-right: 150px; }
+.journal-home .section-heading > p:not(.eyebrow) { font-size: 23px; margin-top: 12px; line-height: 1.3; }
+.journal-home .handwritten { font-family: "Bradley Hand", "Segoe Print", cursive; font-weight: 300; }
+.margin-note { position: absolute; right: 0; top: 36px; transform: rotate(-9deg); font-size: 22px; line-height: 1.15; }
+.margin-note span { display: block; margin: 6px 0 0 17px; font-size: .85em; }
+.journal-home .button { border-radius: 3px; gap: 14px; min-height: 51px; padding: 12px 24px; font-size: 16px; }
+.journal-home .button-solid { background: linear-gradient(110deg, #205d88, #194f76); box-shadow: inset 0 0 0 2px #ffffff10; }
+.journal-home .button-solid:hover { background: #133e5e; }
+.journal-home .opening-spread { grid-template-columns: 1fr 310px 125px; gap: 40px 28px; padding-block: 60px 90px; }
+.journal-home .hero { grid-template-columns: 1.08fr 1fr; gap: 0 34px; }
+.journal-home .hero-eyebrow { font-size: 10px; margin: 0 0 25px; }
+.journal-home .hero h1 { font-size: clamp(74px, 7.1vw, 100px); line-height: .9; }
+.journal-home .hero-statement { font-size: 40px; line-height: 1.06; margin-top: 27px; }
+.journal-home .hero-description { font-size: 21px; line-height: 1.45; margin-top: 34px; max-width: 420px; }
+.journal-home .hero-links { gap: 18px; margin-top: 32px; }
+.journal-home .hero-links .button { font-size: 15px; padding-inline: 20px; }
+.journal-home .hero-portrait { margin: 5px 7px 0 0; align-self: stretch; position: relative; }
+.journal-home .hero-portrait img { height: 100%; min-height: 510px; object-position: 62% center; }
+.journal-home .hero-portrait figcaption { display: block; position: absolute; right: 30px; top: -51px; padding: 0; font-size: 21px; transform: rotate(-10deg); line-height: 1; }
+.journal-home .opening-note { font-size: 28px; line-height: 1.25; margin: 12px 0 0 10px; }
+.journal-home .currently { display: block; padding: 22px; margin: 0; }
+.journal-home .currently h2 { font-size: 10px; margin-bottom: 14px; }
+.currently h2 span { font-size: 8px; letter-spacing: 0; float: right; }
+.currently ul { padding-left: 19px; margin: 0; font-size: 17px; line-height: 1.8; }
+.learning-note { align-self: center; transform: rotate(-9deg); font-size: 26px; line-height: 1.25; }
+.work-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; align-items: start; }
+.work-card { border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+.card-photo { display: block; height: 192px; overflow: hidden; }
+.card-photo img { width: 100%; height: 100%; object-fit: cover; }
+.work-card:nth-child(3) .card-photo img { object-position: center 70%; transform: scale(1.2); }
+.work-card:nth-child(4) .card-photo img { object-position: right 30%; transform: scale(1.2); }
+.card-copy { padding: 15px 19px 17px; }
+.card-copy h3 { font-size: 25px; margin-bottom: 10px; letter-spacing: -.025em; }
+.card-copy h3 a { display: flex; justify-content: space-between; text-decoration: none; gap: 12px; }
+.card-copy h3 a span { color: var(--accent); font-size: 22px; }
+.card-copy > p { font-size: 18px; line-height: 1.3; color: var(--muted); min-height: 70px; }
+.tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; }
+.tags span { background: var(--tint); border-radius: 5px; padding: 3px 9px; color: var(--accent); font-size: 13px; line-height: 1.4; }
+details { margin-top: 12px; color: var(--muted); font-size: 15px; }
+summary { cursor: pointer; color: var(--accent); font-size: 13px; }
+details[open] summary { margin-bottom: 10px; }
+details p + p { margin-top: 8px; }
+.timeline { margin: 45px 0 0 7px; border-left: 1px solid #bfc3c2; }
+.timeline-entry { position: relative; display: grid; grid-template-columns: 74px minmax(0, 1fr); gap: 24px; padding: 0 0 43px 30px; }
+.timeline-entry:last-child { padding-bottom: 8px; }
+.timeline-entry::before { content: ""; position: absolute; left: -7px; top: 22px; width: 11px; height: 11px; border-radius: 50%; background: var(--accent); border: 2px solid var(--paper); }
+.institution-mark { width: 72px; height: 72px; border-radius: 50%; background: #f8f6ef; display: flex; flex-direction: column; align-items: center; justify-content: center; font: bold 23px/1 var(--serif); color: var(--accent); border: 1px solid var(--line); }
+.institution-mark br { display: none; }
+.institution-mark small { font-size: 13px; font-weight: normal; margin-top: 5px; }
+.institution-mark.tata { font: bold 19px/.95 var(--sans); }
+.institution-mark.tata em { color: #a1253d; font-size: 16px; font-style: normal; margin-top: 5px; }
+.institution-mark.cognibot { font-size: 31px; }
+.timeline-content header { display: flex; justify-content: space-between; gap: 20px; margin-bottom: 17px; }
+.timeline-content h3 { font-size: 24px; }
+.timeline-content header p { font-size: 19px; line-height: 1.2; margin-top: 3px; }
+.timeline-content header .timeline-date { text-align: right; color: var(--muted); font-size: 14px; padding-top: 3px; flex: 0 0 180px; }
+.timeline-content > p { color: var(--muted); font-size: 18px; line-height: 1.4; }
+.school-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.school-cards article { border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+.school-cards article > img { width: 100%; height: 285px; object-fit: cover; }
+.school-cards article > div { padding: 19px 18px 22px; }
+.school-cards h3 { font-size: 24px; margin-bottom: 12px; }
+.school-cards p { font-size: 17px; line-height: 1.35; }
+.school-cards .school-meta { font-size: 15px; margin-top: 7px; color: var(--accent); }
+.school-cards .school-description { margin-top: 22px; color: var(--muted); }
+.areas { margin-top: 30px; }
+.area-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.area-grid > div > span { font-size: 28px; color: var(--accent); display: block; margin-bottom: 10px; }
+.area-grid h4 { color: var(--accent); font-size: 16px; margin-bottom: 4px; }
+.area-grid p { color: var(--muted); font-size: 16px; line-height: 1.25; }
+.notebook-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
+.notebook-photo img { width: 100%; height: 540px; object-fit: cover; object-position: 38% center; border-radius: 4px; transform: rotate(.6deg); }
+.notebook-photo figcaption { font-size: 23px; line-height: 1.05; transform: rotate(-7deg); margin: 18px 0 0 9px; }
+.notebook-entries article { padding: 20px 0; border-bottom: 1px solid var(--line); }
+.notebook-entries article:first-child { padding-top: 0; }
+.notebook-entries article .eyebrow { font-size: 9px; margin-bottom: 7px; }
+.notebook-entries h3 { font-size: 27px; line-height: 1.08; }
+.notebook-entries article > p:not(.eyebrow) { color: var(--muted); font-size: 18px; line-height: 1.3; margin-top: 10px; }
+.notebook-entries > a { font-size: 16px; margin-top: 9px; }
+.contact-section .section-heading { margin-bottom: 28px; }
+.contact-section .text-links { gap: 23px; margin-top: 0; }
+.contact-section .button { min-width: 255px; }
+.linkedin-icon { font: bold 16px var(--sans); color: var(--paper); background: var(--accent); padding: 0 3px; border-radius: 2px; }
+.beyond { border-top: 1px solid var(--line); margin-top: 45px; padding-top: 32px; }
+.beyond > p:not(.eyebrow) { color: var(--muted); font-size: 19px; }
+.life-cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; margin-top: 27px; }
+.life-cards img { width: 100%; height: 215px; object-fit: cover; border-radius: 4px; }
+.life-cards figcaption { margin-top: 13px; }
+.life-cards h3 { font-size: 21px; margin-bottom: 5px; }
+.life-cards p { color: var(--muted); font-size: 18px; line-height: 1.25; }
+.closing-note { text-align: center; margin-top: 65px; font-size: 27px; }
+.closing-note span { display: block; font: 14px var(--serif); margin-top: 8px; }
+.journal-home .site-footer { padding: 0 0 25px; border-top: 0; }
+.journal-home .footer-bottom { margin-top: 0; }
+/* Life, lately: quiet type, small artwork and rules; no outer container. */
+.life-lately { --lately-muted: #716d67; --lately-line: rgba(23, 23, 23, .12); margin-top: 48px; padding-top: 27px; border-top: 1px solid var(--lately-line); color: #171717; }
+.lately-heading { display: flex; align-items: baseline; gap: 18px; margin-bottom: 26px; }
+.lately-heading h3 { font-size: 28px; letter-spacing: -.035em; }
+.lately-heading p { font: 12px/1.5 var(--mono); color: var(--lately-muted); }
+.lately-columns { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(280px, .8fr); gap: 48px; }
+.lately-columns > section { min-width: 0; }
+.life-lately h4 { margin: 0 0 16px; font: 650 16px/1.35 var(--sans); letter-spacing: -.025em; color: #171717; }
+.lately-empty, .workout-summary { font: 12px/1.6 var(--mono); color: var(--lately-muted); }
+.lately-empty { border-top: 1px solid var(--lately-line); padding-top: 13px; min-height: 65px; max-width: 100%; }
+.workout-summary { margin-bottom: 10px; display: flex; flex-wrap: wrap; gap: 0 7px; }
+.workout-summary span + span::before { content: "·"; margin-right: 7px; }
+.workout-list { margin: 0; padding: 0; list-style: none; }
+.workout-row { display: grid; grid-template-columns: 14px 65px minmax(72px, 1fr) 57px 72px 57px 13px; column-gap: 6px; align-items: center; min-height: 39px; border-top: 1px solid var(--lately-line); font: 13px/1.45 var(--mono); color: #45433f; }
+.workout-row:hover, .workout-row:focus-within { color: #171717; }
+.activity-icon { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 1.35; stroke-linecap: round; stroke-linejoin: round; }
+.workout-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.workout-distance, .workout-duration, .workout-age { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.workout-age { color: var(--lately-muted); font-size: 12px; }
+.workout-link { text-decoration: none; color: var(--accent); padding-block: 9px; text-align: right; transition: transform 150ms ease; }
+.workout-row:hover .workout-link, .workout-row:focus-within .workout-link { transform: translateX(2px); }
+.workout-no-link { min-width: 0; }
+.music-current { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 14px; align-items: center; }
+.music-art { display: block; width: 72px; height: 72px; object-fit: cover; border-radius: 1px; }
+.music-art-missing { display: grid; place-items: center; background: #e5e2d9; color: var(--lately-muted); font: 19px var(--serif); }
+.music-copy { min-width: 0; font: 13px/1.5 var(--mono); }
+.music-track { font-size: 14px; line-height: 1.45; font-weight: 500; overflow-wrap: anywhere; }
+.music-track a { text-decoration: none; }
+.music-track a:hover { text-decoration: underline; }
+.music-artist, .music-meta { color: var(--lately-muted); overflow-wrap: anywhere; }
+.music-meta { margin-top: 5px; font-size: 12px; line-height: 1.5; }
+.music-recent { display: flex; max-width: 100%; overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain; scrollbar-width: thin; scrollbar-color: var(--lately-line) transparent; margin: 19px 0 0; padding: 2px 2px 6px; list-style: none; }
+.music-recent li { position: relative; flex: 0 0 44px; min-width: 0; }
+.music-recent li + li { margin-left: -14px; }
+.music-recent a { display: block; }
+.music-recent .music-art { width: 44px; height: 44px; border: 1px solid var(--paper); }
+.music-recent li:hover, .music-recent li:focus-within { z-index: 1; }
+.music-recent a:focus-visible { outline-offset: -3px; }
+.visitor-corner { border-top: 1px solid var(--lately-line); margin-top: 26px; padding-top: 17px; font: 12px/1.7 var(--mono); color: var(--lately-muted); }
+.life-lately .visitor-corner h4 { font: 600 12px/1.4 var(--sans); margin-bottom: 7px; }
+.visitor-clock { display: flex; flex-direction: column; font-variant-numeric: tabular-nums; }
+#visitor-timezone { font-size: 12px; overflow-wrap: anywhere; }
+.visitor-weather { display: flex; flex-wrap: wrap; gap: 0 10px; align-items: baseline; margin-top: 4px; }
+#weather-button { border: 0; border-radius: 0; padding: 3px 0; background: none; box-shadow: none; color: var(--accent); font: inherit; }
+#weather-button:hover { text-decoration: underline; }
+#weather-button:disabled { cursor: default; color: var(--lately-muted); }
+#weather-credit { font-size: 11px; color: var(--lately-muted); }
+.lately-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@media (max-width: 1100px) and (min-width: 901px) {
+  .workout-row { grid-template-columns: 14px 65px minmax(60px, 1fr) 72px 13px; }
+  .workout-distance { grid-column: 3; grid-row: 2; text-align: left; font-size: 12px; }
+  .workout-duration { grid-column: 4; grid-row: 1; }
+  .workout-age { grid-column: 4; grid-row: 2; }
+  .workout-link, .workout-no-link { grid-column: 5; grid-row: 1 / 3; }
+  .workout-row { padding-block: 7px; }
+}
+@media (max-width: 900px) {
+  .lately-columns { grid-template-columns: 1fr; gap: 30px; }
+  .music-recent li + li { margin-left: -8px; }
+}
+@media (max-width: 600px) {
+  .life-lately { margin-top: 36px; padding-top: 24px; }
+  .lately-heading { display: block; margin-bottom: 26px; }
+  .lately-heading p { margin-top: 7px; }
+  .workout-row { grid-template-columns: 14px 65px minmax(0, 1fr) 72px 12px; gap: 3px 6px; padding-block: 9px; }
+  .workout-title { white-space: normal; overflow-wrap: anywhere; }
+  .workout-distance { grid-column: 3; grid-row: 2; text-align: left; font-size: 12px; }
+  .workout-duration { grid-column: 4; grid-row: 1; }
+  .workout-age { grid-column: 4; grid-row: 2; font-size: 12px; }
+  .workout-link, .workout-no-link { grid-column: 5; grid-row: 1 / 3; }
+  .visitor-corner { margin-top: 25px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .workout-link { transition: none; }
+  .workout-row:hover .workout-link, .workout-row:focus-within .workout-link { transform: none; }
+}
+@media (max-width: 1000px) {
+  .journal-home .opening-spread { grid-template-columns: 1fr 280px 100px; column-gap: 20px; }
+  .journal-home .hero-statement { font-size: 32px; }
+  .journal-home .hero-description { font-size: 19px; }
+  .journal-home .hero-links { gap: 10px; }
+  .journal-home .hero-links .button { font-size: 14px; padding-inline: 13px; }
+  .journal-home .hero-portrait img { min-height: 490px; }
+  .timeline-content header .timeline-date { flex-basis: 150px; }
+  .margin-note { font-size: 19px; }
+}
+@media (max-width: 800px) {
+  .journal-home .header-inner { min-height: 76px; }
+  .journal-home nav { gap: 22px; }
+  .journal-home .wordmark { font-size: 22px; }
+  .journal-home .opening-spread { grid-template-columns: 1fr 280px; padding-block: 45px 60px; }
+  .learning-note { display: none; }
+  .journal-home .hero { gap: 0 24px; }
+  .journal-home .hero h1 { font-size: 76px; }
+  .journal-home .hero-eyebrow { font-size: 8px; }
+  .journal-home .hero-statement { font-size: 28px; }
+  .journal-home .hero-description { font-size: 18px; margin-top: 25px; }
+  .journal-home .hero-portrait img { min-height: 470px; }
+  .journal-home .section-heading { padding-right: 90px; }
+  .journal-home .section-heading > p:not(.eyebrow) { font-size: 20px; }
+  .margin-note { right: -5px; font-size: 17px; }
+  .card-photo { height: 160px; }
+  .card-copy { padding-inline: 15px; }
+  .card-copy h3 { font-size: 22px; }
+  .card-copy > p { font-size: 17px; min-height: 90px; }
+  .tags { gap: 5px; }
+  .tags span { font-size: 12px; padding-inline: 7px; }
+  .timeline-entry { grid-template-columns: 58px minmax(0, 1fr); gap: 18px; padding-left: 22px; }
+  .institution-mark { width: 58px; height: 58px; }
+  .timeline-content header { flex-direction: column; gap: 7px; }
+  .timeline-content header .timeline-date { text-align: left; flex-basis: auto; }
+  .school-cards article > img { height: 220px; }
+  .school-cards h3 { font-size: 22px; }
+  .area-grid { gap: 17px; }
+  .area-grid h4, .area-grid p { font-size: 14px; }
+  .notebook-layout { gap: 25px; }
+  .notebook-photo img { height: 530px; }
+  .life-cards { gap: 13px; }
+  .life-cards img { height: 170px; }
+  .life-cards p { font-size: 16px; }
+}
+@media (max-width: 600px) {
+  .journal-home .header-inner { min-height: 70px; }
+  .journal-home nav { gap: 10px; }
+  .journal-home nav a { font-size: 14px; }
+  .journal-home .section { padding-block: 48px; }
+  .journal-home .opening-spread { display: grid; grid-template-columns: 1fr; gap: 28px; padding-block: 28px 45px; }
+  .journal-home .hero { grid-template-columns: 1fr; }
+  .journal-home .hero h1 { font-size: 78px; }
+  .journal-home .hero-statement { font-size: 32px; }
+  .journal-home .hero-description { font-size: 19px; }
+  .journal-home .hero-links .button { font-size: 14px; padding-inline: 17px; }
+  .journal-home .hero-portrait { width: 90%; margin: 64px 7px 0 auto; }
+  .journal-home .hero-portrait img { height: 360px; min-height: 0; }
+  .journal-home .hero-portrait figcaption { font-size: 20px; top: -48px; right: 12px; }
+  .journal-home .opening-note { font-size: 24px; margin: 3px 12px; }
+  .journal-home .opening-note br { display: initial; }
+  .journal-home .currently { width: 100%; }
+  .journal-home .section-heading { padding-right: 0; margin-bottom: 25px; }
+  .journal-home .section-heading > p:not(.eyebrow) { font-size: 19px; }
+  .margin-note { display: none; }
+  .work-cards, .school-cards, .notebook-layout { grid-template-columns: 1fr; gap: 22px; }
+  .card-photo { height: 185px; }
+  .card-copy { padding: 17px; }
+  .card-copy h3 { font-size: 25px; }
+  .card-copy > p { min-height: 0; font-size: 18px; }
+  .tags span { font-size: 13px; }
+  .timeline { margin-top: 30px; }
+  .timeline-entry { grid-template-columns: 46px minmax(0, 1fr); gap: 14px; padding: 0 0 32px 19px; }
+  .institution-mark { width: 46px; height: 46px; font-size: 18px; }
+  .institution-mark.tata { font-size: 14px; }
+  .institution-mark.tata em { font-size: 12px; }
+  .institution-mark small { font-size: 10px; }
+  .timeline-content h3 { font-size: 22px; }
+  .timeline-content > p { font-size: 17px; }
+  .timeline-content header p { font-size: 17px; }
+  .timeline-content header .timeline-date { font-size: 13px; }
+  .school-cards article > img { height: 235px; }
+  .school-cards h3 { font-size: 24px; }
+  .area-grid { grid-template-columns: 1fr 1fr; gap: 25px; }
+  .area-grid h4, .area-grid p { font-size: 16px; }
+  .notebook-photo img { height: 340px; }
+  .notebook-photo figcaption { font-size: 21px; margin-bottom: 20px; }
+  .contact-section .text-links { gap: 14px; }
+  .contact-section .button { min-width: 0; width: 100%; }
+  .life-cards { grid-template-columns: 1fr 1fr; gap: 25px 15px; }
+  .life-cards img { height: 170px; }
+  .closing-note { margin-top: 42px; font-size: 23px; }
+}

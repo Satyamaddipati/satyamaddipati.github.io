@@ -1,0 +1,128 @@
+{
+  "demo": true,
+  "asOf": "2026-09-17T18:00:00Z",
+  "updatedAt": "2026-09-17T18:00:00Z",
+  "current": {
+    "id": "demo-track-0",
+    "title": "Paper Satellites",
+    "artist": "The Imaginary Ensemble",
+    "album": "Fictional sessions 1",
+    "artwork": "/assets/images/music-demo.svg#cover-0",
+    "durationSeconds": 240,
+    "isPlaying": false,
+    "playedAt": "2026-09-17T17:54:00Z",
+    "url": "https://example.com/fictional-track"
+  },
+  "recent": [
+    {
+      "id": "demo-track-0",
+      "title": "Paper Satellites",
+      "artist": "The Imaginary Ensemble",
+      "album": "Fictional sessions 1",
+      "artwork": "/assets/images/music-demo.svg#cover-0",
+      "durationSeconds": 240,
+      "isPlaying": false,
+      "playedAt": "2026-09-17T17:00:00.000Z",
+      "url": "https://example.com/fictional-track"
+    },
+    {
+      "id": "demo-track-1",
+      "title": "Window Seat",
+      "artist": "The Imaginary Ensemble",
+      "album": "Fictional sessions 2",
+      "artwork": "/assets/images/music-demo.svg#cover-1",
+      "durationSeconds": 233,
+      "isPlaying": false,
+      "playedAt": "2026-09-17T16:00:00.000Z",
+      "url": null
+    },
+    {
+      "id": "demo-track-2",
+      "title": "Blue Hour",
+      "artist": "The Imaginary Ensemble",
+      "album": "Fictional sessions 3",
+      "artwork": "/assets/images/music-demo.svg#cover-2",
+      "durationSeconds": 226,
+      "isPlaying": false,
+      "playedAt": "2026-09-17T15:00:00.000Z",
+      "url": null
+    },
+    {
+      "id": "demo-track-3",
+      "title": "Soft Geometry",
+      "artist": "The Imaginary Ensemble",
+      "album": "Fictional sessions 4",
+      "artwork": "/assets/images/music-demo.svg#cover-3",
+      "durationSeconds": 219,
+      "isPlaying": false,
+      "playedAt": "2026-09-17T14:00:00.000Z",
+      "url": null
+    },
+    {
+      "id": "demo-track-4",
+      "title": "A Quiet Street",
+      "artist": "The Imaginary Ensemble",
+      "album": "Fictional sessions 5",
+      "artwork": "/assets/images/music-demo.svg#cover-4",
+      "durationSeconds": 212,
+      "isPlaying": false,
+      "playedAt": "2026-09-17T13:00:00.000Z",
+      "url": null
+    },
+    {
+      "id": "demo-track-5",
+      "title": "Late September",
+      "artist": "The Imaginary Ensemble",
+      "album": "Fictional sessions 6",
+      "artwork": "/assets/images/music-demo.svg#cover-5",
+      "durationSeconds": 205,
+      "isPlaying": false,
+      "playedAt": "2026-09-17T12:00:00.000Z",
+      "url": null
+    },
+    {
+      "id": "demo-track-6",
+      "title": "Small Hours",
+      "artist": "The Imaginary Ensemble",
+      "album": "Fictional sessions 7",
+      "artwork": "/assets/images/music-demo.svg#cover-6",
+      "durationSeconds": 198,
+      "isPlaying": false,
+      "playedAt": "2026-09-17T11:00:00.000Z",
+      "url": null
+    },
+    {
+      "id": "demo-track-7",
+      "title": "Somewhere Slowly",
+      "artist": "The Imaginary Ensemble",
+      "album": "Fictional sessions 8",
+      "artwork": "/assets/images/music-demo.svg#cover-7",
+      "durationSeconds": 191,
+      "isPlaying": false,
+      "playedAt": "2026-09-17T10:00:00.000Z",
+      "url": null
+    },
+    {
+      "id": "demo-track-8",
+      "title": "The Long Way",
+      "artist": "The Imaginary Ensemble",
+      "album": "Fictional sessions 9",
+      "artwork": "/assets/images/music-demo.svg#cover-8",
+      "durationSeconds": 184,
+      "isPlaying": false,
+      "playedAt": "2026-09-17T09:00:00.000Z",
+      "url": null
+    },
+    {
+      "id": "demo-track-9",
+      "title": "Daylight Again",
+      "artist": "The Imaginary Ensemble",
+      "album": "Fictional sessions 10",
+      "artwork": "/assets/images/music-demo.svg#cover-9",
+      "durationSeconds": 177,
+      "isPlaying": false,
+      "playedAt": "2026-09-17T08:00:00.000Z",
+      "url": null
+    }
+  ]
+}
