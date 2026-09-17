@@ -16,21 +16,24 @@ user site. Nothing is automatically deployed.
 
 - `index.html`: introduction, Fall 2026 notebook, selected work, chronology,
   education, unpublished note ideas, life, About, and contact.
-- `styles.css`: warm paper, ocean-blue accents, local serif headings, sans-serif
-  prose, and monospace metadata. Responsive layouts at 600/800/1050px.
+- `styles.css`: warm paper, ocean-blue buttons, local serif headings and prose,
+  quiet sans-serif navigation, and monospace metadata. Responsive layouts at
+  600/800/1050px, with two restrained handwritten notes using local fonts.
 - `script.js`: accessible mobile menu and copyright year. No fetches or trackers.
 - `about/`, `blog/`, `resume/`: preserved supporting routes and shared navigation.
 - `resume/content.json`: existing factual reference, unchanged.
 - `profile.jpg`: original portrait, unchanged.
 - `.nojekyll`: preserved.
 
-Reason-Guessr leads with an original inline SVG contour illustration, explicitly
-labeled as conceptual rather than model output. Secondary work uses different
-text-led compositions. Education explains the transition from Environmental
-Science and Engineering into computer science. All technical descriptions are
-visible without expanding controls.
+The revised layout follows the owner's supplied journal reference: a two-line
+introduction, larger tilted portrait, blue buttons, a compact semester notebook,
+and illustrated project previews. Reason-Guessr has a larger conceptual contour
+illustration. Other projects use simple notebook and agent diagrams; these are
+not product screenshots. University panels are typographic, not official logos.
+Education explains the transition from Environmental Science and Engineering
+into computer science. All technical descriptions remain visible.
 
-The site is intentionally light, with a dark education section. System dark-mode
+The site is intentionally light, including the education section. System dark-mode
 preferences do not override the palette. Reduced motion disables smooth scrolling
 and transitions. Nothing is hidden behind animations. With JavaScript disabled,
 all content and navigation remain available.
@@ -107,8 +110,9 @@ An isolated Chromium browser checked all four pages at 375, 768, 1024, and 1440p
 without horizontal overflow. Full-page and viewport screenshots were reviewed.
 Keyboard skip navigation, mobile menu, Escape, focus at anchor destinations,
 sticky-header offsets, reduced motion, and navigation without JavaScript passed.
-No browser console errors or failed local requests were observed. The minimum
-normal-text contrast is 4.78:1 on paper and 9.68:1 in the education section.
+No browser console errors or failed local requests were observed. The static
+palette check covers paper, illustration backgrounds, university panels, and
+primary buttons against the 4.5:1 normal-text threshold.
 
 Reason-Guessr and GitHub returned HTTP 200. LinkedIn returned HTTP 999 to the
 automated check; its original URL is preserved and needs a manual browser check.

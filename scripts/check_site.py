@@ -49,8 +49,9 @@ def contrast(a,b):
     light,dark=sorted((luminance(a),luminance(b)),reverse=True)
     return (light+.05)/(dark+.05)
 for name,foregrounds,backgrounds in [
-    ('paper',['171717','66645f','126782'],['f3f1ea','dcebf0','eae7de']),
-    ('education',['f3f1ea','c5cbcb','b9d9e3'],['15242c'])]:
+    ('paper',['171717','15242c','66645f','126782'],['f3f1ea','f8f6f0','dcebf0','eae7de','e6e1d5','e8e7df']),
+    ('university panel',['743d3d'],['e8dfd9']),
+    ('primary button',['f3f1ea'],['126782','15242c'])]:
     ratios=[contrast(f,b) for f in foregrounds for b in backgrounds]
     if min(ratios)<4.5: errors.append(f'{name} palette fails normal-text contrast: {min(ratios):.2f}')
     print(f'{name} palette: minimum text contrast {min(ratios):.2f}:1')

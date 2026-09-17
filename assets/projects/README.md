@@ -10,5 +10,7 @@ screenshot, replace `.geo-art` inside `.geo-figure` in `index.html`:
 ```
 
 Use actual dimensions and a small file, and update the caption. Life Logger has
-a simple text flow, evaluation has existing reported numbers, and the agent
-experiment is text-led. No screenshots, personal photographs, or URLs were invented.
+a simple notebook illustration and audio flow; evaluation and the agent experiment
+have typographic diagrams. All are illustrative, not actual product screenshots.
+The university panels are typography, not official university logos. Real project
+or campus photographs can replace these areas when supplied by the owner.
