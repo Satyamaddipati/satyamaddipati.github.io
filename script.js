@@ -39,4 +39,11 @@
   }
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
+  // Keep the classic site-wide entry; the subsection is an isolated ES module.
+  const lately = document.getElementById('life-lately');
+  if (lately) {
+    import('/assets/js/live/life-lately.js')
+      .then(({ initLifeLately }) => initLifeLately(lately))
+      .catch(() => {});
+  }
 })();

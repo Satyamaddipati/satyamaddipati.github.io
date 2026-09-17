@@ -1,0 +1,63 @@
+{
+  "demo": true,
+  "asOf": "2026-09-17T18:00:00Z",
+  "updatedAt": "2026-09-17T18:00:00Z",
+  "summary": {
+    "sleepMinutes": 462,
+    "restingHeartRate": 54,
+    "bodyBattery": 71,
+    "stress": null
+  },
+  "activities": [
+    {
+      "id": "demo-workout-0",
+      "source": "fictional-demo",
+      "type": "run",
+      "distanceMeters": 6100,
+      "durationSeconds": 2735,
+      "startedAt": "2026-09-16T16:00:00Z",
+      "url": "https://example.com/demo-run",
+      "name": "Zone 2"
+    },
+    {
+      "id": "demo-workout-1",
+      "source": "fictional-demo",
+      "type": "bike",
+      "distanceMeters": 19800,
+      "durationSeconds": 2984,
+      "startedAt": "2026-09-12T10:00:00Z",
+      "url": "https://example.com/demo-bike",
+      "name": "Morning ride"
+    },
+    {
+      "id": "demo-workout-2",
+      "source": "fictional-demo",
+      "type": "strength",
+      "distanceMeters": null,
+      "durationSeconds": 3015,
+      "startedAt": "2026-09-17T01:00:00Z",
+      "url": null,
+      "name": "Upper body"
+    },
+    {
+      "id": "demo-swim",
+      "source": "fictional-demo",
+      "type": "swim",
+      "name": "Evening Swim",
+      "startedAt": "2026-07-17T18:00:00Z",
+      "durationSeconds": 1630,
+      "distanceMeters": 325,
+      "url": "https://example.com/demo-swim"
+    },
+    {
+      "id": "demo-hike",
+      "source": "fictional-demo",
+      "type": "hike",
+      "name": "Afternoon Walk",
+      "startedAt": "2026-09-02T18:00:00Z",
+      "durationSeconds": 1139,
+      "distanceMeters": null,
+      "url": "https://example.com/demo-hike"
+    }
+  ]
+}
