@@ -35,7 +35,6 @@
 .learning-note { align-self: center; transform: rotate(-9deg); font-size: 26px; line-height: 1.25; }
 .work-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; align-items: start; }
 .current-project { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(260px, .8fr); gap: 24px; align-items: center; padding: 25px; margin-bottom: 22px; border: 1px solid var(--line); border-radius: 4px; background: var(--paper); }
-.current-project.no-image { grid-template-columns: 1fr; }
 .current-project-copy { min-width: 0; }
 .current-project .eyebrow { color: var(--accent); margin-bottom: 12px; }
 .current-project h3 { font-size: clamp(25px, 3vw, 36px); line-height: 1.1; letter-spacing: -.025em; max-width: 21ch; }

@@ -1,0 +1,216 @@
+%=====================================================================
+%  SATYA BHARGAV MADDIPATI -- ServiceNow SWE version (v2)
+%
+%  Layout, sections and entries are IDENTICAL to your original resume.
+%  Only the bullet wording, coursework order and skills grouping changed.
+%  Nothing was cut. GitHub profile link removed; portfolio link enabled.
+%
+%  Lines marked  %% VERIFY  are claims I could not confirm. Check each.
+%=====================================================================
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage[most]{tcolorbox}
+
+% Define missing colors
+\definecolor{mygray}{gray}{0.35}
+\definecolor{mylitblue}{HTML}{EAF1FF}
+
+% Tag box + helpers (define ONCE, not inside entries)
+\newtcbox{\blogtag}{nobeforeafter, boxrule=0pt, arc=2pt, boxsep=0pt,
+  left=3pt,right=3pt,top=2pt,bottom=2pt,
+  colback=mylitblue, box align=base, baseline=0.7mm}
+
+\newcommand{\tagbullet}{\textcolor{mygray}{\textbullet}\,}
+\newcommand{\skill}[1]{\blogtag{\scriptsize \tagbullet \MakeUppercase{#1}}}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.85in}
+\addtolength{\textheight}{1.6in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Satya Bhargav Maddipati} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faMapMarker~Madison, WI ~
+    \small \raisebox{-0.1\height}\faPhone\ +1-608-298-8982 ~ \href{mailto:sbmaddipati@wisc.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{sbmaddipati@wisc.edu}} ~
+    \textbf{\href{https://www.linkedin.com/in/satya-bhargav-maddipati-9a47b8158/}{\textbf{\textcolor[HTML]{1c3978}{LinkedIn}}}} ~
+    \href{https://satyamaddipati.github.io}{\raisebox{-0.2\height}\faGlobe\ \underline{satyamaddipati.github.io}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+% Same seven courses, reordered so Software Engineering and Database
+% Systems lead instead of Reinforcement Learning.
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Wisconsin--Madison}{Madison, WI}
+      {M.S. in Computer Sciences | GPA: 4.0/4.0}{Sep 2025 - May 2027}
+      \resumeItemListStart
+        \resumeItem{\textbf{Coursework:} Software Engineering, Database Systems, Big Data, Computer Vision, Deep Learning, AI Agents}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Indian Institute of Technology Bombay}{Mumbai, India}
+      {B.Tech-M.Tech Dual Degree with Honors | GPA: 8.9/10}{Aug 2018 - Jun 2023}
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+  {Tata AIA Life Insurance\textbar\ Software Engineer -- Machine Learning}{Mumbai, India}
+  {\small \skill{Python}\,\skill{FastAPI}\,\skill{REST APIs}\,\skill{Microservices}\,\skill{Docker}\,\skill{Kubernetes}\,\skill{Azure}\,\skill{CI/CD}}{Jun 2023 - Aug 2025}
+  \resumeItemListStart
+    \resumeItem{\textbf{Designed and deployed scalable FastAPI microservices} backing a customer support platform serving \textbf{50K+ users} on Azure, sustaining \textbf{0.8s p95 latency} and \textbf{99.5\% uptime} under production load}
+    \resumeItem{\textbf{Owned design through delivery} of production workflow services integrating \textbf{LangGraph/CrewAI} agents into existing claims systems, automating multi-step processing and cutting manual review effort by \textbf{35\%}}
+    % VERIFY the testing / code-review claim below. If you did not write
+    % automated tests or ship through peer review, cut that clause.  %% VERIFY
+    \resumeItem{Built a \textbf{reusable, configurable training pipeline} that fine-tuned \textbf{5+ open-source LLMs} (\textbf{Llama 3.2, Qwen 2.5}) via \textbf{QLoRA/PEFT}, shipped with \textbf{automated tests and CI/CD} and validated through peer code review, reaching \textbf{94\%} accuracy on internal benchmarks}
+    \resumeItem{Designed a modular recommendation service over \textbf{2M+} customer records using embeddings and collaborative filtering, exposed as a \textbf{REST API} consumed by multiple internal teams}
+  \resumeItemListEnd
+
+    \resumeSubheading
+  {IIT Bombay \textbar\ Graduate Research Assistant}{Mumbai, India}
+  {\small \skill{Python}\,\skill{Data Pipelines}\,\skill{Pandas}\,\skill{NumPy}\,\skill{Time Series}}{Apr 2022 - Jun 2023}
+  \resumeItemListStart
+    \resumeItem{Built a modular forecasting pipeline for air-quality data: stochastic \textbf{KZ filtering} to strip meteorological trend, then swappable ensemble models (\textbf{XGBoost, Random Forests, SARIMA}) behind a common interface}
+    \resumeItem{Ran \textbf{SHAP-based interpretability analysis} to quantify seasonal and feature-level contributions in the forecasts}
+  \resumeItemListEnd
+
+    \resumeSubheading
+     {Cognibot AI \textbar\ Machine Learning Intern}{Mumbai, India}
+     {\small \skill{Computer Vision}\,\skill{Object Detection}\,\skill{EfficientDet}\,\skill{Python}}{Dec 2021 -- Feb 2022}
+    \resumeItemListStart
+      \resumeItem{Built a scalable people-tracking system for retail stores on an \textbf{EfficientDet} detector, profiling and tuning it across varied \textbf{compute and memory constraints} to meet real-time throughput targets}
+    \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+\vspace{-14pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+\resumeProjectHeading
+  {\textbf{Reason-Guessr: Image Geolocation Web App} \textbar\ {\small \skill{HTML/CSS/JS}\,\skill{CLIP ViT-B/32}\,}}{\href{https://reason-guessr.vercel.app}{\underline{reason-guessr.vercel.app}}}
+  \resumeItemListStart
+    \resumeItem{Built and \textbf{deployed an interactive web application} that predicts GPS coordinates from a single street-level image, wiring a browser frontend to a Python inference service and shipping it to production on \textbf{Vercel}}
+    \resumeItem{Backed by a \textbf{CLIP ViT-B/32} pipeline extracting interpretable cues (climate, plates, vegetation, architecture) zero-shot and fusing them with visual embeddings for coordinate regression; on a self-built \textbf{32K-image} dataset over \textbf{8,000} locations, cue fusion improved median haversine error from \textbf{90.6 km} to \textbf{88.9 km}}
+  \resumeItemListEnd
+  \vspace{-13pt}
+
+\resumeProjectHeading
+  {\textbf{Search Distillation: Learning from a Teacher} \textbar\ {\small \skill{LLMs}\,\skill{Search}\,\skill{Distillation}}}{In progress}
+  \resumeItemListStart
+    \resumeItem{Designing a search distillation study, with Dheeraj Dhillon, where the teacher has evidence access but the student must choose what to read rather than imitate the teacher's answers directly}
+    \resumeItem{Comparing the student against plain distillation and information-gain search baselines on answer accuracy, retrieval cost, and abstention, starting with controlled synthetic tasks before moving to \textbf{MuSiQue} multi-hop questions}
+  \resumeItemListEnd
+  \vspace{-13pt}
+
+\resumeProjectHeading
+    {\textbf{Grounded Vision-Language Agents for Instruction Following} \textbar\ {\small \skill{LLaVA-1.6}\,\skill{LoRA/PEFT}}}{}
+  \resumeItemListStart
+    \resumeItem{Built a multimodal agent on \textbf{LLaVA-1.6 (7B)} with a custom \textbf{Observe$\rightarrow$Reason$\rightarrow$Act} loop for multi-step instruction following on \textbf{VisualWebBench} and \textbf{ScienceQA}, benchmarked against text-only \textbf{Mistral-7B + ReAct} baselines}
+  \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+\vspace{1pt}
+
+%-----------TECHNICAL SKILLS-----------
+% Same four lines, regrouped: Java and JavaScript now lead Programming,
+% and a Software & Web line replaces the old ML-first ordering.
+% MATLAB and R dropped -- they match nothing in this JD.
+\vspace{-3pt}
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming}: Java, JavaScript, HTML/CSS, Python, C++, SQL \\
+     \textbf{Software \& Web}: REST APIs, FastAPI, Streamlit, Git, Unit/Integration Testing, Object-Oriented Design, PostgreSQL, MongoDB, Redis \\
+     \textbf{Cloud \& Infrastructure}: Azure, AWS (EC2, S3, SageMaker), Docker, Kubernetes, CI/CD, Vercel \\
+     \textbf{AI/ML}: PyTorch, TensorFlow, Scikit-learn, XGBoost, Hugging Face, OpenCV, LangChain, LangGraph, CrewAI, QLoRA, PEFT, Pandas, NumPy, SHAP, OpenAI/Anthropic/Gemini APIs
+    }}
+ \end{itemize}
+ \vspace{-14pt}
+
+%-----------ACHIEVEMENTS & POSITIONS OF RESPONSIBILITY-----------
+\section{Achievements and Positions of Responsibility}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Achievements}: JEE Advanced Top 0.5\% among 250K candidates; \textbf{Finalist}, Tata Innovation Workshop (\textbf{25+} teams) --- WhatsApp AI cross-sell flow cutting add-on processing from \textbf{15 days to under 5 min}; Inter-IIT Sports Bronze Medal \\
+     \textbf{Positions of Responsibility}: Web Coordinator, Techfest IIT Bombay
+    }}
+ \end{itemize}
+
+\end{document}
+
