@@ -34,6 +34,13 @@
 .currently ul { padding-left: 19px; margin: 0; font-size: 17px; line-height: 1.8; }
 .learning-note { align-self: center; transform: rotate(-9deg); font-size: 26px; line-height: 1.25; }
 .work-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; align-items: start; }
+.current-project { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(260px, .8fr); gap: 24px; align-items: center; padding: 25px; margin-bottom: 22px; border: 1px solid var(--line); border-radius: 4px; background: var(--paper); }
+.current-project.no-image { grid-template-columns: 1fr; }
+.current-project-copy { min-width: 0; }
+.current-project .eyebrow { color: var(--accent); margin-bottom: 12px; }
+.current-project h3 { font-size: clamp(25px, 3vw, 36px); line-height: 1.1; letter-spacing: -.025em; max-width: 21ch; }
+.current-project-copy > p:not(.eyebrow) { color: var(--muted); font-size: 18px; line-height: 1.4; margin-top: 14px; }
+.current-project > img { display: block; width: 100%; height: auto; border-radius: 3px; }
 .work-card { border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
 .card-photo { display: block; height: 192px; overflow: hidden; }
 .card-photo img { width: 100%; height: 100%; object-fit: cover; }
@@ -189,6 +196,8 @@ details p + p { margin-top: 8px; }
   .margin-note { font-size: 19px; }
 }
 @media (max-width: 800px) {
+  .current-project { grid-template-columns: 1fr; }
+  .current-project > img { max-width: 460px; }
   .journal-home .header-inner { min-height: 76px; }
   .journal-home nav { gap: 22px; }
   .journal-home .wordmark { font-size: 22px; }

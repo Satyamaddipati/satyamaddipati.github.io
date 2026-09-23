@@ -35,6 +35,24 @@
 </section>
 <section id="projects" class="section work-section" aria-label="Selected work">
 <header class="section-heading"><p class="eyebrow">Projects</p><h2>Selected Work</h2><p>A few projects I’m proud of — at the intersection of<br>LLMs, real-world applications, and human curiosity.</p><aside class="margin-note handwritten" aria-hidden="true">Ideas<br>→ Prototypes<br>→ Impact<br><span>(eventually)</span></aside></header>
+<article id="search-distillation" class="current-project" aria-labelledby="search-distillation-title">
+  <div class="current-project-copy">
+    <p class="eyebrow">Fall 2026 research · In progress</p>
+    <h3 id="search-distillation-title">Learning to Search from a Teacher Who Already Knows</h3>
+    <p>Can a smaller language model learn when to look for evidence, rather than just imitate a teacher’s answers? With Dheeraj Dhillon, I’m designing a search distillation study that gives the teacher access to evidence while the student must choose what to read.</p>
+    <div class="tags"><span>Language Models</span><span>Search</span><span>Model Distillation</span></div>
+    <details><summary>Research plan</summary><p>We plan to compare the student with plain distillation and information-gain search on answer accuracy, retrieval cost, and abstention when evidence is unavailable. The study starts with controlled synthetic tasks, then moves to MuSiQue multi-hop questions. The method and experiments are still being developed; results are forthcoming.</p></details>
+  </div>
+  <img src="/assets/projects/search-distillation.svg" width="640" height="420" alt="Diagram of a teacher with evidence guiding a student that selects passages to read" loading="lazy">
+</article>
+<article id="ai-agents" class="current-project no-image" aria-labelledby="ai-agents-title">
+  <div class="current-project-copy">
+    <p class="eyebrow">In progress</p>
+    <h3 id="ai-agents-title">AI Agents</h3>
+    <p>A new project exploring autonomous AI agents. Still early days — I’m actively working on it and will share the approach, tools, and results as it comes together.</p>
+    <div class="tags"><span>AI Agents</span><span>LLMs</span><span>Autonomy</span></div>
+  </div>
+</article>
 <div class="work-cards"><article id="reason-guessr" class="work-card"><div class="card-photo"><img src="/assets/images/mountains.jpg" width="1536" height="1024" alt="" loading="lazy" ></div><div class="card-copy"><h3><a href="https://reason-guessr.vercel.app">Reason-Guessr<span aria-hidden="true">→</span></a></h3><p>An interpretable image-geolocation system that uses visual clues to reason about where a photo was taken.</p><div class="tags"><span>CLIP</span><span>Computer Vision</span><span>PyTorch</span></div><details><summary>Project details</summary><p>Evaluated on 32K images, with a median haversine error of 88.9 km. Uses computer vision and CLIP representations to connect visual evidence to a location.</p><a class="underlined-link" href="https://reason-guessr.vercel.app">Try Reason-Guessr ↗</a></details></div></article>
 <article id="life-logger" class="work-card"><div class="card-photo"><img src="/assets/images/notebook.jpg" width="1536" height="1024" alt="" loading="lazy" ></div><div class="card-copy"><h3>AI Life Logger</h3><p>A personal lifelogging system that turns captured audio into structured memories and hourly summaries.</p><div class="tags"><span>Whisper</span><span>Personal AI</span><span>Claude</span></div><details><summary>Project details</summary><p>Ray-Ban AI Life Logger connects audio capture, transcription, LLMs, and automation. Built with Python, Whisper, Claude, and SQLite. Code not yet linked.</p></details></div></article>
 <article id="production-ai" class="work-card"><div class="card-photo"><img src="/assets/images/whiteboard.jpg" width="1536" height="1024" alt="" loading="lazy" ></div><div class="card-copy"><h3>Multi-Agent LLM Evaluation</h3><p>A repeatable framework for comparing LLM outputs through multiple agents and automated scoring.</p><div class="tags"><span>Multi-Agent Systems</span><span>Evaluation</span><span>LLMs</span></div><details><summary>Project details</summary><p>Production work at Tata AIA. Benchmarks GPT-4, Claude, and Gemini across 1,000+ prompts, with 50K+ evaluations per month and 89% correlation with human scoring. LangGraph · OpenAI API · Docker · Streamlit</p></details></div></article>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Learning to search</title>
+  <desc id="desc">A teacher sees the answer evidence while a student selects one of several passages to read.</desc>
+  <rect width="640" height="420" fill="#e8e7df"/>
+  <g fill="none" stroke="#b7c5c4" stroke-width="2">
+    <path d="M320 122v56M159 178h322M159 178v28M320 178v28M481 178v28"/>
+    <path d="M320 293v32" stroke="#126782" stroke-width="3"/>
+  </g>
+  <rect x="196" y="42" width="248" height="80" rx="8" fill="#f8f6f0" stroke="#b7c5c4"/>
+  <circle cx="231" cy="82" r="16" fill="#dcebf0"/>
+  <path d="M224 82l5 5 9-11" fill="none" stroke="#126782" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="258" y="77" fill="#15242c" font-family="Arial, sans-serif" font-size="17" font-weight="700">Teacher</text>
+  <text x="258" y="99" fill="#66645f" font-family="Arial, sans-serif" font-size="13">sees the evidence</text>
+  <g font-family="Arial, sans-serif" font-size="14" text-anchor="middle">
+    <rect x="80" y="206" width="158" height="87" rx="7" fill="#f8f6f0" stroke="#b7c5c4"/>
+    <rect x="241" y="206" width="158" height="87" rx="7" fill="#dcebf0" stroke="#126782" stroke-width="2"/>
+    <rect x="402" y="206" width="158" height="87" rx="7" fill="#f8f6f0" stroke="#b7c5c4"/>
+    <text x="159" y="242" fill="#15242c">Passage 1</text><text x="159" y="265" fill="#66645f" font-size="12">candidate</text>
+    <text x="320" y="242" fill="#15242c">Passage 2</text><text x="320" y="265" fill="#126782" font-size="12">selected to read</text>
+    <text x="481" y="242" fill="#15242c">Passage 3</text><text x="481" y="265" fill="#66645f" font-size="12">candidate</text>
+  </g>
+  <rect x="230" y="325" width="180" height="60" rx="8" fill="#15242c"/>
+  <text x="320" y="350" fill="#f8f6f0" font-family="Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle">Student</text>
+  <text x="320" y="371" fill="#c6d9de" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">learns when to search</text>
+</svg>
