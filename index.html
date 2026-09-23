@@ -39,9 +39,9 @@
   <div class="current-project-copy">
     <p class="eyebrow">Fall 2026 research · In progress</p>
     <h3 id="search-distillation-title">Learning to Search from a Teacher Who Already Knows</h3>
-    <p>Can a smaller language model learn when to look for evidence, rather than just imitate a teacher’s answers? With Dheeraj Dhillon, I’m designing a search distillation study that gives the teacher access to evidence while the student must choose what to read.</p>
-    <div class="tags"><span>Language Models</span><span>Search</span><span>Model Distillation</span></div>
-    <details><summary>Research plan</summary><p>We plan to compare the student with plain distillation and information-gain search on answer accuracy, retrieval cost, and abstention when evidence is unavailable. The study starts with controlled synthetic tasks, then moves to MuSiQue multi-hop questions. The method and experiments are still being developed; results are forthcoming.</p></details>
+    <p>Can a smaller language model learn when to search and what to retrieve, rather than just imitate a teacher’s answers? With Dheeraj Dhillon, I’m training a Qwen3-1.7B student against a frozen 4B teacher to learn efficient search behavior under explicit tool-call costs.</p>
+    <div class="tags"><span>Qwen3</span><span>Retrieval</span><span>Distillation</span></div>
+    <details><summary>Research plan</summary><p>We’re evaluating on controlled fact-finding tasks and MuSiQue multi-hop QA, measuring answer accuracy, retrieval cost, and abstention, against standard knowledge distillation and information-gain search baselines. The method and experiments are still being developed; results are forthcoming.</p></details>
   </div>
   <img src="/assets/projects/search-distillation.svg" width="640" height="420" alt="Diagram of a teacher with evidence guiding a student that selects passages to read" loading="lazy">
 </article>

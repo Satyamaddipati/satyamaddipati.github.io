@@ -171,10 +171,10 @@
   \vspace{-13pt}
 
 \resumeProjectHeading
-  {\textbf{Search Distillation: Learning from a Teacher} \textbar\ {\small \skill{LLMs}\,\skill{Search}\,\skill{Distillation}}}{In progress}
+  {\textbf{Teacher-Student Retrieval Learning} \textbar\ {\small \skill{Qwen3}\,\skill{Retrieval}\,\skill{Distillation}}}{In progress}
   \resumeItemListStart
-    \resumeItem{Designing a search distillation study, with Dheeraj Dhillon, where the teacher has evidence access but the student must choose what to read rather than imitate the teacher's answers directly}
-    \resumeItem{Comparing the student against plain distillation and information-gain search baselines on answer accuracy, retrieval cost, and abstention, starting with controlled synthetic tasks before moving to \textbf{MuSiQue} multi-hop questions}
+    \resumeItem{Training, with Dheeraj Dhillon, a \textbf{Qwen3-1.7B} student against a frozen \textbf{4B teacher} to learn efficient when-to-search / what-to-retrieve behavior under explicit \textbf{tool-call costs}}
+    \resumeItem{Evaluating on controlled fact-finding tasks and \textbf{MuSiQue} multi-hop QA on answer accuracy, retrieval cost, and abstention, against standard knowledge distillation and information-gain search baselines}
   \resumeItemListEnd
   \vspace{-13pt}
 
