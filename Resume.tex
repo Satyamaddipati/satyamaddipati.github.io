@@ -50,7 +50,9 @@
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.19in}
 \addtolength{\topmargin}{-.85in}
+\addtolength{\topmargin}{2pt}
 \addtolength{\textheight}{1.6in}
+\addtolength{\textheight}{2pt}
 
 \urlstyle{same}
 
@@ -103,7 +105,7 @@
     \small \raisebox{-0.1\height}\faPhone\ +1-608-298-8982 ~ \href{mailto:sbmaddipati@wisc.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{sbmaddipati@wisc.edu}} ~
     \textbf{\href{https://www.linkedin.com/in/satya-bhargav-maddipati-9a47b8158/}{\textbf{\textcolor[HTML]{1c3978}{LinkedIn}}}} ~
     \href{https://satyamaddipati.github.io}{\raisebox{-0.2\height}\faGlobe\ \underline{satyamaddipati.github.io}}
-    \vspace{-8pt}
+    \vspace{-14pt}
 \end{center}
 
 %-----------EDUCATION-----------
@@ -113,34 +115,34 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Wisconsin--Madison}{Madison, WI}
-      {M.S. in Computer Sciences | GPA: 4.0/4.0}{Sep 2025 - May 2027}
+      {M.S. in Computer Sciences | GPA: 4.0/4.0}{Sep 2025 -- May 2027 (Expected)}
       \resumeItemListStart
         \resumeItem{\textbf{Coursework:} Software Engineering, Database Systems, Big Data, Computer Vision, Deep Learning, AI Agents}
       \resumeItemListEnd
     \resumeSubheading
       {Indian Institute of Technology Bombay}{Mumbai, India}
-      {B.Tech-M.Tech Dual Degree with Honors | GPA: 8.9/10}{Aug 2018 - Jun 2023}
+      {B.Tech-M.Tech Dual Degree with Honors | GPA: 8.9/10}{Aug 2018 -- Jun 2023}
   \resumeSubHeadingListEnd
-\vspace{-12pt}
+\vspace{-16pt}
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
     \resumeSubheading
   {Tata AIA Life Insurance\textbar\ Software Engineer -- Machine Learning}{Mumbai, India}
-  {\small \skill{Python}\,\skill{FastAPI}\,\skill{REST APIs}\,\skill{Microservices}\,\skill{Docker}\,\skill{Kubernetes}\,\skill{Azure}\,\skill{CI/CD}}{Jun 2023 - Aug 2025}
+  {\small \skill{Python}\,\skill{FastAPI}\,\skill{REST APIs}\,\skill{Microservices}\,\skill{Docker}\,\skill{Kubernetes}\,\skill{Azure}\,\skill{CI/CD}}{Jun 2023 -- Aug 2025}
   \resumeItemListStart
     \resumeItem{\textbf{Designed and deployed scalable FastAPI microservices} backing a customer support platform serving \textbf{50K+ users} on Azure, sustaining \textbf{0.8s p95 latency} and \textbf{99.5\% uptime} under production load}
     \resumeItem{\textbf{Owned design through delivery} of production workflow services integrating \textbf{LangGraph/CrewAI} agents into existing claims systems, automating multi-step processing and cutting manual review effort by \textbf{35\%}}
     % VERIFY the testing / code-review claim below. If you did not write
     % automated tests or ship through peer review, cut that clause.  %% VERIFY
-    \resumeItem{Built a \textbf{reusable, configurable training pipeline} that fine-tuned \textbf{5+ open-source LLMs} (\textbf{Llama 3.2, Qwen 2.5}) via \textbf{QLoRA/PEFT}, shipped with \textbf{automated tests and CI/CD} and validated through peer code review, reaching \textbf{94\%} accuracy on internal benchmarks}
+    \resumeItem{Built a \textbf{reusable, configurable training pipeline} that fine-tuned \textbf{5+ open-source LLMs} (\textbf{Llama 3.2, Qwen 2.5}) via \textbf{QLoRA/PEFT}, shipped with \textbf{automated tests and CI/CD}, validated through peer code review, and reached \textbf{94\%} accuracy on internal benchmarks}
     \resumeItem{Designed a modular recommendation service over \textbf{2M+} customer records using embeddings and collaborative filtering, exposed as a \textbf{REST API} consumed by multiple internal teams}
   \resumeItemListEnd
 
     \resumeSubheading
   {IIT Bombay \textbar\ Graduate Research Assistant}{Mumbai, India}
-  {\small \skill{Python}\,\skill{Data Pipelines}\,\skill{Pandas}\,\skill{NumPy}\,\skill{Time Series}}{Apr 2022 - Jun 2023}
+  {\small \skill{Python}\,\skill{Data Pipelines}\,\skill{Pandas}\,\skill{NumPy}\,\skill{Time Series}}{Apr 2022 -- Jun 2023}
   \resumeItemListStart
     \resumeItem{Built a modular forecasting pipeline for air-quality data: stochastic \textbf{KZ filtering} to strip meteorological trend, then swappable ensemble models (\textbf{XGBoost, Random Forests, SARIMA}) behind a common interface}
     \resumeItem{Ran \textbf{SHAP-based interpretability analysis} to quantify seasonal and feature-level contributions in the forecasts}
@@ -163,18 +165,18 @@
     \resumeSubHeadingListStart
 
 \resumeProjectHeading
-  {\textbf{Reason-Guessr: Image Geolocation Web App} \textbar\ {\small \skill{HTML/CSS/JS}\,\skill{CLIP ViT-B/32}\,}}{\href{https://reason-guessr.vercel.app}{\underline{reason-guessr.vercel.app}}}
+  {\textbf{Reason-Guessr: Image Geolocation} \textbar\ {\small \skill{CLIP ViT-B/32}}}{\href{https://reason-guessr.vercel.app}{\underline{reason-guessr.vercel.app}}}
   \resumeItemListStart
     \resumeItem{Built and \textbf{deployed an interactive web application} that predicts GPS coordinates from a single street-level image, wiring a browser frontend to a Python inference service and shipping it to production on \textbf{Vercel}}
-    \resumeItem{Backed by a \textbf{CLIP ViT-B/32} pipeline extracting interpretable cues (climate, plates, vegetation, architecture) zero-shot and fusing them with visual embeddings for coordinate regression; on a self-built \textbf{32K-image} dataset over \textbf{8,000} locations, cue fusion improved median haversine error from \textbf{90.6 km} to \textbf{88.9 km}}
+    \resumeItem{Extracted interpretable cues (climate, plates, vegetation, architecture) zero-shot via a \textbf{CLIP ViT-B/32} pipeline and fused them with visual embeddings for coordinate regression; on a self-built \textbf{32K-image} dataset over \textbf{8,000} locations, cue fusion improved median haversine error from \textbf{90.6 km} to \textbf{88.9 km}}
   \resumeItemListEnd
   \vspace{-13pt}
 
 \resumeProjectHeading
   {\textbf{Teacher-Student Retrieval Learning} \textbar\ {\small \skill{Qwen3}\,\skill{Retrieval}\,\skill{Distillation}}}{In progress}
   \resumeItemListStart
-    \resumeItem{Training, with Dheeraj Dhillon, a \textbf{Qwen3-1.7B} student against a frozen \textbf{4B teacher} to learn efficient when-to-search / what-to-retrieve behavior under explicit \textbf{tool-call costs}}
-    \resumeItem{Evaluating on controlled fact-finding tasks and \textbf{MuSiQue} multi-hop QA on answer accuracy, retrieval cost, and abstention, against standard knowledge distillation and information-gain search baselines}
+    \resumeItem{Training a \textbf{Qwen3-1.7B} student against a frozen \textbf{4B teacher} to learn efficient when-to-search / what-to-retrieve behavior under explicit \textbf{tool-call costs}}
+    \resumeItem{Evaluating on controlled fact-finding tasks and \textbf{MuSiQue} multi-hop QA, measuring answer accuracy, retrieval cost, and abstention, against standard knowledge distillation and information-gain search baselines}
   \resumeItemListEnd
   \vspace{-13pt}
 
@@ -185,20 +187,19 @@
   \resumeItemListEnd
 
     \resumeSubHeadingListEnd
-\vspace{1pt}
+\vspace{-4pt}
 
 %-----------TECHNICAL SKILLS-----------
-% Same four lines, regrouped: Java and JavaScript now lead Programming,
-% and a Software & Web line replaces the old ML-first ordering.
-% MATLAB and R dropped -- they match nothing in this JD.
 \vspace{-3pt}
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Programming}: Java, JavaScript, HTML/CSS, Python, C++, SQL \\
-     \textbf{Software \& Web}: REST APIs, FastAPI, Streamlit, Git, Unit/Integration Testing, Object-Oriented Design, PostgreSQL, MongoDB, Redis \\
-     \textbf{Cloud \& Infrastructure}: Azure, AWS (EC2, S3, SageMaker), Docker, Kubernetes, CI/CD, Vercel \\
-     \textbf{AI/ML}: PyTorch, TensorFlow, Scikit-learn, XGBoost, Hugging Face, OpenCV, LangChain, LangGraph, CrewAI, QLoRA, PEFT, Pandas, NumPy, SHAP, OpenAI/Anthropic/Gemini APIs
+    \footnotesize{\item{
+     \textbf{Languages}: Python, Java, C/C++, JavaScript, TypeScript, SQL, R \\
+     \textbf{Front-end}: React, Next.js, Vue.js, React Native, Node/Express.js, HTML/CSS \\
+     \textbf{Back-end \& Data}: FastAPI, Spring Boot, REST APIs, PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch \\
+     \textbf{AI/ML}: PyTorch, TensorFlow, Scikit-learn, Hugging Face, LangChain, LangGraph, CrewAI, QLoRA/PEFT, Pandas, NumPy, SHAP, OpenAI/Anthropic/Gemini APIs \\
+     \textbf{Infrastructure}: AWS, Azure, Docker, Kubernetes, Kafka, RabbitMQ, Prometheus, Grafana, CI/CD, Linux \\
+     \textbf{Core CS \& Systems}: Data Structures \& Algorithms, Operating Systems, Computer Networks, Distributed Systems, Microservices, Object-Oriented Design
     }}
  \end{itemize}
  \vspace{-14pt}
