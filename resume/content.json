@@ -3,20 +3,21 @@
   "email": "sbmaddipati@wisc.edu",
   "github": "https://github.com/Satyamaddipati",
   "linkedin": "https://www.linkedin.com/in/sbmaddipati",
+  "twitter": "https://x.com/bhargavsatya1",
   "website": "https://satyamaddipati.github.io/",
-  "summary": "M.S. Computer Sciences student at UW-Madison with experience building production AI services, retrieval workflows, and machine learning systems.",
+  "summary": "M.S. Computer Sciences student researching efficient language-model search, with interests in generative models for scientific data. Experience spans retrieval learning, time-series forecasting, model evaluation, and production ML systems.",
   "education": [
     {
       "organization": "University of Wisconsin-Madison",
-      "dates": "Sep 2025 - May 2027",
+      "dates": "Sep 2025 – May 2027 (expected)",
       "title": "M.S. in Computer Sciences",
-      "details": "GPA: 4.0/4.0. Coursework: AI, machine learning, computer vision, foundation models, databases, big-data systems, and HCI."
+      "details": "GPA: 4.0/4.0. Coursework: Advanced NLP, Reinforcement Learning, AI Agents for Science, AI-Assisted Software Development, Computer Vision, Databases, Big Data."
     },
     {
       "organization": "IIT Bombay",
       "dates": "Aug 2018 - Jun 2023",
       "title": "B.Tech + M.Tech Dual Degree, Honors",
-      "details": "Environmental Science and Engineering. GPA: 8.9/10. Coursework: machine learning, probability, statistics, NLP, and data science."
+      "details": "GPA: 8.9/10."
     }
   ],
   "experience": [
@@ -24,11 +25,12 @@
       "organization": "Tata AIA Life Insurance",
       "location": "Mumbai, India",
       "dates": "July 2023 – December 2025",
-      "title": "Assistant Manager, Data Science",
+      "title": "Assistant Manager, Data Science (Software Engineer – ML); previously Management Trainee",
       "bullets": [
-        "Built production GPT-4 and RAG services with FastAPI on Azure, plus agentic claims workflows using LangGraph and CrewAI.",
-        "Developed agentic and retrieval workflows that reduced manual review by 35%, saving an estimated 2,000+ person-hours annually.",
-        "Improved document-classification accuracy from 78% to 94% by fine-tuning Llama and Qwen with QLoRA and PEFT."
+        "Built and deployed FastAPI services on Azure for a customer-support platform serving 50K+ users; achieved 0.8 s p95 latency and 99.5% uptime.",
+        "Integrated LangGraph/CrewAI agent workflows into claims systems, reducing manual review effort by 35% (estimated 2,000+ person-hours annually).",
+        "Developed reusable fine-tuning pipelines for 5+ open-source LLMs using QLoRA/PEFT; document-classification accuracy improved from 78% to 94% on internal benchmarks.",
+        "Designed an embedding and collaborative-filtering recommendation service over 2M+ customer records and exposed it through REST APIs used by multiple internal teams."
       ],
       "note": "Management Trainee: July 2023 – June 2024; Assistant Manager, Data Science: June 2024 – December 2025"
     },
@@ -38,9 +40,10 @@
       "dates": "Apr 2022 - Jun 2023",
       "title": "Graduate Research Assistant",
       "bullets": [
-        "Built 3–7 day air-quality forecasts using SARIMA, XGBoost, Random Forests, and meteorological data.",
-        "Applied stochastic KZ filtering and SHAP analysis to explain seasonal and feature-level contributions."
-      ]
+        "Built a time-series forecasting pipeline combining KZ filtering and multiple linear regression for detrending with SARIMA and grid-search-tuned Random Forest models on Sion CAAQMS air-quality data.",
+        "Evaluated raw and filtered inputs; SARIMA achieved PM2.5 RMSE of 0.44 at a 1-day horizon and 5.27 at 7 days. Applied SHAP to interpret the contributions of humidity, wind speed, and rainfall across pollutant targets."
+      ],
+      "note": "Time-series machine learning and model evaluation"
     },
     {
       "organization": "IIT Bombay",
@@ -59,13 +62,28 @@
       "bullets": [
         "Developed an EfficientDet computer-vision pipeline for tracking people in retail environments across different compute constraints."
       ]
+    },
+    {
+      "organization": "Eureka Infotech Inc",
+      "location": "Mumbai, India",
+      "dates": "May 2021 - Jun 2021",
+      "title": "Data Analyst Intern",
+      "bullets": [
+        "Re-engineered AWS Batch forecasting workflows, reducing runtime from 2.5 days to 145 minutes.",
+        "Designed and Dockerized an AutoML framework integrating multiple models and hyperparameter optimization."
+      ]
     }
   ],
   "projects": [
     {
+      "title": "Buzzer: Interactive Quiz Platform",
+      "tech": "React, TypeScript, FastAPI, Socket.IO",
+      "description": "Extended a multi-user quiz platform across Admin, Host, and Player apps, implementing question types with shared partial-credit scoring and cross-layer payload contracts; added integration tests spanning API validation, answer persistence, import/export, and session reports."
+    },
+    {
       "title": "Reason-Guessr",
       "tech": "PyTorch, CLIP, Computer Vision",
-      "description": "Built an interpretable image-geolocation pipeline on a 32K-image dataset, reaching 88.9 km median haversine error.",
+      "description": "Built an image-geolocation pipeline evaluated on 32K images; cue fusion improved median haversine error from 90.6 km to 88.9 km.",
       "url": "https://reason-guessr.vercel.app"
     },
     {
@@ -76,7 +94,7 @@
     {
       "title": "Grounded Vision-Language Agent",
       "tech": "LLaVA-1.6, LoRA/PEFT, Hugging Face",
-      "description": "Implemented an Observe-Reason-Act loop for multi-step visual instruction following and evaluated it against text-only baselines."
+      "description": "Implemented an Observe–Reason–Act loop with LLaVA-1.6 (7B) for multi-step visual instruction following; evaluated on VisualWebBench and ScienceQA against a text-only Mistral-7B + ReAct baseline."
     },
     {
       "title": "Multi-Agent LLM Evaluation Platform",
@@ -87,10 +105,10 @@
     }
   ],
   "skills": {
-    "Languages": "Python, C++, SQL, JavaScript, Java, R, MATLAB",
-    "Backend": "FastAPI, Flask, REST APIs, PostgreSQL, Redis, SQLite",
-    "ML & AI": "PyTorch, Scikit-learn, Hugging Face, OpenCV, XGBoost, RAG, LangGraph",
-    "Cloud": "Docker, Kubernetes, CI/CD, Azure, AWS"
+    "Programming": "Python, C++, Java, JavaScript/TypeScript, SQL",
+    "ML": "PyTorch, Hugging Face, Scikit-learn, CLIP, XGBoost, SHAP, QLoRA/PEFT",
+    "Generative AI": "Language models, retrieval, distillation, RAG, LangGraph, CrewAI",
+    "Systems": "FastAPI, React, REST APIs, Git, unit/integration testing, PostgreSQL, MySQL, Docker, Azure, AWS, CI/CD, OOP"
   },
   "professional_work": [
     {
@@ -98,6 +116,18 @@
       "organization": "Tata AIA Life Insurance",
       "tech": "FastAPI, Azure, GPT-4",
       "description": "Achieved 0.8s p95 latency and 99.5% uptime."
+    }
+  ],
+  "location": "Madison, WI",
+  "research": [
+    {
+      "organization": "University of Wisconsin–Madison",
+      "title": "Teacher–Student Retrieval Learning",
+      "dates": "Fall 2026 – Present",
+      "bullets": [
+        "Training a Qwen3-1.7B student against a frozen 4B teacher to learn when to search and what to retrieve under explicit tool-call costs.",
+        "Evaluating on controlled fact-finding tasks and MuSiQue multi-hop QA; measuring answer accuracy, retrieval cost, and abstention against standard distillation and information-gain search baselines. Experiments are ongoing; results are not yet available."
+      ]
     }
   ]
 }

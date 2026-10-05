@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Reason-Guessr: an interpretable image-geolocation system using CLIP ViT-B/32 and semantic visual cues, evaluated on 32K images across 8,000 locations.">
+  <meta name="theme-color" content="#F3F1EA">
+  <title>Reason-Guessr | Satya Maddipati</title>
+  <link rel="canonical" href="https://satyamaddipati.github.io/projects/reason-guessr/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Reason-Guessr | Satya Maddipati">
+  <meta property="og:description" content="An interpretable image-geolocation system using CLIP and semantic visual cues.">
+  <meta property="og:url" content="https://satyamaddipati.github.io/projects/reason-guessr/">
+  <meta property="og:image" content="https://satyamaddipati.github.io/assets/projects/reason-guessr.svg">
+  <meta property="og:image:alt" content="Reason-Guessr pipeline diagram">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script src="/assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="/">Satya Maddipati</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Menu <span aria-hidden="true">+</span></button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="/#work">Work</a>
+        <a href="/research/">Research</a>
+        <a href="/about/">About</a>
+        <a href="/resume/resume.pdf" data-resume-link target="_blank" rel="noopener">Resume ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="wrap subpage case-study" tabindex="-1">
+    <header class="page-intro case-study-intro">
+      <p class="eyebrow">Case study</p>
+      <h1>Reason-Guessr<span class="accent">.</span></h1>
+      <p>An interpretable image-geolocation system that predicts location from a single street-level image while surfacing the visual evidence behind the prediction.</p>
+      <div class="case-study-links"><a class="button button-solid" href="https://reason-guessr.vercel.app">Live demo ↗</a></div>
+    </header>
+
+    <section class="case-section" aria-labelledby="cs-01"><p class="case-number">01</p><h2 id="cs-01">Problem</h2><p>Given a single street-level photo, predict where on Earth it was taken. Most geolocation models output a coordinate and nothing else — a recruiter or reviewer has no way to tell whether the model noticed the right things or got lucky on a correlated background feature.</p></section>
+
+    <section class="case-section" aria-labelledby="cs-02"><p class="case-number">02</p><h2 id="cs-02">Why this is hard</h2><p>Two images from different continents can share similar lighting, road surfaces, or vegetation; two images from the same city can look completely different close-up versus from a distance. A model that only optimizes coordinate error has no incentive to ground its answer in anything a human could check.</p></section>
+
+    <section class="case-section" aria-labelledby="cs-03"><p class="case-number">03</p><h2 id="cs-03">Dataset</h2><p>Evaluated on <strong>32K images across 8,000 locations</strong>. Each location contributes multiple images so the model can't just memorize a single viewpoint per place.</p></section>
+
+    <section class="case-section" aria-labelledby="cs-04"><p class="case-number">04</p><h2 id="cs-04">Architecture</h2>
+      <figure class="case-diagram"><img src="/assets/projects/reason-guessr.svg" width="640" height="420" loading="lazy" alt="Diagram: street-level image into a CLIP ViT-B/32 encoder, producing a visual embedding, fused with climate, plate, vegetation, and architecture cues, into coordinate regression"></figure>
+      <p>A CLIP ViT-B/32 encoder turns the image into a visual embedding. That embedding is fused with a set of interpretable cues before a regression head predicts latitude and longitude — so the final coordinate is traceable back to specific visual evidence, not just a black-box embedding.</p>
+    </section>
+
+    <section class="case-section" aria-labelledby="cs-05"><p class="case-number">05</p><h2 id="cs-05">Interpretable cues</h2><ul class="case-list"><li>Climate and vegetation</li><li>License plates</li><li>Architecture style</li></ul><p>Surfacing these cues means a reviewer can sanity-check a prediction against the same evidence the model used, instead of trusting a single opaque number.</p></section>
+
+    <section class="case-section" aria-labelledby="cs-06"><p class="case-number">06</p><h2 id="cs-06">Experiments</h2>
+      <div class="case-stats">
+        <div><span class="case-stat">90.6 km</span><span class="case-stat-label">CLIP embedding alone</span></div>
+        <div><span class="case-stat">88.9 km</span><span class="case-stat-label">with cue fusion</span></div>
+      </div>
+      <p>Median haversine error. Cue fusion gives a modest, consistent improvement over the embedding-only baseline — not a dramatic one, which is itself informative about how much of the signal CLIP's embedding already captures on its own.</p>
+    </section>
+
+    <section class="case-section" aria-labelledby="cs-07"><p class="case-number">07</p><h2 id="cs-07">Limitations</h2><p>The hardest cases are locations with few distinguishing visual cues — similar climate zones, no visible signage, generic architecture. Cue fusion narrows the error on average; it doesn't remove this category of ambiguity, and an honest accounting of the result has to say so rather than imply the system resolves every case.</p></section>
+
+    <section class="case-section" aria-labelledby="cs-08"><p class="case-number">08</p><h2 id="cs-08">What I'd try next</h2><p>The small gap between the embedding-only and cue-fusion numbers suggests the interpretable cues are currently acting more as a sanity check than a strong independent signal. A natural next step is weighting cues by how confidently each one fires, rather than fusing them uniformly, so a strong plate match can outvote a weak vegetation guess.</p></section>
+
+    <p class="section-end"><a class="underlined-link" href="https://reason-guessr.vercel.app">Try the live demo ↗</a></p>
+  </main>
+  <footer id="contact" class="site-footer wrap">
+    <div class="footer-top">
+      <h2>Let’s grab coffee<span class="accent">.</span></h2>
+      <div class="text-links" aria-label="Contact links">
+        <a href="mailto:sbmaddipati@wisc.edu">Email ↗</a>
+        <a href="https://github.com/Satyamaddipati">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/sbmaddipati">LinkedIn ↗</a>
+        <a href="https://x.com/bhargavsatya1">Twitter ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> Satya Maddipati</span><a href="#content">Back to top ↑</a></div>
+  </footer>
+</body>
+</html>

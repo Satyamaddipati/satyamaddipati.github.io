@@ -4,8 +4,8 @@ The existing files `bascom-hall.jpg`, `iit-bombay-main-building.jpg`, and
 `lake-mendota-sunset.jpg` were present in the workspace before this revision.
 The two campus photographs are now verified and credited in
 [`../IMAGE_CREDITS.md`](../IMAGE_CREDITS.md).
-The source, creator and license of `lake-mendota-sunset.jpg` remain unverified:
-**UNSAFE TO PUBLISH** until replaced or its rights are established.
+`lake-mendota-sunset.jpg` is owner-confirmed (2026-10) as a personal photograph
+the owner holds the rights to. See `docs/PRECOMMIT_QA.md` for the updated record.
 
 The following assets were created with the built-in image-generation tool for
 the September 17, 2026 reference-matching revision, then exported as local JPEGs.

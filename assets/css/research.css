@@ -1,0 +1,24 @@
+/* Research notebook: narrow column, numbered entries, academic restraint. */
+.research-page { max-width: 760px; }
+.research-page .page-intro h1 { font-size: clamp(40px, 5vw, 56px); }
+.research-page .page-intro > p:not(.eyebrow) { font-size: 18px; }
+.research-entry { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 0 32px; margin-top: 56px; padding-top: 48px; border-top: 1px solid var(--line); }
+.research-entry:first-of-type { margin-top: 48px; }
+.entry-number { font: italic 54px/1 var(--serif); color: var(--line); }
+.entry-body { min-width: 0; }
+.entry-status { font: 11px/1.5 var(--mono); color: var(--accent); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 14px; }
+.entry-body h2 { font-size: clamp(26px, 3.4vw, 36px); letter-spacing: -.02em; max-width: 24ch; }
+.entry-lede { color: var(--muted); font-size: 18px; margin-top: 10px; font-style: italic; }
+.entry-body section { margin-top: 34px; }
+.entry-body h3 { font: 11px/1.5 var(--mono); text-transform: uppercase; letter-spacing: .1em; color: var(--muted); padding-bottom: 8px; border-bottom: 1px solid var(--line); margin-bottom: 14px; }
+.entry-body section p { font-size: 16px; line-height: 1.55; color: var(--ink); max-width: 62ch; }
+.entry-body section ul { margin: 0; padding-left: 20px; font-size: 16px; line-height: 1.6; color: var(--ink); max-width: 62ch; }
+.entry-body section li + li { margin-top: 6px; }
+#status-01 + p { color: var(--muted); }
+.research-aside { max-width: 62ch; margin: 56px 0 0 122px; padding-top: 28px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; line-height: 1.5; font-style: italic; }
+.research-aside strong { font-style: normal; color: var(--heading); }
+@media (max-width: 640px) {
+  .research-entry { grid-template-columns: 1fr; gap: 10px; margin-top: 40px; padding-top: 32px; }
+  .entry-number { font-size: 32px; }
+  .research-aside { margin-left: 0; }
+}

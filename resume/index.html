@@ -15,8 +15,8 @@
   <meta property="og:image:alt" content="Satya Bhargav Maddipati">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/styles.css">
-  <script src="/script.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script src="/assets/js/site.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
@@ -25,11 +25,10 @@
       <a class="wordmark" href="/">Satya Maddipati</a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Menu <span aria-hidden="true">+</span></button>
       <nav id="main-nav" aria-label="Main navigation">
-        <a href="/#projects">Work</a>
-        <a href="/blog/">Notes</a>
-        <a href="/#life">Life</a>
+        <a href="/#work">Work</a>
+        <a href="/research/">Research</a>
         <a href="/about/">About</a>
-        <a href="/resume/resume.pdf" data-resume-link aria-current="page" target="_blank" rel="noopener">Resume ↗</a>
+        <a href="/resume/resume.pdf" data-resume-link target="_blank" rel="noopener">Resume ↗</a>
       </nav>
     </div>
   </header>
@@ -38,79 +37,138 @@
     <div class="resume-sheet">
 <!-- RESUME CONTENT START -->
 <h2 class="resume-name">Satya Bhargav Maddipati</h2>
-<p class="muted">M.S. Computer Sciences student at UW-Madison with experience building production AI services, retrieval workflows, and machine learning systems.</p>
-<div class="resume-contact"><a href="mailto:sbmaddipati@wisc.edu">sbmaddipati@wisc.edu</a><a href="https://github.com/Satyamaddipati">GitHub</a><a href="https://www.linkedin.com/in/sbmaddipati">LinkedIn</a></div>
+<p class="muted">M.S. Computer Sciences student researching efficient language-model search, with interests in generative models for scientific data. Experience spans retrieval learning, time-series forecasting, model evaluation, and production ML systems.</p>
+<p>Madison, WI</p>
+<div class="resume-contact">
+<a href="mailto:sbmaddipati@wisc.edu">sbmaddipati@wisc.edu</a>
+<a href="https://github.com/Satyamaddipati">GitHub</a>
+<a href="https://www.linkedin.com/in/sbmaddipati">LinkedIn</a>
+<a href="https://x.com/bhargavsatya1">Twitter</a>
+</div>
 <section class="resume-section"><h3>Education</h3>
-<article class="resume-item"><div class="resume-item-heading"><h4>University of Wisconsin-Madison</h4><span>Sep 2025 - May 2027</span></div>
+<article class="resume-item"><div class="resume-item-heading">
+<h4>University of Wisconsin-Madison</h4>
+<span>Sep 2025 – May 2027 (expected)</span>
+</div>
 <p><strong>M.S. in Computer Sciences</strong></p>
-<p>GPA: 4.0/4.0. Coursework: AI, machine learning, computer vision, foundation models, databases, big-data systems, and HCI.</p>
+<p>GPA: 4.0/4.0. Coursework: Advanced NLP, Reinforcement Learning, AI Agents for Science, AI-Assisted Software Development, Computer Vision, Databases, Big Data.</p>
 </article>
-<article class="resume-item"><div class="resume-item-heading"><h4>IIT Bombay</h4><span>Aug 2018 - Jun 2023</span></div>
+<article class="resume-item"><div class="resume-item-heading">
+<h4>IIT Bombay</h4>
+<span>Aug 2018 - Jun 2023</span>
+</div>
 <p><strong>B.Tech + M.Tech Dual Degree, Honors</strong></p>
-<p>Environmental Science and Engineering. GPA: 8.9/10. Coursework: machine learning, probability, statistics, NLP, and data science.</p>
+<p>GPA: 8.9/10.</p>
 </article>
 </section>
-<section class="resume-section"><h3>Experience</h3>
-<article class="resume-item"><div class="resume-item-heading"><h4>Tata AIA Life Insurance</h4><span>July 2023 – December 2025</span></div>
-<p><strong>Management Trainee → Assistant Manager, Data Science</strong></p>
-<p>Management Trainee: July 2023 – June 2024 · Assistant Manager, Data Science: June 2024 – December 2025</p>
-
-<ul><li>Built production GPT-4 and RAG services with FastAPI on Azure, plus agentic claims workflows using LangGraph and CrewAI.</li><li>Developed agentic and retrieval workflows that reduced manual review by 35%, saving an estimated 2,000+ person-hours annually.</li><li>Improved document-classification accuracy from 78% to 94% by fine-tuning Llama and Qwen with QLoRA and PEFT.</li></ul>
+<section class="resume-section"><h3>Research experience</h3>
+<article class="resume-item"><div class="resume-item-heading">
+<h4>University of Wisconsin–Madison</h4>
+<span>Fall 2026 – Present</span>
+</div>
+<p><strong>Teacher–Student Retrieval Learning</strong></p>
+<ul><li>Training a Qwen3-1.7B student against a frozen 4B teacher to learn when to search and what to retrieve under explicit tool-call costs.</li><li>Evaluating on controlled fact-finding tasks and MuSiQue multi-hop QA; measuring answer accuracy, retrieval cost, and abstention against standard distillation and information-gain search baselines. Experiments are ongoing; results are not yet available.</li></ul>
 </article>
-<article class="resume-item"><div class="resume-item-heading"><h4>IIT Bombay</h4><span>Apr 2022 - Jun 2023</span></div>
+<article class="resume-item"><div class="resume-item-heading">
+<h4>IIT Bombay</h4>
+<span>Apr 2022 - Jun 2023</span>
+</div>
 <p><strong>Graduate Research Assistant</strong></p>
-<ul><li>Built 3–7 day air-quality forecasts using SARIMA, XGBoost, Random Forests, and meteorological data.</li><li>Applied stochastic KZ filtering and SHAP analysis to explain seasonal and feature-level contributions.</li></ul>
+<p>Time-series machine learning and model evaluation</p>
+<ul><li>Built a time-series forecasting pipeline combining KZ filtering and multiple linear regression for detrending with SARIMA and grid-search-tuned Random Forest models on Sion CAAQMS air-quality data.</li><li>Evaluated raw and filtered inputs; SARIMA achieved PM2.5 RMSE of 0.44 at a 1-day horizon and 5.27 at 7 days. Applied SHAP to interpret the contributions of humidity, wind speed, and rainfall across pollutant targets.</li></ul>
 </article>
-<article class="resume-item"><div class="resume-item-heading"><h4>IIT Bombay</h4><span>Aug 2022 - May 2023</span></div>
+</section>
+<section class="resume-section"><h3>Industry and teaching experience</h3>
+<article class="resume-item"><div class="resume-item-heading">
+<h4>Tata AIA Life Insurance</h4>
+<span>July 2023 – December 2025</span>
+</div>
+<p><strong>Assistant Manager, Data Science (Software Engineer – ML); previously Management Trainee</strong></p>
+<p>Management Trainee: July 2023 – June 2024; Assistant Manager, Data Science: June 2024 – December 2025</p>
+<ul><li>Built and deployed FastAPI services on Azure for a customer-support platform serving 50K+ users; achieved 0.8 s p95 latency and 99.5% uptime.</li><li>Integrated LangGraph/CrewAI agent workflows into claims systems, reducing manual review effort by 35% (estimated 2,000+ person-hours annually).</li><li>Developed reusable fine-tuning pipelines for 5+ open-source LLMs using QLoRA/PEFT; document-classification accuracy improved from 78% to 94% on internal benchmarks.</li><li>Designed an embedding and collaborative-filtering recommendation service over 2M+ customer records and exposed it through REST APIs used by multiple internal teams.</li></ul>
+</article>
+<article class="resume-item"><div class="resume-item-heading">
+<h4>IIT Bombay</h4>
+<span>Aug 2022 - May 2023</span>
+</div>
 <p><strong>Teaching Assistant</strong></p>
 <ul><li>Led labs, tutorials, and office hours, helping students understand course material and assignments.</li></ul>
 </article>
-<article class="resume-item"><div class="resume-item-heading"><h4>Cognibot AI</h4><span>Dec 2021 - Feb 2022</span></div>
+<article class="resume-item"><div class="resume-item-heading">
+<h4>Cognibot AI</h4>
+<span>Dec 2021 - Feb 2022</span>
+</div>
 <p><strong>Machine Learning Intern</strong></p>
 <ul><li>Developed an EfficientDet computer-vision pipeline for tracking people in retail environments across different compute constraints.</li></ul>
 </article>
+<article class="resume-item"><div class="resume-item-heading">
+<h4>Eureka Infotech Inc</h4>
+<span>May 2021 - Jun 2021</span>
+</div>
+<p><strong>Data Analyst Intern</strong></p>
+<ul><li>Re-engineered AWS Batch forecasting workflows, reducing runtime from 2.5 days to 145 minutes.</li><li>Designed and Dockerized an AutoML framework integrating multiple models and hyperparameter optimization.</li></ul>
+</article>
 </section>
-<section class="resume-section"><h3>Selected professional work · Tata AIA Life Insurance</h3>
-<article class="resume-item"><div class="resume-item-heading"><h4>Multi-Agent LLM Evaluation Platform</h4></div>
-<p>LangGraph · OpenAI API · Docker · Streamlit</p>
+<section class="resume-section"><h3>Selected professional work</h3>
+<article class="resume-item"><div class="resume-item-heading">
+<h4>Tata AIA Life Insurance</h4>
+</div>
+<p><strong>Multi-Agent LLM Evaluation Platform</strong></p>
+<p>LangGraph, OpenAI API, Docker, Streamlit</p>
 <p>Production platform processing 50K+ evaluations per month, with 89% correlation with human scoring. Benchmarked GPT-4, Claude, and Gemini across 1,000+ prompts using LLM-as-judge evaluators.</p>
 </article>
-<article class="resume-item"><div class="resume-item-heading"><h4>Production GPT-4 and RAG services</h4></div>
-<p>FastAPI · Azure · GPT-4</p>
+<article class="resume-item"><div class="resume-item-heading">
+<h4>Tata AIA Life Insurance</h4>
+</div>
+<p><strong>Production GPT-4 and RAG services</strong></p>
+<p>FastAPI, Azure, GPT-4</p>
 <p>Achieved 0.8s p95 latency and 99.5% uptime.</p>
 </article>
 </section>
 <section class="resume-section"><h3>Selected projects</h3>
-<article class="resume-item"><div class="resume-item-heading"><h4>Reason-Guessr</h4></div>
+<article class="resume-item"><div class="resume-item-heading">
+<h4>Buzzer: Interactive Quiz Platform</h4>
+</div>
+<p>React, TypeScript, FastAPI, Socket.IO</p>
+<p>Extended a multi-user quiz platform across Admin, Host, and Player apps, implementing question types with shared partial-credit scoring and cross-layer payload contracts; added integration tests spanning API validation, answer persistence, import/export, and session reports.</p>
+</article>
+<article class="resume-item"><div class="resume-item-heading">
+<h4>Reason-Guessr</h4>
+</div>
 <p>PyTorch, CLIP, Computer Vision</p>
-<p>Built an interpretable image-geolocation pipeline on a 32K-image dataset, reaching 88.9 km median haversine error.</p>
+<p>Built an image-geolocation pipeline evaluated on 32K images; cue fusion improved median haversine error from 90.6 km to 88.9 km.</p>
 <p><a href="https://reason-guessr.vercel.app">View live project ↗</a></p>
 </article>
-<article class="resume-item"><div class="resume-item-heading"><h4>Ray-Ban AI Life Logger</h4></div>
+<article class="resume-item"><div class="resume-item-heading">
+<h4>Ray-Ban AI Life Logger</h4>
+</div>
 <p>Python, Whisper, Claude, SQLite</p>
 <p>Built an automated pipeline that transcribes captured audio, filters useful signals, and delivers structured hourly summaries.</p>
 </article>
-<article class="resume-item"><div class="resume-item-heading"><h4>Grounded Vision-Language Agent</h4></div>
+<article class="resume-item"><div class="resume-item-heading">
+<h4>Grounded Vision-Language Agent</h4>
+</div>
 <p>LLaVA-1.6, LoRA/PEFT, Hugging Face</p>
-<p>Implemented an Observe-Reason-Act loop for multi-step visual instruction following and evaluated it against text-only baselines.</p>
+<p>Implemented an Observe–Reason–Act loop with LLaVA-1.6 (7B) for multi-step visual instruction following; evaluated on VisualWebBench and ScienceQA against a text-only Mistral-7B + ReAct baseline.</p>
 </article>
 </section>
 <section class="resume-section resume-skills"><h3>Technical skills</h3>
-<p><strong>Languages:</strong> Python, C++, SQL, JavaScript, Java, R, MATLAB</p>
-<p><strong>Backend:</strong> FastAPI, Flask, REST APIs, PostgreSQL, Redis, SQLite</p>
-<p><strong>ML &amp; AI:</strong> PyTorch, Scikit-learn, Hugging Face, OpenCV, XGBoost, RAG, LangGraph</p>
-<p><strong>Cloud:</strong> Docker, Kubernetes, CI/CD, Azure, AWS</p>
+<p><strong>Programming:</strong> Python, C++, Java, JavaScript/TypeScript, SQL</p>
+<p><strong>ML:</strong> PyTorch, Hugging Face, Scikit-learn, CLIP, XGBoost, SHAP, QLoRA/PEFT</p>
+<p><strong>Generative AI:</strong> Language models, retrieval, distillation, RAG, LangGraph, CrewAI</p>
+<p><strong>Systems:</strong> FastAPI, React, REST APIs, Git, unit/integration testing, PostgreSQL, MySQL, Docker, Azure, AWS, CI/CD, OOP</p>
 </section>
 <!-- RESUME CONTENT END -->
     </div>
   </main>
   <footer id="contact" class="site-footer wrap">
     <div class="footer-top">
-      <h2>Say hello<span class="accent">.</span></h2>
+      <h2>Let’s grab coffee<span class="accent">.</span></h2>
       <div class="text-links" aria-label="Contact links">
         <a href="mailto:sbmaddipati@wisc.edu">Email ↗</a>
         <a href="https://github.com/Satyamaddipati">GitHub ↗</a>
         <a href="https://www.linkedin.com/in/sbmaddipati">LinkedIn ↗</a>
+        <a href="https://x.com/bhargavsatya1">Twitter ↗</a>
       </div>
     </div>
     <div class="footer-bottom"><span>© <span id="year">2026</span> Satya Maddipati</span><a href="#content">Back to top ↑</a></div>

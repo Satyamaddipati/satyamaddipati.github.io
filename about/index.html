@@ -15,8 +15,9 @@
   <meta property="og:image:alt" content="Satya Bhargav Maddipati">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/styles.css">
-  <script src="/script.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/journal.css">
+  <script src="/assets/js/site.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
@@ -25,9 +26,8 @@
       <a class="wordmark" href="/">Satya Maddipati</a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Menu <span aria-hidden="true">+</span></button>
       <nav id="main-nav" aria-label="Main navigation">
-        <a href="/#projects">Work</a>
-        <a href="/blog/">Notes</a>
-        <a href="/#life">Life</a>
+        <a href="/#work">Work</a>
+        <a href="/research/">Research</a>
         <a href="/about/" aria-current="page">About</a>
         <a href="/resume/resume.pdf" data-resume-link target="_blank" rel="noopener">Resume ↗</a>
       </nav>
@@ -39,22 +39,61 @@
       <figure class="about-photo"><img src="/profile.jpg" width="854" height="1280" alt="Satya Maddipati"><figcaption>Satya Maddipati</figcaption></figure>
       <div class="about-prose">
         <p class="about-lead">I’m Satya, an M.S. Computer Sciences student at UW–Madison. I build software and applied AI systems.</p>
-        <section aria-labelledby="journey-title"><h2 id="journey-title">The path here</h2><p>I studied Environmental Science and Engineering at IIT Bombay, earning a B.Tech + M.Tech dual degree with Honors. Working with environmental data drew me toward machine learning; research and teaching gave me more questions to follow.</p><p>At Tata AIA Life Insurance, I progressed from Management Trainee (July 2023 – June 2024) to Assistant Manager, Data Science (June 2024 – December 2025). I worked on production AI services: retrieval workflows, document classification, and LLM evaluation. I’m now using graduate school to deepen my CS foundations through coursework and projects.</p></section>
-        <section aria-labelledby="interests-title"><h2 id="interests-title">What holds my attention</h2><p>Machine learning, computer vision, intelligent systems, and distributed systems. My projects range from estimating locations from images to making captured audio easier to revisit.</p><a class="underlined-link" href="/#projects">See the projects ↗</a></section>
-        <section aria-labelledby="outside-title"><h2 id="outside-title">Outside work</h2><p>Outside of work, I enjoy lifting, traveling, photography, coffee, and exploring new places.</p><!-- TODO: Add one real personal photo and a specific caption from Satya to assets/life/everyday.webp. No invented anecdotes or fun facts. --></section>
-        <div class="text-links"><a href="mailto:sbmaddipati@wisc.edu">Email ↗</a><a href="https://www.linkedin.com/in/sbmaddipati">LinkedIn ↗</a></div>
+        <section aria-labelledby="journey-title"><h2 id="journey-title">The path here</h2><p>I earned a B.Tech + M.Tech dual degree with Honors at IIT Bombay. My research used time-series decomposition, SARIMA, tuned Random Forest models, and SHAP to forecast and interpret air-quality measurements. That work connected scientific questions with model design and evaluation.</p><p>At Tata AIA Life Insurance, I progressed from Management Trainee (July 2023 – June 2024) to Assistant Manager, Data Science (June 2024 – December 2025). I worked on production AI services: retrieval workflows, document classification, and LLM evaluation. I’m now using graduate school to deepen my CS foundations through coursework and projects.</p>
+        <div class="journey-photos">
+          <figure><img src="/assets/images/iit-bombay-main-building.jpg" width="1280" height="960" alt="Academic building and gardens at IIT Bombay" loading="lazy"><figcaption>IIT Bombay</figcaption></figure>
+          <figure><img src="/assets/images/bascom-hall.jpg" width="1280" height="848" alt="Bascom Hall framed by autumn leaves at UW–Madison" loading="lazy"><figcaption>UW–Madison</figcaption></figure>
+        </div>
+        </section>
+        <section aria-labelledby="toolkit-title"><h2 id="toolkit-title">Toolkit</h2><div class="toolkit-grid">
+          <p><strong>Languages</strong><span>Python · C++ · Java · JavaScript · SQL</span></p>
+          <p><strong>ML / AI</strong><span>PyTorch · Hugging Face · Scikit-learn · CLIP · XGBoost · SHAP · QLoRA/PEFT</span></p>
+          <p><strong>Generative AI</strong><span>Language models · retrieval · distillation · RAG · LangGraph · CrewAI</span></p>
+          <p><strong>Systems</strong><span>FastAPI · REST APIs · Docker · Azure · AWS · CI/CD</span></p>
+        </div></section>
+        <section aria-labelledby="interests-title"><h2 id="interests-title">What holds my attention</h2><p>Efficient language-model search, model evaluation, and generative models for scientific data. My current retrieval-learning project studies when a smaller language model should search under explicit tool-call costs. My completed work includes time-series forecasting, image geolocation, and deployed ML systems.</p><a class="underlined-link" href="/#work">See the projects ↗</a></section>
+        <section aria-labelledby="outside-title"><h2 id="outside-title">Outside work</h2><p>Outside of work, I enjoy lifting, traveling, photography, coffee, and exploring new places.</p>
+        <div class="life-cards">
+          <figure><img src="/assets/images/gym.jpg" width="1536" height="1024" alt="Dumbbells beside sunlit gym windows" loading="lazy"><figcaption><h3>Gym</h3><p>A stronger mind in a stronger body.</p></figcaption></figure>
+          <figure><img src="/assets/images/mountains.jpg" width="1536" height="1024" alt="A trail through alpine mountains" loading="lazy"><figcaption><h3>Travel</h3><p>New places, new perspectives.</p></figcaption></figure>
+          <figure><img src="/assets/images/coffee.jpg" width="1536" height="1024" alt="A cappuccino with leaf-shaped latte art" loading="lazy"><figcaption><h3>Coffee</h3><p>Fuel for thought.</p></figcaption></figure>
+          <figure><img src="/assets/images/lake-mendota-sunset.jpg" width="1280" height="855" alt="The sun setting over Lake Mendota" loading="lazy"><figcaption><h3>Quiet moments</h3><p>Step back. Be present.</p></figcaption></figure>
+        </div>
+        </section>
+        <div class="text-links"><a href="mailto:sbmaddipati@wisc.edu">Email ↗</a><a href="https://www.linkedin.com/in/sbmaddipati">LinkedIn ↗</a><a href="https://x.com/bhargavsatya1">Twitter ↗</a></div>
       </div>
     </div>
+    <section id="life-lately" class="life-lately" aria-labelledby="life-lately-title">
+      <header class="lately-heading"><h3 id="life-lately-title">life, lately</h3><p id="lately-demo-label" hidden>fictional demo · local preview only</p></header>
+      <div class="lately-columns">
+        <section class="lately-workouts" aria-labelledby="workouts-title">
+          <h4 id="workouts-title">workouts</h4>
+          <div id="workouts-content" aria-live="polite"><p class="lately-empty">a little room for movement. no workouts shared yet.</p></div>
+        </section>
+        <section class="lately-music" aria-labelledby="music-title">
+          <h4 id="music-title">music</h4>
+          <div id="music-content" aria-live="polite"><p class="lately-empty">music integration coming soon</p></div>
+        </section>
+      </div>
+      <section class="visitor-corner" aria-labelledby="visitor-title">
+        <h4 id="visitor-title">your corner</h4>
+        <p class="visitor-clock"><time id="visitor-time">your local time, when JavaScript is available</time><span id="visitor-timezone"></span></p>
+        <div class="visitor-weather"><button id="weather-button" type="button" hidden aria-describedby="weather-privacy">show local weather <span aria-hidden="true">→</span></button><span id="weather-status" role="status"></span><a id="weather-credit" href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer" hidden>via Open-Meteo</a></div>
+        <p id="weather-privacy" class="lately-sr-only">On request, your browser asks for location access. An approximate location is sent once to Open-Meteo for weather. This website does not save it.</p>
+      </section>
+    </section>
   </main>
   <footer id="contact" class="site-footer wrap">
     <div class="footer-top">
-      <h2>Say hello<span class="accent">.</span></h2>
+      <h2>Let’s grab coffee<span class="accent">.</span></h2>
       <div class="text-links" aria-label="Contact links">
         <a href="mailto:sbmaddipati@wisc.edu">Email ↗</a>
         <a href="https://github.com/Satyamaddipati">GitHub ↗</a>
         <a href="https://www.linkedin.com/in/sbmaddipati">LinkedIn ↗</a>
+        <a href="https://x.com/bhargavsatya1">Twitter ↗</a>
       </div>
     </div>
+    <details><summary>Image credits</summary><p>Bascom Hall by <a href="https://commons.wikimedia.org/wiki/File:Bascom_Hall_on_the_UW_Madison_campus_in_Madison,_WI_(6351014921).jpg">Richard Hurd</a>, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>. IIT Bombay by <a href="https://commons.wikimedia.org/wiki/File:Main_building_in_IIT_Bombay.jpg">Shishirdasika</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Images resized/re-encoded and cropped for display; the IIT Bombay adaptation remains CC BY-SA 4.0.</p><p><a href="/assets/IMAGE_CREDITS.md">Full verified image credits</a></p></details>
     <div class="footer-bottom"><span>© <span id="year">2026</span> Satya Maddipati</span><a href="#content">Back to top ↑</a></div>
   </footer>
 </body>

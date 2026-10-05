@@ -49,11 +49,11 @@ def contrast(a,b):
     light,dark=sorted((luminance(a),luminance(b)),reverse=True)
     return (light+.05)/(dark+.05)
 for name,foregrounds,backgrounds in [
-    ('paper',['171717','15242c','66645f','126782'],['f3f1ea','f8f6f0','dcebf0','eae7de','e6e1d5','e8e7df']),
-    ('university panel',['743d3d'],['e8dfd9']),
-    ('primary button',['f3f1ea'],['126782','15242c']),
-    ('reference homepage',['171717','101923','555d64','194f76'],['f3f1ea','dfe5e8']),
-    ('reference buttons',['f3f1ea'],['205d88','194f76','133e5e'])]:
+    ('paper',['2b2420','211c18','6b5440','8f4610'],['f2e8d8','f7f0e3','f0dcbe','ece0cc','e8dbc0','eadcc4']),
+    ('university panel',['4a3221'],['efe0c8']),
+    ('primary button',['f2e8d8'],['8f4610','211c18']),
+    ('reference homepage',['2b2420','1a1512','5c4836','7a3b0d'],['f2e8d8','ead9be']),
+    ('reference buttons',['f2e8d8'],['9a4e14','8f4610','6b3209'])]:
     ratios=[contrast(f,b) for f in foregrounds for b in backgrounds]
     if min(ratios)<4.5: errors.append(f'{name} palette fails normal-text contrast: {min(ratios):.2f}')
     print(f'{name} palette: minimum text contrast {min(ratios):.2f}:1')

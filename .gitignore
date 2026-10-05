@@ -1,0 +1,5 @@
+# Working drafts and audit notes — not part of the published site.
+output/
+
+# OS/editor cruft
+.DS_Store

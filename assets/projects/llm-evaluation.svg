@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="ev-title ev-desc">
+  <title id="ev-title">Multi-agent LLM evaluation pipeline</title>
+  <desc id="ev-desc">Model outputs are scored by evaluator agents, aggregated, and surfaced on a dashboard.</desc>
+  <rect width="640" height="420" fill="#EADCC4"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <rect x="30" y="172" width="112" height="76" rx="8" fill="#F7F0E3" stroke="#C7B59A" stroke-width="2"/>
+    <text x="86" y="206" fill="#211C18" font-size="13" font-weight="700">Model</text>
+    <text x="86" y="223" fill="#211C18" font-size="13" font-weight="700">outputs</text>
+    <path d="M142 210h36" fill="none" stroke="#C7B59A" stroke-width="2" marker-end="url(#evArrow)"/>
+    <rect x="178" y="130" width="130" height="50" rx="7" fill="#F0DCBE" stroke="#8F4610" stroke-width="2"/>
+    <text x="243" y="160" fill="#211C18" font-size="12" font-weight="700">GPT-4 evaluator</text>
+    <rect x="178" y="185" width="130" height="50" rx="7" fill="#F0DCBE" stroke="#8F4610" stroke-width="2"/>
+    <text x="243" y="215" fill="#211C18" font-size="12" font-weight="700">Claude evaluator</text>
+    <rect x="178" y="240" width="130" height="50" rx="7" fill="#F0DCBE" stroke="#8F4610" stroke-width="2"/>
+    <text x="243" y="270" fill="#211C18" font-size="12" font-weight="700">Gemini evaluator</text>
+    <path d="M308 155h32M308 210h32M308 265h32" fill="none" stroke="#C7B59A" stroke-width="2"/>
+    <path d="M340 155v55M340 265v-55M340 210h30" fill="none" stroke="#C7B59A" stroke-width="2" marker-end="url(#evArrow)"/>
+    <rect x="378" y="186" width="118" height="48" rx="7" fill="#F7F0E3" stroke="#C7B59A" stroke-width="2"/>
+    <text x="437" y="208" fill="#211C18" font-size="12" font-weight="700">Score</text>
+    <text x="437" y="224" fill="#211C18" font-size="11">aggregation</text>
+    <path d="M496 210h36" fill="none" stroke="#C7B59A" stroke-width="2" marker-end="url(#evArrow)"/>
+    <rect x="540" y="172" width="70" height="76" rx="8" fill="#211C18"/>
+    <text x="575" y="203" fill="#F7F0E3" font-size="12" font-weight="700">Dash-</text>
+    <text x="575" y="219" fill="#F7F0E3" font-size="12" font-weight="700">board</text>
+    <text x="320" y="340" fill="#6B5440" font-size="11">1,000+ prompts · LLM-as-judge scoring · 50K+ evaluations / month</text>
+  </g>
+  <defs>
+    <marker id="evArrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0l7 4-7 4z" fill="#C7B59A"/></marker>
+  </defs>
+</svg>

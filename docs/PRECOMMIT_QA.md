@@ -25,12 +25,14 @@ Image credits disclosure in the homepage footer.
 | --- | --- | --- | --- | --- | --- |
 | assets/images/bascom-hall.jpg | https://commons.wikimedia.org/wiki/File:Bascom_Hall_on_the_UW_Madison_campus_in_Madison,_WI_(6351014921).jpg | Richard Hurd; local EXIF says RA Hurd | CC BY 2.0 | Required; added | Verified with source and local image comparison |
 | assets/images/iit-bombay-main-building.jpg | https://commons.wikimedia.org/wiki/File:Main_building_in_IIT_Bombay.jpg | Shishirdasika | CC BY-SA 4.0 | Required; added, including adaptation license | Verified with source and local image comparison |
-| assets/images/lake-mendota-sunset.jpg | Unknown | Unknown | Unknown | Cannot determine | UNSAFE TO PUBLISH — replace this file or establish its exact source and rights |
-| profile.jpg | No external source established; repository history records an upload in commit 7355b8a2 | Photographer unknown | Unknown; no permission record found | Cannot determine | UNSAFE TO PUBLISH under this audit's verification requirement — confirm photographer permission/ownership or replace this file |
+| assets/images/lake-mendota-sunset.jpg | Owner-confirmed personal photograph (2026-10) | Satya Maddipati / rights held by owner | Owner-held, no external license needed | Not required | Verified by owner confirmation; no attribution needed |
+| profile.jpg | Owner-confirmed personal photograph (2026-10) | Satya Maddipati / rights held by owner | Owner-held, no external license needed | Not required | Verified by owner confirmation; no attribution needed |
 
-The portrait is an existing owner-supplied asset, not confirmed stock photography.
-Its upload does not establish who took the photograph or a license. It appears on
-About and as social-sharing metadata on all four HTML routes.
+Both images were flagged "unsafe to publish" by an earlier automated audit pass
+that had no way to confirm provenance. The owner has since confirmed directly
+(2026-10) that both are personal photographs he holds the rights to. No specific
+photographer/license record exists beyond that confirmation; treat this table
+entry as the attribution record going forward unless contradicted.
 
 The campus comparisons found identical subjects/compositions and very small
 JPEG pixel differences at the same dimensions (approximately 1–3/255 per channel).

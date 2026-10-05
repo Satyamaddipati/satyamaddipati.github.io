@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Satya Maddipati's research: cost-aware retrieval learning for LLM agents, training a small student model to decide when to search.">
+  <meta name="theme-color" content="#F3F1EA">
+  <title>Research | Satya Maddipati</title>
+  <link rel="canonical" href="https://satyamaddipati.github.io/research/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Research | Satya Maddipati">
+  <meta property="og:description" content="Cost-aware retrieval learning for LLM agents: training a small student model to decide when to search.">
+  <meta property="og:url" content="https://satyamaddipati.github.io/research/">
+  <meta property="og:image" content="https://satyamaddipati.github.io/profile.jpg">
+  <meta property="og:image:alt" content="Satya Bhargav Maddipati">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/research.css">
+  <script src="/assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="/">Satya Maddipati</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Menu <span aria-hidden="true">+</span></button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="/#work">Work</a>
+        <a href="/research/" aria-current="page">Research</a>
+        <a href="/about/">About</a>
+        <a href="/resume/resume.pdf" data-resume-link target="_blank" rel="noopener">Resume ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="wrap subpage research-page" tabindex="-1">
+    <header class="page-intro"><p class="eyebrow">Research</p><h1>Open questions<span class="accent">.</span></h1><p>Notes from an ongoing research notebook — methods, baselines, and status, not polished results.</p></header>
+
+    <article class="research-entry" aria-labelledby="entry-01-title">
+      <div class="entry-number" aria-hidden="true">01</div>
+      <div class="entry-body">
+        <p class="entry-status">In progress · Fall 2026</p>
+        <h2 id="entry-01-title">Learning to Search From a Teacher Who Already Knows</h2>
+        <p class="entry-lede">Cost-aware retrieval learning for LLM agents.</p>
+
+        <section aria-labelledby="rq-01"><h3 id="rq-01">Research question</h3><p>Can a smaller language model learn <em>when</em> to search and <em>what</em> to retrieve from a teacher that already has access to the evidence, rather than simply imitating the teacher's final answers?</p></section>
+
+        <section aria-labelledby="setup-01"><h3 id="setup-01">Setup</h3><ul><li>Student: Qwen3-1.7B</li><li>Teacher: a frozen 4B model with access to supporting evidence</li><li>Explicit tool-call cost included in the training signal, so the student must trade off answer quality against how much it searches</li></ul></section>
+
+        <section aria-labelledby="eval-01"><h3 id="eval-01">Evaluation</h3><ul><li>Controlled fact-finding tasks</li><li>MuSiQue multi-hop QA</li><li>Metrics: answer accuracy, retrieval cost, and abstention</li></ul></section>
+
+        <section aria-labelledby="baselines-01"><h3 id="baselines-01">Baselines</h3><ul><li>Standard knowledge distillation (imitate the teacher's answer, not its search behavior)</li><li>Information-gain search (retrieve greedily by expected information gain, no learned cost model)</li></ul></section>
+
+        <section aria-labelledby="status-01"><h3 id="status-01">Status</h3><p>Training and evaluation are underway. Results are not yet available — this entry will be updated as experiments complete.</p></section>
+      </div>
+    </article>
+
+    <p class="research-aside">Also forming a question about <strong>KV-cache eviction during long-context reasoning</strong> — which parts of an LLM's key-value cache are safe to drop during long, multi-step reasoning without losing answer quality. Too early for a full entry: no method or baselines defined yet.</p>
+
+    <p class="section-end"><a class="underlined-link" href="/about/">More about my background →</a></p>
+  </main>
+  <footer id="contact" class="site-footer wrap">
+    <div class="footer-top">
+      <h2>Let’s grab coffee<span class="accent">.</span></h2>
+      <div class="text-links" aria-label="Contact links">
+        <a href="mailto:sbmaddipati@wisc.edu">Email ↗</a>
+        <a href="https://github.com/Satyamaddipati">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/sbmaddipati">LinkedIn ↗</a>
+        <a href="https://x.com/bhargavsatya1">Twitter ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> Satya Maddipati</span><a href="#content">Back to top ↑</a></div>
+  </footer>
+</body>
+</html>

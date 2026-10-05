@@ -39,5 +39,26 @@ Credit: “Main building in IIT Bombay” by Shishirdasika, CC BY-SA 4.0;
 resized/re-encoded and cropped for display. The modified image is provided under
 CC BY-SA 4.0.
 
+## University of Wisconsin seal
+
+- Local file: images/uw-madison-seal.svg
+- Work: Seal of the University of Wisconsin
+- Source: https://commons.wikimedia.org/wiki/File:Seal_of_the_University_of_Wisconsin.svg
+- Copyright status: public domain (copyright term expired); Wikimedia Commons
+  notes the design may still be protected as a trademark in some jurisdictions.
+- Attribution required: no (public domain), credited here anyway for provenance.
+- Changes: none; used as downloaded.
+
+Note: this is the institutional seal, used only to factually identify the
+owner's degree-granting institution (nominative use), not to imply endorsement
+by or affiliation with the university beyond being a student.
+
+An equivalent IIT Bombay mark was deliberately not added: the only version
+found (Wikipedia's "Indian_Institute_of_Technology_Bombay_Logo.svg") is hosted
+under `/wikipedia/en/`, Wikipedia's local non-free-media path, and carries a
+fair-use rationale valid only for use within Wikipedia articles — not licensed
+for reuse on third-party sites. No freely-licensed alternative was found on
+Wikimedia Commons as of 2026-10-05.
+
 This file intentionally credits only verified external sources. Unresolved image
 provenance is recorded in docs/PRECOMMIT_QA.md, not attributed by guesswork here.

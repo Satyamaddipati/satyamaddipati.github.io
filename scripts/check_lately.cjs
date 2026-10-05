@@ -37,7 +37,7 @@ const output = fs.mkdtempSync(path.join(os.tmpdir(), 'life-lately-'));
     page.on('request', r => requests.push(r.url()));
     await page.clock.install({ time: new Date('2026-09-17T05:31:00Z') });
     for (const mode of ['demo', 'empty']) {
-      await page.goto(base + '/' + (mode === 'demo' ? '?demo=1' : '') + '#life-lately');
+      await page.goto(base + '/about/' + (mode === 'demo' ? '?demo=1' : '') + '#life-lately');
       await page.waitForFunction(() => document.querySelector('#visitor-time').dateTime);
       if (mode === 'demo') await page.locator('.workout-row').first().waitFor();
       await page.waitForFunction(() => document.querySelector('#life-lately').dataset.ready === 'true');
@@ -141,7 +141,7 @@ const output = fs.mkdtempSync(path.join(os.tmpdir(), 'life-lately-'));
 
     // Broken feeds retain the static fallbacks.
     await page.route('**/assets/data/*.json', route => route.fulfill({status:200,contentType:'application/json',body:'invalid JSON'}));
-    await page.goto(base + '/');
+    await page.goto(base + '/about/');
     await page.locator('#weather-button').waitFor({state:'visible'});
     assert(await page.locator('#music-content').textContent().then(t => t.includes('coming soon')));
     assert(await page.locator('#workouts-content').textContent().then(t => t.includes('no workouts shared')));
@@ -152,19 +152,19 @@ const output = fs.mkdtempSync(path.join(os.tmpdir(), 'life-lately-'));
     publicPage.on('request', request => publicRequests.push(request.url()));
     await publicPage.route('https://portfolio.test/**', async route => {
       const url = new URL(route.request().url());
-      const local = path.join(root, url.pathname === '/' ? 'index.html' : url.pathname);
+      const local = path.join(root, url.pathname.endsWith('/') ? url.pathname + 'index.html' : url.pathname);
       const types = {'.html':'text/html','.js':'text/javascript','.json':'application/json','.css':'text/css','.svg':'image/svg+xml','.jpg':'image/jpeg'};
       if (!fs.existsSync(local)) return route.fulfill({status:404,body:''});
       return route.fulfill({body:fs.readFileSync(local),contentType:types[path.extname(local)] || 'application/octet-stream'});
     });
-    await publicPage.goto('https://portfolio.test/?demo=1#life-lately');
+    await publicPage.goto('https://portfolio.test/about/?demo=1#life-lately');
     await publicPage.locator('#weather-button').waitFor({state:'visible'});
     assert(!publicRequests.some(url => url.includes('.example.json')));
     assert(await publicPage.locator('#lately-demo-label').isHidden());
     assert(publicRequests.some(url => url.endsWith('/assets/data/music.json')));
     const nojs = await browser.newContext({javaScriptEnabled:false});
     const plain = await nojs.newPage();
-    await plain.goto(base + '/#life-lately');
+    await plain.goto(base + '/about/#life-lately');
     assert(await plain.locator('#music-content').textContent().then(t=>t.includes('coming soon')));
     assert(await plain.locator('#weather-button').isHidden());
     assert.deepEqual(errors, []);

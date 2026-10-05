@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="AI Life Logger: a personal systems-engineering project that turns audio captured on Ray-Ban glasses into structured memories and hourly summaries.">
+  <meta name="theme-color" content="#F3F1EA">
+  <title>AI Life Logger | Satya Maddipati</title>
+  <link rel="canonical" href="https://satyamaddipati.github.io/projects/ai-life-logger/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AI Life Logger | Satya Maddipati">
+  <meta property="og:description" content="A personal system that turns captured audio into structured memories and hourly summaries.">
+  <meta property="og:url" content="https://satyamaddipati.github.io/projects/ai-life-logger/">
+  <meta property="og:image" content="https://satyamaddipati.github.io/assets/projects/ai-life-logger.svg">
+  <meta property="og:image:alt" content="AI Life Logger pipeline diagram">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script src="/assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="/">Satya Maddipati</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" hidden>Menu <span aria-hidden="true">+</span></button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="/#work">Work</a>
+        <a href="/research/">Research</a>
+        <a href="/about/">About</a>
+        <a href="/resume/resume.pdf" data-resume-link target="_blank" rel="noopener">Resume ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="wrap subpage case-study" tabindex="-1">
+    <header class="page-intro case-study-intro">
+      <p class="eyebrow">Case study</p>
+      <h1>AI Life Logger<span class="accent">.</span></h1>
+      <p>A personal systems-engineering project: audio captured on Ray-Ban glasses becomes structured memories and an hourly summary, with no cloud dashboard and no manual review step.</p>
+      <p class="case-study-status">Personal project · code not yet linked</p>
+    </header>
+
+    <section class="case-section" aria-labelledby="ll-01"><p class="case-number">01</p><h2 id="ll-01">Why this is a systems problem, not just an LLM demo</h2><p>Calling an LLM on a transcript is the easy part. The actual engineering is in the plumbing around it: audio arrives continuously and unpredictably, has to be turned into text reliably, filtered down to what's worth remembering, summarized, stored durably, and delivered on a schedule — without a person babysitting any of it.</p></section>
+
+    <section class="case-section" aria-labelledby="ll-02"><p class="case-number">02</p><h2 id="ll-02">Architecture</h2>
+      <figure class="case-diagram"><img src="/assets/projects/ai-life-logger.svg" width="640" height="420" loading="lazy" alt="Diagram: Ray-Ban audio capture through a filesystem watcher, Whisper transcription, filtering and deduplication, Claude summarization, SQLite persistence, and a Telegram hourly digest"></figure>
+      <ul class="case-list">
+        <li>Ray-Ban glasses capture audio</li>
+        <li>A filesystem watcher picks up new recordings as they land</li>
+        <li>Whisper transcribes them</li>
+        <li>A filtering/deduplication step discards noise and repeats</li>
+        <li>Claude summarizes what's left into structured notes</li>
+        <li>SQLite persists the result</li>
+        <li>A Telegram bot delivers an hourly digest</li>
+      </ul>
+    </section>
+
+    <section class="case-section" aria-labelledby="ll-03"><p class="case-number">03</p><h2 id="ll-03">What a pipeline like this has to get right</h2><p>Running unattended against a continuous audio stream raises a specific set of problems, independent of the model in the loop:</p><ul class="case-list"><li><strong>Partial writes.</strong> A recording interrupted mid-capture shouldn't produce a half-transcribed, corrupted entry.</li><li><strong>Duplicate captures.</strong> If the watcher sees the same file twice — a retry, a sync hiccup — it shouldn't summarize it twice.</li><li><strong>Quiet hours.</strong> Not every captured moment should become a 2 a.m. Telegram notification.</li><li><strong>Failure recovery.</strong> A Whisper or Claude API failure on one clip shouldn't take down the rest of the pipeline.</li><li><strong>Privacy by default.</strong> Everything stays local (SQLite, no cloud dashboard); the only outbound step is the summary itself.</li></ul><p class="case-note">These are the design constraints the architecture above is built to satisfy — the project's engineering substance, not a list of logged incidents.</p></section>
+
+    <section class="case-section" aria-labelledby="ll-04"><p class="case-number">04</p><h2 id="ll-04">Status</h2><p>A working personal pipeline, still evolving. Code isn't public yet.</p></section>
+
+    <p class="section-end"><a class="underlined-link" href="/#work">Back to selected work →</a></p>
+  </main>
+  <footer id="contact" class="site-footer wrap">
+    <div class="footer-top">
+      <h2>Let’s grab coffee<span class="accent">.</span></h2>
+      <div class="text-links" aria-label="Contact links">
+        <a href="mailto:sbmaddipati@wisc.edu">Email ↗</a>
+        <a href="https://github.com/Satyamaddipati">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/sbmaddipati">LinkedIn ↗</a>
+        <a href="https://x.com/bhargavsatya1">Twitter ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> Satya Maddipati</span><a href="#content">Back to top ↑</a></div>
+  </footer>
+</body>
+</html>
