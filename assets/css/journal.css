@@ -60,8 +60,8 @@ details p + p { margin-top: 8px; }
 .institution-mark { width: 68px; height: 68px; border-radius: 50%; background: #F7F0E3; display: flex; flex-direction: column; align-items: center; justify-content: center; font: bold 23px/1 var(--serif); color: var(--accent); border: 1.5px solid var(--line); box-shadow: 0 0 0 3px var(--paper), 0 0 0 4px var(--line); }
 .institution-mark br { display: none; }
 .institution-mark small { font-size: 13px; font-weight: normal; margin-top: 5px; }
-.institution-mark.tata { font: bold 19px/.95 var(--sans); }
-.institution-mark.tata em { color: #6B3209; font-size: 16px; font-style: normal; margin-top: 5px; }
+.institution-mark.tata { padding: 14px 10px; }
+.institution-mark.tata img { width: 100%; height: 100%; object-fit: contain; }
 .institution-mark.cognibot { font-size: 31px; }
 .timeline-content header { display: flex; justify-content: space-between; gap: 20px; margin-bottom: 17px; }
 .timeline-content h3 { font-size: 24px; }
@@ -277,8 +277,6 @@ details p + p { margin-top: 8px; }
   .timeline { margin-top: 30px; }
   .timeline-entry { grid-template-columns: 46px minmax(0, 1fr); gap: 14px; padding: 0 0 32px 19px; }
   .institution-mark { width: 46px; height: 46px; font-size: 18px; }
-  .institution-mark.tata { font-size: 14px; }
-  .institution-mark.tata em { font-size: 12px; }
   .institution-mark small { font-size: 10px; }
   .timeline-content h3 { font-size: 22px; }
   .timeline-content > p { font-size: 17px; }
